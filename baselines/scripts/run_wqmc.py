@@ -46,6 +46,8 @@ def runs():
     simulated = [("11", "11-taxa-weighted-quartets"), ("15", "15-taxa-weighted-quartets"),
                  ("37", "37-taxa-weighted-quartets"), ("48", "48-taxa-weighted-quartets")]
     for group, folder in simulated:
+        if not (INPUT / folder).is_dir():  # dataset not extracted on this machine
+            continue
         for path in sorted((INPUT / folder).iterdir()):
             if group == "11":
                 reference = REFERENCES / ("11_estimated.tre" if path.name.startswith("estimated_") else "11_simulated.tre")
@@ -135,9 +137,15 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--only", nargs="*", help="groups to run: 11 15 37 48 biological 101 144 200")
     parser.add_argument("--jobs", type=int, default=1, help="inputs run in parallel (default 1)")
+    parser.add_argument("--out", help="folder for this run's results, to keep a rerun apart from baselines/results")
     args = parser.parse_args()
     if not WQMC.exists():
         raise SystemExit(f"wQMC binary not found: {WQMC} (see baselines/commands.md)")
+    if args.out:
+        global OUT_DIR, CSV_PATH  # inherited by the worker processes
+        OUT_DIR = Path(args.out).resolve() / "wqmc"
+        CSV_PATH = Path(args.out).resolve() / "wqmc_results.csv"
+        CSV_PATH.parent.mkdir(parents=True, exist_ok=True)
 
     rows = {}
     if CSV_PATH.exists():

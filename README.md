@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/quanta-banner.svg" width="100%" alt="QUANTA: signals from a quantum computer pass through an annealing energy landscape into a bird species tree whose taxa are qubits">
+</p>
+
 # QUANTA
 (Version 1.0)
 
@@ -258,3 +262,29 @@ Results and logs of the other solvers:
 
 `<solver>` is `simulated_annealing` or `tabu_search`, except for QUANTA-Tree, which used only
 simulated annealing.
+
+## Baselines: wQMC and ASTRAL
+
+These commands run wQMC and ASTRAL on the 37-, 48-, 101- and 200-taxon datasets. Neither needs a
+token, and both programs are already in `baselines/tools/`. Results go to `my_runs/baselines/`, and
+finished inputs are skipped, so an interrupted run resumes with the same command.
+
+```bash
+# wQMC
+QWQFM/.venv/bin/python baselines/scripts/run_wqmc.py --only 37 48 101 200 --out my_runs/baselines
+
+# ASTRAL
+QWQFM/.venv/bin/python baselines/scripts/run_astral.py --only 37 --jobs 4 --out my_runs/baselines
+QWQFM/.venv/bin/python baselines/scripts/run_astral.py --only 48 --jobs 4 --out my_runs/baselines
+QWQFM/.venv/bin/python baselines/scripts/run_astral.py --only 101 --out my_runs/baselines
+QWQFM/.venv/bin/python baselines/scripts/run_astral.py --only 200 --out my_runs/baselines
+```
+
+**ASTRAL on 101 taxa:** our results used each replicate's 1000 true gene trees from the ASTRAL-III
+S100 dataset, which are not in the input files on Google Drive. To do the same, save them as
+`QWQFM/WQFM/input_files/101-taxa-true-gene-trees/<replicate>.truegenetrees`. Without them, ASTRAL
+runs on the weighted quartets instead, which needs about 20 GB of memory per replicate.
+
+Our results are in `baselines/results/astral_results.csv` and `baselines/results/wqmc_results.csv`,
+with each input's tree and logs in `baselines/results/<astral or wqmc>/<dataset>/<input>/`. See
+[baselines/commands.md](baselines/commands.md) for details.

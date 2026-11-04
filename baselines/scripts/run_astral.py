@@ -196,7 +196,12 @@ def main():
                         help="inputs run in parallel (default 1)")
     parser.add_argument("--threads", type=int, default=1,
                         help="ASTER threads per input (default 1, single-threaded like wQFM)")
+    parser.add_argument("--out", help="folder for this run's results, to keep a rerun apart from baselines/results")
     args = parser.parse_args()
+    if args.out:
+        global OUT_DIR, CSV_PATH  # inherited by the worker processes
+        OUT_DIR = Path(args.out).resolve() / "astral"
+        CSV_PATH = Path(args.out).resolve() / "astral_results.csv"
 
     new_rows = {}
     specs = [s for s in runs() if not args.only or s["group"] in args.only]
