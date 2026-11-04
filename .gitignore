@@ -16,3 +16,6 @@ wqfm-tree/official/
 
 # Secrets (D-Wave API token)
 .env
+
+# Editor settings
+.vscode/

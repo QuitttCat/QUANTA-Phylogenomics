@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Score one estimated tree the same way as the wQFM / wQ2A results.
+"""Score one estimated tree the same way as the wQFM / QUANTA results.
 
 - RF: normalized Robinson-Foulds distance to a reference tree, using
   QWQFM/benchmark/robinson_foulds.py (optional; only when --reference is given).

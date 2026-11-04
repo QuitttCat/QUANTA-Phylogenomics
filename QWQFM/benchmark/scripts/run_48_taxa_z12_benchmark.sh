@@ -16,6 +16,10 @@ WQFM_PYTHON="${WQFM_PYTHON:-${REPO_DIR}/.venv/bin/python}"
 RF_PYTHON="${RF_PYTHON:-${REPO_DIR}/.venv/bin/python}"
 SCORER="${SCRIPT_DIR}/score_reused_classical_row.py"
 ENV_FILE="${ENV_FILE:-${WORKSPACE_DIR}/.env}"
+# Algorithms run after `cd "$APP_DIR"`, so caller-relative paths must be anchored now.
+INPUT_DIR="$(realpath -m "$INPUT_DIR")"
+OUTPUT_CSV="$(realpath -m "$OUTPUT_CSV")"
+WORK_DIR="$(realpath -m "$WORK_DIR")"
 DWAVE_SOLVER="${DWAVE_SOLVER:-Advantage2_system1}"
 DWAVE_TOPOLOGY="${DWAVE_TOPOLOGY:-zephyr_z12}"
 

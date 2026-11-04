@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Run the 37-taxon wQFM vs wQ²A benchmark on the D-Wave QPU, collect the CSV,
+# Run the 37-taxon wQFM vs QUANTA benchmark on the D-Wave QPU, collect the CSV,
 # and plot it. Partitions with n>20 taxa go to the QPU, smaller ones to brute
 # force, so a D-Wave API token is required: export DWAVE_API_TOKEN or put
 # DWAVE_API_TOKEN=... in .env at the repository root.

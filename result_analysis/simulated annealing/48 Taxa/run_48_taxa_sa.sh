@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# 48-taxon benchmark: wQFM vs wQ²A with simulated annealing in place of the QPU
+# 48-taxon benchmark: wQFM vs QUANTA with simulated annealing in place of the QPU
 # (n > 20 -> simulated annealing, n <= 20 -> brute force, QUBO A=1, B=0.4).
 # Needs no D-Wave token. Runs one file at a time; finished files are skipped on
 # rerun. wQFM runs already done locally (WQFM_REUSE_DIR) are copied, not rerun.
@@ -23,7 +23,7 @@ OUTPUT_CSV="${ROOT}/QWQFM/benchmark/output_csv/${name}"
 RF_SCRIPT="${ROOT}/QWQFM/benchmark/robinson_foulds.py"
 
 export JAVA_TOOL_OPTIONS="${JAVA_TOOL_OPTIONS:--Xmx6g -Xms6g}"
-export WQ2A_SA_THRESHOLD="${WQ2A_SA_THRESHOLD:-20}" WQ2A_A="${WQ2A_A:-1.0}" WQ2A_B="${WQ2A_B:-0.4}"
+export QUANTA_SA_THRESHOLD="${QUANTA_SA_THRESHOLD:-20}" QUANTA_A="${QUANTA_A:-1.0}" QUANTA_B="${QUANTA_B:-0.4}"
 
 mapfile -d '' files < <(find "$INPUT_DIR" -maxdepth 1 -type f -print0 | sort -z)
 ((${#files[@]})) || { echo "Error: no input files in $INPUT_DIR" >&2; exit 1; }
@@ -33,7 +33,7 @@ mkdir -p "$WORK_DIR" "${HERE}/result"
 echo "Input: $INPUT_DIR (${#files[@]} files)"
 echo "Work dir: $WORK_DIR"
 echo "wQFM reuse dir: $WQFM_REUSE_DIR"
-echo "QUBO: A=$WQ2A_A B=$WQ2A_B; simulated annealing for n > $WQ2A_SA_THRESHOLD; JVM: $JAVA_TOOL_OPTIONS"
+echo "QUBO: A=$QUANTA_A B=$QUANTA_B; simulated annealing for n > $QUANTA_SA_THRESHOLD; JVM: $JAVA_TOOL_OPTIONS"
 
 echo "Building wQFM..."
 (cd "$APP_DIR" && ant -q jar)
@@ -61,7 +61,7 @@ for ((i = 0; i < ${#files[@]}; i++)); do
         fi
     fi
     if [[ ! -f "${out}/sa.done" ]]; then
-        echo "  wQ2A (simulated annealing): running"
+        echo "  QUANTA (simulated annealing): running"
         run 2 sa "$out" "$input" --simulated_annealing
     fi
 

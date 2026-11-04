@@ -1,4 +1,4 @@
-# 101-taxon benchmark: wQFM vs wQ²A (D-Wave QPU) — accuracy and timing
+# 101-taxon benchmark: wQFM vs QUANTA (D-Wave QPU) — accuracy and timing
 
 All commands are run from the **repository root** (the directory that contains
 `QWQFM/` and `result_analysis/`). Every path below is relative to it.
@@ -46,7 +46,7 @@ Every bar is the mean over replicates with standard-error bars.
   `Time taken = N ms` line.
 - **(c) Sum of division-step times** (log scale) — the total time of all
   bipartition steps in a run, from the `BENCHMARK_BIPARTITION_TIME_NS` markers.
-  wQ²A is shown twice:
+  QUANTA is shown twice:
   - *wall clock* — the full time of its division steps, including building the
     QUBO from the quartets and the round trip to D-Wave;
   - *QPU access + brute force* — only the time spent solving: D-Wave
@@ -57,15 +57,15 @@ Every bar is the mean over replicates with standard-error bars.
 
 | Column | Meaning |
 |---|---|
-| `wqfm_end_to_end_seconds`, `wq2a_end_to_end_seconds` | whole run |
-| `wqfm_division_seconds`, `wq2a_division_seconds` | sum of division steps, wall clock |
-| `wq2a_qpu_access_seconds` | sum of D-Wave `qpu_access_time` |
-| `wq2a_bruteforce_seconds` | sum of brute-force solves (n ≤ 20) |
-| `wq2a_qpu_calls` | number of QPU calls in the run |
+| `wqfm_end_to_end_seconds`, `quanta_end_to_end_seconds` | whole run |
+| `wqfm_division_seconds`, `quanta_division_seconds` | sum of division steps, wall clock |
+| `quanta_qpu_access_seconds` | sum of D-Wave `qpu_access_time` |
+| `quanta_bruteforce_seconds` | sum of brute-force solves (n ≤ 20) |
+| `quanta_qpu_calls` | number of QPU calls in the run |
 
 ## Rerun the benchmark (needs a D-Wave token)
 
-101 taxa produce partitions with more than 20 taxa, which wQ²A sends to the
+101 taxa produce partitions with more than 20 taxa, which QUANTA sends to the
 D-Wave QPU. Provide a Leap API token:
 
 ```bash
@@ -83,8 +83,8 @@ bash "result_analysis/101 Taxa/collect_and_plot.sh"
 ```
 
 The benchmark's default output paths are the ones `collect_and_plot.sh` reads.
-It runs all wQ²A (QPU) jobs first, then wQFM. Expect about 4 minutes per
-replicate for wQ²A and about 20 minutes for wQFM, and Leap QPU time for
+It runs all QUANTA (QPU) jobs first, then wQFM. Expect about 4 minutes per
+replicate for QUANTA and about 20 minutes for wQFM, and Leap QPU time for
 every replicate. Re-running resumes from finished replicates.
 
 Useful options:
@@ -94,7 +94,7 @@ bash QWQFM/benchmark/scripts/run_101_taxa_benchmark.sh --dry-run   # paths, file
 bash QWQFM/benchmark/scripts/run_101_taxa_benchmark.sh --limit 1   # one replicate only
 ```
 
-QPU sampling is stochastic, so wQ²A trees and times can differ slightly between runs.
+QPU sampling is stochastic, so QUANTA trees and times can differ slightly between runs.
 
 ---
 
@@ -129,8 +129,8 @@ QWQFM/.venv/bin/python "result_analysis/101 Taxa/graph.py" \
 export DWAVE_API_TOKEN="your-token-here"
 cd QWQFM/WQFM
 bash run-wqfm.sh -i input_files/101-taxa-weighted-quartets/01.true.wqrts -o wqfm.tre -algo 1 > wqfm.log 2>&1
-bash run-wqfm.sh -i input_files/101-taxa-weighted-quartets/01.true.wqrts -o wq2a.tre -algo 2 > quantum.log 2>&1
+bash run-wqfm.sh -i input_files/101-taxa-weighted-quartets/01.true.wqrts -o quanta.tre -algo 2 > quantum.log 2>&1
 ```
 
-`-algo 1` is wQFM, `-algo 2` is wQ²A. Each log ends with a `Time taken` line
+`-algo 1` is wQFM, `-algo 2` is QUANTA. Each log ends with a `Time taken` line
 and contains one `BENCHMARK_BIPARTITION_TIME_NS` marker per division step.

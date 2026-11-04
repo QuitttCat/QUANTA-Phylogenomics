@@ -181,8 +181,8 @@ def panel_division(ax):
     reps = replicate_rows()
     series_minutes(ax, rows, "wqfm_division_seconds", "wQFM", WQFM, "o",
                    replicates=reps and (reps, "wqfm_division_seconds"))
-    series_minutes(ax, rows, "wq2a_division_seconds", "QUANTA (quantum annealer)", QUANTA, "s",
-                   replicates=reps and (reps, "wq2a_division_seconds"))
+    series_minutes(ax, rows, "quanta_division_seconds", "QUANTA (quantum annealer)", QUANTA, "s",
+                   replicates=reps and (reps, "quanta_division_seconds"))
     for solver, label, color, marker in CLASSICAL:
         sreps = replicate_rows(solver)
         series_minutes(ax, classical_by_dataset(solver), "division_seconds", label, color, marker, annotate=False,
@@ -198,8 +198,8 @@ def panel_end_to_end(ax):
     reps = replicate_rows()
     series_minutes(ax, rows, "wqfm_end_to_end_seconds", "wQFM", WQFM, "o",
                    replicates=reps and (reps, "wqfm_end_to_end_seconds"))
-    series_minutes(ax, rows, "wq2a_end_to_end_seconds", "QUANTA (quantum annealer)", QUANTA, "s",
-                   replicates=reps and (reps, "wq2a_end_to_end_seconds"))
+    series_minutes(ax, rows, "quanta_end_to_end_seconds", "QUANTA (quantum annealer)", QUANTA, "s",
+                   replicates=reps and (reps, "quanta_end_to_end_seconds"))
     for solver, label, color, marker in CLASSICAL:
         sreps = replicate_rows(solver)
         series_minutes(ax, classical_by_dataset(solver), "end_to_end_seconds", label, color, marker, annotate=False,

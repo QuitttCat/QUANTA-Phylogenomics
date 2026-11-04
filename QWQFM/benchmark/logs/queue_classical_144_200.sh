@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # One-off queue: 144 and 200 taxa first (SA, then tabu), then the remaining
 # 101-taxon tabu replicates; one run at a time with a small Java heap (laptop).
-cd /home/niloy/Downloads/dwave
+cd "$(dirname "${BASH_SOURCE[0]}")/../../.."
 run() {  # group solver heap
     local name; [ "$2" = sa ] && name=simulated_annealing || name=tabu_search
     echo "=== $1 $2 (heap $3) start $(date)"

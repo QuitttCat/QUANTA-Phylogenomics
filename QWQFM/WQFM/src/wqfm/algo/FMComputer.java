@@ -364,8 +364,8 @@
 
 // public FMResultObject run_FM_Algorithm_Whole2() {
 //     //run qaoa.py to get initial bipartition, passing quartets via stdin
-//     String pythonPath = "/home/niloy/wQFM-2020/.venv/bin/python";
-//     String qaoaScript = "/home/niloy/wQFM-2020/WQFM/src/wqfm/algo/quantum/qaoa.py";
+//     String pythonPath = "../.venv/bin/python";
+//     String qaoaScript = "src/wqfm/algo/quantum/qaoa.py";
 
 //     List<String> leftPartition = new ArrayList<>();
 //     List<String> rightPartition = new ArrayList<>();

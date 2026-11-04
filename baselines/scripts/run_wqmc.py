@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Run wQMC (weighted Quartet MaxCut, Avni et al. 2015) on the same
-weighted-quartet inputs used for wQFM and wQ2A.
+weighted-quartet inputs used for wQFM and QUANTA.
 
 wQMC requires integer taxon names, so each input is first converted to its
 format (one line of `a,b|c,d:weight` entries, as in the wQFM benchmark

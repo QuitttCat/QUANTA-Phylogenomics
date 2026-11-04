@@ -9,7 +9,8 @@
 # Usage: [JOBS=N] INPUT_DIR=... WORK_DIR=... RESULT_CSV=... [scoring] \
 #        bash run_classical_benchmark.sh sa|tabu
 #   INPUT_DIR          weighted-quartet files to run
-#   WORK_DIR           per-file trees and logs (finished files are skipped)
+#   INPUT_NAMES        only these files of INPUT_DIR, space-separated (default: all)
+#   WORK_DIR           per-file trees and logs (finished files are skipped; relative paths are fine)
 #   RESULT_CSV         output CSV
 #   JOBS               quartet files run at once (default 1); each run is single-threaded
 # Scoring, one of:
@@ -28,12 +29,15 @@ python_bin="${REPO_DIR}/.venv/bin/python"
 solver="${1:-}"
 [[ "$solver" == sa || "$solver" == tabu ]] || { echo "Usage: $0 sa|tabu" >&2; exit 2; }
 : "${INPUT_DIR:?}" "${WORK_DIR:?}" "${RESULT_CSV:?}"
-work_dir="$WORK_DIR"
+# Runs happen after `cd "$app_dir"`, so caller-relative paths must be anchored now.
+INPUT_DIR="$(realpath -m "$INPUT_DIR")"
+RESULT_CSV="$(realpath -m "$RESULT_CSV")"
+work_dir="$(realpath -m "$WORK_DIR")"
 
 export JAVA_TOOL_OPTIONS="${JAVA_TOOL_OPTIONS:--Xmx1g}"
 export WQFM_PYTHON="$python_bin"
 export WQFM_QUBO_SCRIPT="${app_dir}/src/wqfm/algo/quantum/qaoa_classical.py"
-export WQ2A_CLASSICAL_SOLVER="$solver"
+export QUANTA_CLASSICAL_SOLVER="$solver"
 export MPLCONFIGDIR="${work_dir}/matplotlib"
 # One thread per run, so JOBS parallel runs do not oversubscribe the CPU.
 export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1
@@ -68,10 +72,18 @@ run_one() {
     fi
 }
 
-total="$(find "$INPUT_DIR" -maxdepth 1 -type f | wc -l)"
+list_inputs() {
+    if [[ -n "${INPUT_NAMES:-}" ]]; then
+        local name
+        for name in $INPUT_NAMES; do printf '%s\0' "${INPUT_DIR}/${name}"; done
+    else
+        find "$INPUT_DIR" -maxdepth 1 -type f -print0 | sort -z
+    fi
+}
+total="$(list_inputs | tr -cd '\0' | wc -c)"
 export -f run_one
 export app_dir work_dir solver total
-find "$INPUT_DIR" -maxdepth 1 -type f -print0 | sort -z |
+list_inputs |
     xargs -0 -P "${JOBS:-1}" -I{} bash -c 'run_one "$1"' _ {}
 
 if [[ -n "${MODEL_TREE_SCRIPT:-}" ]]; then

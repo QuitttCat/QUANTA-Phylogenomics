@@ -321,7 +321,7 @@ BENCHMARK_CONQUER_TOTAL_TIME_NS algorithm=2 merge_count=13 duration_ns=8276061
 
 [L 49.] FMRunner: final tree return
 ((((alligator,caiman),(Gallus,Taeniopygia)),(phrynops,(caretta,(chelonoidis,emys)))),((podarcis,(Anolis,python)),((Xenopus,protopterus),(Ornithorhynchus,(Homo,Monodelphis)))));
->-> Successfully written to output-file /home/niloy/Downloads/dwave/QWQFM/benchmark/work/my_run/aminota-nt.weighted_quartets/wq2a.tre
+>-> Successfully written to output-file /home/niloy/Downloads/dwave/QWQFM/benchmark/work/my_run/aminota-nt.weighted_quartets/quanta.tre
 
 Time taken = 4743 ms ==> 0 minutes and 4 seconds.
 ================= **** ======================== **** ====================

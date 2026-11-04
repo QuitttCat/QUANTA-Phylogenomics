@@ -62,7 +62,7 @@ def main():
     groups = {}
     for row in files:
         fm_large, fm_small = fm_seconds(row["wqfm_log"])
-        qpu, with_hybrid, bruteforce = quanta_seconds(row["wq2a_log"])
+        qpu, with_hybrid, bruteforce = quanta_seconds(row["quanta_log"])
         groups.setdefault(int(row["taxa"]), []).append((fm_large, fm_small, qpu, with_hybrid, bruteforce))
 
     rows = []

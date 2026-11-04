@@ -3,7 +3,7 @@
 All commands are run from the **repository root** (the directory that contains
 `QWQFM/`, `baselines/` and `result_analysis/`). Every path below is relative to it.
 
-Both baselines run on the **same inputs** as wQFM and wQ²A
+Both baselines run on the **same inputs** as wQFM and QUANTA
 (`QWQFM/WQFM/input_files/`) and are scored with the **same code**:
 
 - RF: normalized Robinson–Foulds distance, `QWQFM/benchmark/robinson_foulds.py`
@@ -44,7 +44,7 @@ baselines/tools/ASTER/bin/wastral --mode 4 --treeweights WEIGHTS -t 1 -u 0 -o OU
 `--mode 4` turns off support/length weighting and `--treeweights` (an option of
 ASTER's `wastral`, see `src/astral-hybrid.cpp`) scales each tree's quartets
 linearly by its weight, so ASTRAL maximizes exactly the weighted quartet score
-that wQFM and wQ²A maximize. Check: on Amniota AA, ASTER reports `Score: 83604`,
+that wQFM and QUANTA maximize. Check: on Amniota AA, ASTER reports `Score: 83604`,
 the same value our scorer computes for its tree.
 
 The 144- and 200-taxon inputs are single gene trees; ASTRAL runs on the gene tree

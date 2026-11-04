@@ -1,4 +1,4 @@
-# 11-taxon benchmark: wQFM vs wQ²A (bruteforce)
+# 11-taxon benchmark: wQFM vs QUANTA (bruteforce)
 
 All commands are run from the **repository root** (the directory that contains
 `QWQFM/`, `dataset/` and `result_analysis/`). Every path below is relative to it.
@@ -8,10 +8,10 @@ All commands are run from the **repository root** (the directory that contains
 - Java (JDK 17+) and Apache Ant — used to build and run wQFM
 - Python virtual environment at `QWQFM/.venv` with `dendropy` and `matplotlib`
 - Input quartet files in `QWQFM/WQFM/input_files/11-taxa-weighted-quartets/` (200 files)
-- True trees in `dataset/11-taxon/` (`true_tree_trimmed`, `model_tree`)
+- True trees in `baselines/references/` (`11_estimated.tre`, `11_simulated.tre`)
 
 No D-Wave token is needed: the 11-taxon dataset never exceeds 11 taxa per
-partition, so wQ²A never crosses the n>20 QPU threshold and solves every
+partition, so QUANTA never crosses the n>20 QPU threshold and solves every
 partition by brute force.
 
 ## Reproduce the benchmark (one command)
@@ -30,7 +30,7 @@ bash "result_analysis/11 Taxa/run_11_taxa.sh" my_run.csv
 
 The script:
 
-1. runs wQFM and wQ²A on all 200 quartet files with the full JVM heap
+1. runs wQFM and QUANTA on all 200 quartet files with the full JVM heap
    (`-Xmx6g -Xms6g`; override by exporting `JAVA_TOOL_OPTIONS` first),
 2. scores both trees by normalized Robinson–Foulds distance against the true tree,
 3. copies the CSV into `result_analysis/11 Taxa/result/`,
@@ -114,14 +114,14 @@ bash run-wqfm.sh -i input_files/11-taxa-weighted-quartets/estimated_Xgenes_stron
 bash run-wqfm.sh -i input_files/11-taxa-weighted-quartets/estimated_Xgenes_strongILS_estimated_5genes_strongILS_R1_weighted_quartets -o bruteforce.tre -algo 2
 ```
 
-`-algo 1` is wQFM, `-algo 2` is wQ²A.
+`-algo 1` is wQFM, `-algo 2` is QUANTA.
 
 Score a tree against the true tree (run from the repository root):
 
 ```bash
-QWQFM/.venv/bin/python QWQFM/benchmark/robinson_foulds.py dataset/11-taxon/true_tree_trimmed QWQFM/WQFM/wqfm.tre
+QWQFM/.venv/bin/python QWQFM/benchmark/robinson_foulds.py baselines/references/11_estimated.tre QWQFM/WQFM/wqfm.tre
 ```
 
-Use `dataset/11-taxon/true_tree_trimmed` for `estimated_*` files and
-`dataset/11-taxon/model_tree` for `simulated_*` files — the two use different
+Use `baselines/references/11_estimated.tre` for `estimated_*` files and
+`baselines/references/11_simulated.tre` for `simulated_*` files — the two use different
 leaf labels (`1..11` vs `1.1..11.11`) for the same topology.

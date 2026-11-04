@@ -1,4 +1,4 @@
-# 15-taxon benchmark: wQFM vs wQ²A (bruteforce)
+# 15-taxon benchmark: wQFM vs QUANTA (bruteforce)
 
 All commands are run from the **repository root** (the directory that contains
 `QWQFM/`, `dataset/` and `result_analysis/`). Every path below is relative to it.
@@ -9,10 +9,10 @@ All commands are run from the **repository root** (the directory that contains
 - Python virtual environment at `QWQFM/.venv` with `dendropy` and `matplotlib`
 - Input quartet files in `QWQFM/WQFM/input_files/15-taxa-weighted-quartets/` (60 files:
   6 conditions × 10 replicates)
-- True tree at `dataset/15-taxon/true_tree_trimmed`
+- True tree at `baselines/references/15.tre`
 
 No D-Wave token is needed: the 15-taxon dataset never exceeds 15 taxa per
-partition, so wQ²A never crosses the n>20 QPU threshold and solves every
+partition, so QUANTA never crosses the n>20 QPU threshold and solves every
 partition by brute force.
 
 ## Reproduce the benchmark (one command)
@@ -31,7 +31,7 @@ bash "result_analysis/15 Taxa/run_15_taxa.sh" my_run.csv
 
 The script:
 
-1. runs wQFM and wQ²A on all 60 quartet files with the full JVM heap
+1. runs wQFM and QUANTA on all 60 quartet files with the full JVM heap
    (`-Xmx6g -Xms6g`; override by exporting `JAVA_TOOL_OPTIONS` first),
 2. scores both trees by normalized Robinson–Foulds distance against the true tree,
 3. copies the CSV into `result_analysis/15 Taxa/result/`,
@@ -119,18 +119,19 @@ bash run-wqfm.sh -i input_files/15-taxa-weighted-quartets/100gene-100bp_R1_weigh
 bash run-wqfm.sh -i input_files/15-taxa-weighted-quartets/100gene-100bp_R1_weighted_quartets -o bruteforce.tre -algo 2
 ```
 
-`-algo 1` is wQFM, `-algo 2` is wQ²A.
+`-algo 1` is wQFM, `-algo 2` is QUANTA.
 
 Score a tree against the true tree (run from the repository root):
 
 ```bash
-QWQFM/.venv/bin/python QWQFM/benchmark/robinson_foulds.py dataset/15-taxon/true_tree_trimmed QWQFM/WQFM/wqfm.tre
+QWQFM/.venv/bin/python QWQFM/benchmark/robinson_foulds.py baselines/references/15.tre QWQFM/WQFM/wqfm.tre
 ```
 
 **Where the input files come from:** each file in
 `QWQFM/WQFM/input_files/15-taxa-weighted-quartets/` is a copy of
-`dataset/15-taxon/<condition>/R<i>/weighted_quartets`, renamed to
-`<condition>_R<i>_weighted_quartets`. To rebuild the folder:
+`<condition>/R<i>/weighted_quartets` from the original 15-taxon dataset, renamed to
+`<condition>_R<i>_weighted_quartets`. To rebuild the folder, with that dataset unpacked at
+`dataset/15-taxon/`:
 
 ```bash
 mkdir -p QWQFM/WQFM/input_files/15-taxa-weighted-quartets

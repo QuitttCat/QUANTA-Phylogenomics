@@ -1,4 +1,4 @@
-quartet_file_name,wqfm_end_to_end_seconds,wq2a_end_to_end_seconds,wqfm_division_seconds,wq2a_division_seconds,wq2a_qpu_access_seconds,wq2a_bruteforce_seconds,wq2a_qpu_calls
+quartet_file_name,wqfm_end_to_end_seconds,quanta_end_to_end_seconds,wqfm_division_seconds,quanta_division_seconds,quanta_qpu_access_seconds,quanta_bruteforce_seconds,quanta_qpu_calls
 01.true.wqrts,845.076,283.977,830.672,265.058,1.170292,5.740443,7
 02.true.wqrts,1497.127,238.444,1482.519,222.578,1.258630,0.793861,8
 03.true.wqrts,1576.647,228.731,1561.273,213.258,1.139802,16.241013,6

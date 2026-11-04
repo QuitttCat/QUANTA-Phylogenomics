@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Plot wQFM vs wQ²A on the 101-taxon dataset (true gene trees).
+"""Plot wQFM vs QUANTA on the 101-taxon dataset (true gene trees).
 
 Panel (a): average RF distance.
 Panel (b): end-to-end running time.
-Panel (c): total time of the division (bipartition) steps, log scale; wQ²A is
+Panel (c): total time of the division (bipartition) steps, log scale; QUANTA is
 shown both as wall clock and as compute only (QPU access + brute force).
 Every bar is the mean over replicates with standard-error bars.
 """
@@ -18,7 +18,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 WQFM = "#eb6834"
-WQ2A = "#2a78d6"
+QUANTA = "#2a78d6"
 
 
 def parse_args():
@@ -85,23 +85,23 @@ def main():
 
     top = bars(ax_rf, [
         ("wQFM", [float(r["rf_wqfm_wrt_base"]) for r in results], WQFM, None),
-        (r"wQ$^2$A", [float(r["rf_quantum_wrt_base"]) for r in results], WQ2A, None),
+        (r"QUANTA", [float(r["rf_quantum_wrt_base"]) for r in results], QUANTA, None),
     ], lambda v: f"{v:.4f}")
     ax_rf.set_ylim(0, top * 1.3)
     ax_rf.set_ylabel("Avg. Robinson–Foulds distance", fontsize=11, fontweight="bold")
 
     top = bars(ax_total, [
         ("wQFM", [float(r["wqfm_end_to_end_seconds"]) / 60 for r in timing], WQFM, None),
-        (r"wQ$^2$A", [float(r["wq2a_end_to_end_seconds"]) / 60 for r in timing], WQ2A, None),
+        (r"QUANTA", [float(r["quanta_end_to_end_seconds"]) / 60 for r in timing], QUANTA, None),
     ], lambda v: f"{v:.1f} min")
     ax_total.set_ylim(0, top * 1.2)
     ax_total.set_ylabel("Avg. end-to-end time (minutes)", fontsize=11, fontweight="bold")
 
     bars(ax_div, [
         ("wQFM", [float(r["wqfm_division_seconds"]) for r in timing], WQFM, None),
-        (r"wQ$^2$A" "\n(wall clock)", [float(r["wq2a_division_seconds"]) for r in timing], WQ2A, None),
-        (r"wQ$^2$A" "\n(QPU access +\nbrute force)",
-         [float(r["wq2a_qpu_access_seconds"]) + float(r["wq2a_bruteforce_seconds"]) for r in timing],
+        (r"QUANTA" "\n(wall clock)", [float(r["quanta_division_seconds"]) for r in timing], QUANTA, None),
+        (r"QUANTA" "\n(QPU access +\nbrute force)",
+         [float(r["quanta_qpu_access_seconds"]) + float(r["quanta_bruteforce_seconds"]) for r in timing],
          "#9ec2ee", "//"),
     ], lambda v: f"{v:.1f} s")
     ax_div.set_yscale("log")

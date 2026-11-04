@@ -8,12 +8,18 @@ APP_DIR="${REPO_DIR}/WQFM"
 WORKSPACE_DIR="$(cd "${REPO_DIR}/.." && pwd)"
 
 INPUT_DIR="${INPUT_DIR:-${APP_DIR}/input_files/biological_dataset_weigted_quartets}"
+# The datasets in the paper; set INPUT_NAMES="" to run every file in INPUT_DIR.
+INPUT_NAMES="${INPUT_NAMES-aminota-aa.weighted_quartets aminota-nt.weighted_quartets avian-all.weighted_quartets mamalian.weighted_quartets}"
 OUTPUT_CSV="${OUTPUT_CSV:-${BENCHMARK_DIR}/output_csv/biological/results_biological_qpu_plus_bruteforce.csv}"
 WORK_DIR="${WORK_DIR:-${BENCHMARK_DIR}/work/biological_qpu_plus_bruteforce}"
 WQFM_PYTHON="${WQFM_PYTHON:-${REPO_DIR}/.venv/bin/python}"
-SCORE_PYTHON="${SCORE_PYTHON:-${WORKSPACE_DIR}/benchmark/.venv/bin/python}"
+SCORE_PYTHON="${SCORE_PYTHON:-${REPO_DIR}/.venv/bin/python}"
 SCORER="${SCRIPT_DIR}/score_biological_row.py"
 ENV_FILE="${ENV_FILE:-${WORKSPACE_DIR}/.env}"
+# Algorithms run after `cd "$APP_DIR"`, so caller-relative paths must be anchored now.
+INPUT_DIR="$(realpath -m "$INPUT_DIR")"
+OUTPUT_CSV="$(realpath -m "$OUTPUT_CSV")"
+WORK_DIR="$(realpath -m "$WORK_DIR")"
 
 limit="${LIMIT:-0}"
 force="${FORCE:-0}"
@@ -122,7 +128,11 @@ token_source="environment"
 load_dwave_token_from_env_file
 
 mapfile -d '' input_files < <(
-    find "$INPUT_DIR" -maxdepth 1 -type f -print0 | sort -z
+    if [[ -n "$INPUT_NAMES" ]]; then
+        for name in $INPUT_NAMES; do printf '%s\0' "${INPUT_DIR}/${name}"; done
+    else
+        find "$INPUT_DIR" -maxdepth 1 -type f -print0 | sort -z
+    fi
 )
 if ((${#input_files[@]} == 0)); then
     echo "Error: no input files found in $INPUT_DIR" >&2

@@ -1,4 +1,4 @@
-dataset,taxa,files,end_to_end_files,wqfm_end_to_end_seconds,wq2a_end_to_end_seconds,wqfm_division_seconds,wq2a_division_seconds,wq2a_qpu_access_seconds,wq2a_bruteforce_seconds,wq2a_hybrid_solver_seconds,wq2a_other_overhead_seconds,note
+dataset,taxa,files,end_to_end_files,wqfm_end_to_end_seconds,quanta_end_to_end_seconds,wqfm_division_seconds,quanta_division_seconds,quanta_qpu_access_seconds,quanta_bruteforce_seconds,quanta_hybrid_solver_seconds,quanta_other_overhead_seconds,note
 37 taxa (simulated),37,240,240,3.575600,9.681554,3.144355,9.243825,0.304810,1.734552,0.000000,7.204463,
 37 taxa (mammals),37,1,1,4.091000,10.312000,3.633258,9.868030,0.328567,1.776949,0.000000,7.762514,
 46 taxa (angiosperm),46,1,1,9.409000,13.790000,8.555996,12.918547,0.487488,1.005536,0.000000,11.425522,

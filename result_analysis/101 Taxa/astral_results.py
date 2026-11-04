@@ -7,7 +7,7 @@ against the replicate's weighted-quartet file.
 
 Reads the 101-taxon rows of baselines/results/astral_results.csv (written by
 baselines/scripts/run_astral.py or run_astral_queued.py --only 101), adds the
-wQFM and wQ²A RF distances of the same replicate from the QPU results CSV,
+wQFM and QUANTA RF distances of the same replicate from the QPU results CSV,
 and writes:
 
   result/astral_101_taxa.csv          one row per replicate
@@ -84,7 +84,7 @@ def main():
 
     summary = {"replicates": len(rows)}
     for name, label in [("rf_astral_wrt_base", "rf_astral"), ("rf_wqfm_wrt_base", "rf_wqfm"),
-                        ("rf_quantum_wrt_base", "rf_wq2a"),
+                        ("rf_quantum_wrt_base", "rf_quanta"),
                         ("astral_quartet_score_fraction", "astral_quartet_score_fraction")]:
         mean, se = mean_se([float(r[name]) for r in rows if r[name] != ""])
         summary[f"{label}_mean"], summary[f"{label}_se"] = fmt(mean), fmt(se)

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Curate wQFM vs wQ²A timing from the benchmark run logs, then draw the figure.
+# Curate wQFM vs QUANTA timing from the benchmark run logs, then draw the figure.
 # Needs no D-Wave token: it only reads finished runs.
 # Usage: bash "result_analysis/running time analysis/run.sh"
 set -Eeuo pipefail

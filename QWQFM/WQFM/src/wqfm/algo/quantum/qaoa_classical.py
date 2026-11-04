@@ -9,8 +9,8 @@ large partitions differs:
               same deterministic balanced fallback
   n <= 20  -> exact brute force (qaoa.find_min_energy, unchanged)
 
-Environment: WQ2A_CLASSICAL_SOLVER (required: sa or tabu),
-WQ2A_CLASSICAL_READS (1000).
+Environment: QUANTA_CLASSICAL_SOLVER (required: sa or tabu),
+QUANTA_CLASSICAL_READS (1000).
 """
 
 import os
@@ -27,11 +27,11 @@ SOLVERS = {
     "sa": ("SIMULATED_ANNEALING", SimulatedAnnealingSampler),
     "tabu": ("TABU_SEARCH", TabuSampler),
 }
-SOLVER = os.environ.get("WQ2A_CLASSICAL_SOLVER", "")
+SOLVER = os.environ.get("QUANTA_CLASSICAL_SOLVER", "")
 if SOLVER not in SOLVERS:
-    sys.exit("Set WQ2A_CLASSICAL_SOLVER to 'sa' or 'tabu'")
+    sys.exit("Set QUANTA_CLASSICAL_SOLVER to 'sa' or 'tabu'")
 LABEL, SAMPLER = SOLVERS[SOLVER]
-READS = int(os.environ.get("WQ2A_CLASSICAL_READS", "1000"))
+READS = int(os.environ.get("QUANTA_CLASSICAL_READS", "1000"))
 
 
 def classical_annealing(Q, n):

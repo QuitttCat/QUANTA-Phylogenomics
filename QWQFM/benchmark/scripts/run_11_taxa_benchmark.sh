@@ -25,8 +25,8 @@ RF_SCRIPT="$(realpath -m "$RF_SCRIPT")"
 # "estimated_*" files use plain integer leaf labels (1..11) and need
 # true_tree_trimmed; "simulated_*" files use decimal labels (1.1..11.11) and
 # need model_tree. Picked per-file by filename prefix below.
-ESTIMATED_MODEL_TREE_FILE="${ESTIMATED_MODEL_TREE_FILE:-${WORKSPACE_DIR}/dataset/11-taxon/true_tree_trimmed}"
-SIMULATED_MODEL_TREE_FILE="${SIMULATED_MODEL_TREE_FILE:-${WORKSPACE_DIR}/dataset/11-taxon/model_tree}"
+ESTIMATED_MODEL_TREE_FILE="${ESTIMATED_MODEL_TREE_FILE:-${WORKSPACE_DIR}/baselines/references/11_estimated.tre}"
+SIMULATED_MODEL_TREE_FILE="${SIMULATED_MODEL_TREE_FILE:-${WORKSPACE_DIR}/baselines/references/11_simulated.tre}"
 
 # Datasets with a single label convention set MODEL_TREE_FILE to score every
 # file against one true tree, bypassing the estimated/simulated split above.

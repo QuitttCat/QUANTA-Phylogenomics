@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Run the 11-taxon wQFM vs wQ²A benchmark, collect the CSV, and plot it.
+# Run the 11-taxon wQFM vs QUANTA benchmark, collect the CSV, and plot it.
 # Usage: bash "result_analysis/11 Taxa/run_11_taxa.sh" [output_csv_name]
 set -Eeuo pipefail
 

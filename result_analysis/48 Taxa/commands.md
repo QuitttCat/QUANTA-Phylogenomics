@@ -1,4 +1,4 @@
-# 48-taxon benchmark: wQFM vs wQ²A (D-Wave Advantage2, Zephyr Z12)
+# 48-taxon benchmark: wQFM vs QUANTA (D-Wave Advantage2, Zephyr Z12)
 
 All commands are run from the **repository root** (the directory that contains
 `QWQFM/` and `result_analysis/`). Every path below is relative to it.
@@ -11,7 +11,7 @@ All commands are run from the **repository root** (the directory that contains
   (114 files, 7 conditions with 13–20 replicates each; the dataset itself has
   uneven replicate counts)
 - **A D-Wave Leap API token with access to `Advantage2_system1`.** 48 taxa
-  produce partitions with more than 20 taxa; wQ²A sends those to the QPU and
+  produce partitions with more than 20 taxa; QUANTA sends those to the QPU and
   solves smaller partitions (n ≤ 20) by brute force.
 
 Provide the token in either of two ways:
@@ -34,10 +34,10 @@ before running anything.
 The results come from two runs:
 
 1. **Classical run** — `QWQFM/benchmark/scripts/run_48_taxa_benchmark.sh` ran
-   wQFM (and wQ²A on the default solver) on all 114 files, giving
+   wQFM (and QUANTA on the default solver) on all 114 files, giving
    `QWQFM/benchmark/output_csv/results_48_taxa_qpu_plus_bruteforce_n>20.csv`.
 2. **Z12 run** — `QWQFM/benchmark/scripts/run_48_taxa_z12_benchmark.sh` reused
-   the wQFM trees and timings from that CSV and reran only wQ²A on
+   the wQFM trees and timings from that CSV and reran only QUANTA on
    `Advantage2_system1` (Zephyr Z12 topology), giving the CSV used here.
 
 ## Results already included
@@ -96,14 +96,14 @@ The script:
 
 1. reuses the wQFM trees and timings from the classical source CSV
    (`QWQFM/benchmark/output_csv/results_48_taxa_qpu_plus_bruteforce_n>20.csv`),
-2. runs wQ²A on all 114 files on `Advantage2_system1` with the full JVM heap
+2. runs QUANTA on all 114 files on `Advantage2_system1` with the full JVM heap
    (`-Xmx6g -Xms6g`; override by exporting `JAVA_TOOL_OPTIONS` first),
 3. scores both trees by normalized Robinson–Foulds distance against the
    48-taxon true species tree,
 4. copies the CSV into `result_analysis/48 Taxa/result/`,
 5. draws the figure into `result_analysis/48 Taxa/figure/`.
 
-Because QPU sampling is stochastic, wQ²A trees can differ slightly between runs;
+Because QPU sampling is stochastic, QUANTA trees can differ slightly between runs;
 wQFM results are reused, so they do not change. A full run makes QPU calls for
 every file and uses Leap QPU time.
 
@@ -136,13 +136,13 @@ bash "result_analysis/48 Taxa/run_48_taxa.sh"
 |---|---|
 | Results CSV | `result_analysis/48 Taxa/result/<name>.csv` |
 | Figure | `result_analysis/48 Taxa/figure/<name>.pdf` |
-| Per-file wQ²A trees and logs | `QWQFM/benchmark/work/<name>/<quartet_file>/` |
+| Per-file QUANTA trees and logs | `QWQFM/benchmark/work/<name>/<quartet_file>/` |
 
 CSV columns: `quartet_file_name, wqfm_tree, quantum_annealing_tree,
 quantum_solver, quantum_topology, rf_wqfm_wrt_base, rf_quantum_wrt_base, better,
 wqfm_bipartition_time_seconds, quantum_qpu_access_time_seconds,
 quantum_bruteforce_time_seconds, quantum_time_seconds`.
-The `quantum_*` columns hold the wQ²A results. `better` is `1` if wQ²A has the
+The `quantum_*` columns hold the QUANTA results. `better` is `1` if QUANTA has the
 lower RF distance, `-1` if wQFM does, `0` for a tie.
 
 The figure has two panels, each the mean RF distance over replicates with
@@ -203,7 +203,7 @@ QWQFM/.venv/bin/python "result_analysis/48 Taxa/graph.py" \
 export DWAVE_API_TOKEN="your-token-here"
 cd QWQFM/WQFM
 bash run-wqfm.sh -i input_files/48-taxa-weighted-quartets/1X-1000-500_R1_weighted_quartets -o wqfm.tre -algo 1
-bash run-wqfm.sh -i input_files/48-taxa-weighted-quartets/1X-1000-500_R1_weighted_quartets -o wq2a.tre -algo 2
+bash run-wqfm.sh -i input_files/48-taxa-weighted-quartets/1X-1000-500_R1_weighted_quartets -o quanta.tre -algo 2
 ```
 
-`-algo 1` is wQFM, `-algo 2` is wQ²A.
+`-algo 1` is wQFM, `-algo 2` is QUANTA.

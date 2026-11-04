@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Draw running time against number of taxa from timing_summary.csv.
 
-Panel (a): end-to-end time. Panel (b): total division-step time, with wQ²A
+Panel (a): end-to-end time. Panel (b): total division-step time, with QUANTA
 shown as wall clock and as solve time only (QPU access + brute force + Leap
 Hybrid solver). Each dataset is a point; lines join the mean at each taxon count.
 Both axes are linear; time is in minutes.
@@ -18,8 +18,8 @@ import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter, NullFormatter
 
 WQFM = "#eb6834"
-WQ2A = "#2a78d6"
-WQ2A_SOLVE = "#0d3b7a"
+QUANTA = "#2a78d6"
+QUANTA_SOLVE = "#0d3b7a"
 ZERO_GAP_MM = 5
 
 
@@ -83,15 +83,15 @@ def main():
     fig, (ax_e2e, ax_div) = plt.subplots(1, 2, figsize=(15, 5.8))
 
     plot_series(ax_e2e, rows, f("wqfm_end_to_end_seconds"), "wQFM", WQFM, "o")
-    plot_series(ax_e2e, rows, f("wq2a_end_to_end_seconds"), r"wQ$^2$A", WQ2A, "s")
+    plot_series(ax_e2e, rows, f("quanta_end_to_end_seconds"), r"QUANTA", QUANTA, "s")
     ax_e2e.set_ylabel("End-to-end time (minutes)", fontsize=12, fontweight="bold")
 
-    solve = lambda r: (float(r["wq2a_qpu_access_seconds"]) + float(r["wq2a_bruteforce_seconds"])
-                       + float(r["wq2a_hybrid_solver_seconds"]))
+    solve = lambda r: (float(r["quanta_qpu_access_seconds"]) + float(r["quanta_bruteforce_seconds"])
+                       + float(r["quanta_hybrid_solver_seconds"]))
     plot_series(ax_div, rows, f("wqfm_division_seconds"), "wQFM", WQFM, "o")
-    plot_series(ax_div, rows, f("wq2a_division_seconds"), r"wQ$^2$A (wall clock)", WQ2A, "s")
-    plot_series(ax_div, rows, solve, r"wQ$^2$A (solve only: QPU access + brute force + Leap Hybrid)",
-                WQ2A_SOLVE, "^", linestyle="--")
+    plot_series(ax_div, rows, f("quanta_division_seconds"), r"QUANTA (wall clock)", QUANTA, "s")
+    plot_series(ax_div, rows, solve, r"QUANTA (solve only: QPU access + brute force + Leap Hybrid)",
+                QUANTA_SOLVE, "^", linestyle="--")
     ax_div.set_ylabel("Total division-step time (minutes)", fontsize=12, fontweight="bold")
 
     fig.tight_layout(rect=[0, 0.03, 1, 1])

@@ -45,7 +45,7 @@ def wqfm_rows(row):
 
 def quanta_rows(row):
     pending = None
-    for line in (ROOT / row["wq2a_log"]).read_text(errors="replace").splitlines():
+    for line in (ROOT / row["quanta_log"]).read_text(errors="replace").splitlines():
         match = QPU.search(line)
         if match:
             pending = ("QPU", float(match.group(1)) / 1e6, "")

@@ -107,8 +107,8 @@ def solve_leap_hybrid(Q, time_limit):
 
 def solve_sa(Q, reads):
     # qaoa_classical reads its settings from the environment when imported.
-    os.environ["WQ2A_CLASSICAL_SOLVER"] = "sa"
-    os.environ["WQ2A_CLASSICAL_READS"] = str(reads)
+    os.environ["QUANTA_CLASSICAL_SOLVER"] = "sa"
+    os.environ["QUANTA_CLASSICAL_READS"] = str(reads)
     import qaoa_classical
 
     x, energy, wall, text = captured(qaoa_classical.classical_annealing, Q, Q.shape[0])

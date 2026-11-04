@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # One-off queue: after the running 101-taxon SA job, run the remaining
 # classical-solver jobs one at a time with a small Java heap (laptop).
-cd /home/niloy/Downloads/dwave
+cd "$(dirname "${BASH_SOURCE[0]}")/../../.."
 while pgrep -f '^bash result_analysis/classical solvers/run_classical.sh 101 sa' >/dev/null; do sleep 15; done
 run() {  # group solver heap
     echo "=== $1 $2 (heap $3) start $(date)"

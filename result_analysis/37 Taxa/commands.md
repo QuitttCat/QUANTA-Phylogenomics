@@ -1,4 +1,4 @@
-# 37-taxon benchmark: wQFM vs wQ²A (D-Wave QPU)
+# 37-taxon benchmark: wQFM vs QUANTA (D-Wave QPU)
 
 All commands are run from the **repository root** (the directory that contains
 `QWQFM/` and `result_analysis/`). Every path below is relative to it.
@@ -10,7 +10,7 @@ All commands are run from the **repository root** (the directory that contains
 - Input quartet files in `QWQFM/WQFM/input_files/37-taxa-weighted-quartets/`
   (240 files: 12 conditions × 20 replicates)
 - **A D-Wave Leap API token with QPU access.** Unlike the 11- and 15-taxon
-  datasets, 37 taxa produce partitions with more than 20 taxa; wQ²A sends those
+  datasets, 37 taxa produce partitions with more than 20 taxa; QUANTA sends those
   to the D-Wave QPU and solves smaller partitions (n ≤ 20) by brute force.
 
 Provide the token in either of two ways:
@@ -85,14 +85,14 @@ bash "result_analysis/37 Taxa/run_37_taxa.sh" my_run.csv
 
 The script:
 
-1. runs wQFM and wQ²A on all 240 quartet files with the full JVM heap
+1. runs wQFM and QUANTA on all 240 quartet files with the full JVM heap
    (`-Xmx6g -Xms6g`; override by exporting `JAVA_TOOL_OPTIONS` first),
 2. scores both trees by normalized Robinson–Foulds distance against the
    37-taxon true species tree,
 3. copies the CSV into `result_analysis/37 Taxa/result/`,
 4. draws the figure into `result_analysis/37 Taxa/figure/`.
 
-Because QPU sampling is stochastic, wQ²A trees can differ slightly between runs;
+Because QPU sampling is stochastic, QUANTA trees can differ slightly between runs;
 wQFM results are deterministic.
 
 Lower the heap if your machine has less than ~8 GB RAM:
@@ -112,7 +112,7 @@ JAVA_TOOL_OPTIONS="-Xmx3g" bash "result_analysis/37 Taxa/run_37_taxa.sh"
 CSV columns: `quartet_file_name, wqfm_tree, quantum_annealing_tree,
 rf_wqfm_wrt_base, rf_quantum_wrt_base, better, wqfm_bipartition_time_seconds,
 quantum_qpu_access_time_seconds, quantum_bruteforce_time_seconds, quantum_time_seconds`.
-The `quantum_*` columns hold the wQ²A results. `better` is `1` if wQ²A has the
+The `quantum_*` columns hold the QUANTA results. `better` is `1` if QUANTA has the
 lower RF distance, `-1` if wQFM does, `0` for a tie.
 
 The figure has three panels, each the mean RF distance over 20 replicates with
@@ -172,7 +172,7 @@ QWQFM/.venv/bin/python "result_analysis/37 Taxa/graph.py" \
 export DWAVE_API_TOKEN="your-token-here"
 cd QWQFM/WQFM
 bash run-wqfm.sh -i input_files/37-taxa-weighted-quartets/noscale.200g.500b_R1_weighted_quartets -o wqfm.tre -algo 1
-bash run-wqfm.sh -i input_files/37-taxa-weighted-quartets/noscale.200g.500b_R1_weighted_quartets -o wq2a.tre -algo 2
+bash run-wqfm.sh -i input_files/37-taxa-weighted-quartets/noscale.200g.500b_R1_weighted_quartets -o quanta.tre -algo 2
 ```
 
-`-algo 1` is wQFM, `-algo 2` is wQ²A.
+`-algo 1` is wQFM, `-algo 2` is QUANTA.

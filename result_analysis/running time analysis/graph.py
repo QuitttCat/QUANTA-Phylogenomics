@@ -95,8 +95,8 @@ def main():
     for ax, row in zip(axes, rows):
         get = lambda key: float(row[key])
         s = sa.get(int(row["taxa"]))
-        candidates = [get("wqfm_end_to_end_seconds"), get("wq2a_end_to_end_seconds"),
-                      get("wqfm_division_seconds"), get("wq2a_division_seconds")]
+        candidates = [get("wqfm_end_to_end_seconds"), get("quanta_end_to_end_seconds"),
+                      get("wqfm_division_seconds"), get("quanta_division_seconds")]
         if s:
             candidates += [s["end_to_end_seconds"], s["division_seconds"]]
         largest = max(candidates)
@@ -111,7 +111,7 @@ def main():
         ax.tick_params(length=0, labelsize=10, labelcolor=INK)
 
         # End-to-end: wQFM, QUANTA (quantum annealer), QUANTA (simulated annealing).
-        ends = [(0.0, get("wqfm_end_to_end_seconds"), WQFM), (1.0, get("wq2a_end_to_end_seconds"), QUANTA)]
+        ends = [(0.0, get("wqfm_end_to_end_seconds"), WQFM), (1.0, get("quanta_end_to_end_seconds"), QUANTA)]
         if s:
             ends.append((2.0, s["end_to_end_seconds"], SA))
         for x, value, color in ends:
@@ -121,11 +121,11 @@ def main():
         stacked(ax, 3.5, width, [(get("wqfm_division_seconds"), WQFM, None)],
                 get("wqfm_division_seconds"), scale, short, "white")
         stacked(ax, 4.5, width,
-                [(get("wq2a_qpu_access_seconds"), QUANTA, None),
-                 (get("wq2a_bruteforce_seconds"), BRUTE_FORCE[1], BRUTE_FORCE[2]),
-                 (get("wq2a_hybrid_solver_seconds"), HYBRID[1], HYBRID[2]),
-                 (get("wq2a_other_overhead_seconds"), OVERHEAD[1], OVERHEAD[2])],
-                get("wq2a_division_seconds"), scale, short, QUANTA)
+                [(get("quanta_qpu_access_seconds"), QUANTA, None),
+                 (get("quanta_bruteforce_seconds"), BRUTE_FORCE[1], BRUTE_FORCE[2]),
+                 (get("quanta_hybrid_solver_seconds"), HYBRID[1], HYBRID[2]),
+                 (get("quanta_other_overhead_seconds"), OVERHEAD[1], OVERHEAD[2])],
+                get("quanta_division_seconds"), scale, short, QUANTA)
         if s:
             other = s["division_seconds"] - s["sampler_seconds"] - s["bruteforce_seconds"]
             stacked(ax, 5.5, width,

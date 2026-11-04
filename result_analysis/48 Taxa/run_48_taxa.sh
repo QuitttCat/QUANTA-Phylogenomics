@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Rerun wQ²A on the 48-taxon dataset on D-Wave Advantage2 (Zephyr Z12), reusing
+# Rerun QUANTA on the 48-taxon dataset on D-Wave Advantage2 (Zephyr Z12), reusing
 # the wQFM trees and timings from the classical source CSV, then plot.
 # Partitions with n>20 taxa go to the QPU, smaller ones to brute force, so a
 # D-Wave API token is required: export DWAVE_API_TOKEN or put DWAVE_API_TOKEN=...

@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-# Load DWAVE_API_TOKEN from /root/dwave/.env.
+# Load DWAVE_API_TOKEN from .env in the repository root (or from DWAVE_ENV_FILE).
 # This accepts whitespace around "=", for example:
 # DWAVE_API_TOKEN= token-value
 
-_dwave_env_file="${DWAVE_ENV_FILE:-/root/dwave/.env}"
+_dwave_env_file="${DWAVE_ENV_FILE:-$(dirname "${BASH_SOURCE[0]}")/.env}"
 _dwave_token_value=""
 _dwave_token_line=""
 

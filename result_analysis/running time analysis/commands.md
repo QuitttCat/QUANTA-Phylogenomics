@@ -1,4 +1,4 @@
-# Running time analysis: wQFM vs wQ²A across datasets
+# Running time analysis: wQFM vs QUANTA across datasets
 
 All commands are run from the **repository root** (the directory that contains
 `QWQFM/` and `result_analysis/`). Every path below is relative to it.
@@ -40,9 +40,9 @@ Samples are grouped by number of taxa and averaged over all samples in a group:
 One panel per group, ordered by number of taxa, each with its own time axis
 (seconds, minutes or hours, whichever fits). Every panel shows:
 
-- **End-to-end** — the whole run of wQFM and of wQ²A.
+- **End-to-end** — the whole run of wQFM and of QUANTA.
 - **Division steps** — the total time of all division (bipartition) steps. The
-  wQ²A bar is split into:
+  QUANTA bar is split into:
   - *QPU access* — D-Wave `qpu_access_time` of every QPU call (and of the Leap
     Hybrid job, for 200 taxa);
   - *Brute force* — partitions with n ≤ 20, solved exactly;
@@ -60,8 +60,8 @@ Running time (minutes) against number of taxa, both axes linear; one point per
 group, joined by lines (46 has an unlabeled tick, since it sits too close to 48
 to label).
 
-- **(a)** End-to-end time of wQFM and wQ²A.
-- **(b)** Total division-step time: wQFM, wQ²A wall clock, and wQ²A solve time
+- **(a)** End-to-end time of wQFM and QUANTA.
+- **(b)** Total division-step time: wQFM, QUANTA wall clock, and QUANTA solve time
   only (QPU access + brute force + Leap Hybrid solver), dashed.
 
 ## Where every number comes from
@@ -69,7 +69,7 @@ to label).
 All times are read from benchmark logs. The results CSV of each dataset is only
 used to decide which input files belong to it.
 
-| Dataset | Files | wQFM logs (`QWQFM/benchmark/work/...`) | wQ²A logs (`QWQFM/benchmark/work/...`) | File list from (`QWQFM/benchmark/output_csv/...`) |
+| Dataset | Files | wQFM logs (`QWQFM/benchmark/work/...`) | QUANTA logs (`QWQFM/benchmark/work/...`) | File list from (`QWQFM/benchmark/output_csv/...`) |
 |---|---|---|---|---|
 | 37 taxa (simulated) | 240 | `37_taxa_quantum_A1_B1_n_gt_20/` | same | `results_37_taxa_qpu_plus_bruteforce_n>20.csv` |
 | 37 taxa (mammals) | 1 | `biological_qpu_plus_bruteforce/` | same | `biological/results_biological_qpu_plus_bruteforce_n>20.csv` |
@@ -79,8 +79,8 @@ used to decide which input files belong to it.
 | 144 taxa (insect) | 1 | `insect_single_gene_144_taxa/` | same | `biological/results_insect_single_gene_144_taxa.csv` |
 | 200 taxa (simulated) | 1 | `200_taxa_full/` | same | (single run) |
 
-`timing_per_file.csv` records, for every row, the exact wQFM and wQ²A log it was
-read from (`wqfm_log`, `wq2a_log`).
+`timing_per_file.csv` records, for every row, the exact wQFM and QUANTA log it was
+read from (`wqfm_log`, `quanta_log`).
 
 **37-taxon simulated and biological datasets:** the logs of the runs that
 produced the two `n>20` CSVs no longer exist. Their timing is taken from the
@@ -89,7 +89,7 @@ closest runs of the same input files:
 weight B = 1) and `biological_qpu_plus_bruteforce` (same files, QPU threshold
 n > 18). The amniota files in the biological run are not included.
 
-**48-taxon simulated dataset (114 samples) — not included yet.** Its wQ²A times
+**48-taxon simulated dataset (114 samples) — not included yet.** Its QUANTA times
 exist (Zephyr Z12 run on the server), but that run reused wQFM results without
 keeping wQFM logs. A local wQFM rerun (`48_taxa_wqfm_only_local/`) gave
 topologically identical trees but ran on a machine a median 3.3× slower than
@@ -110,9 +110,9 @@ Log markers used:
 
 ## Timing CSV columns (seconds)
 
-`wqfm_end_to_end_seconds`, `wq2a_end_to_end_seconds`, `wqfm_division_seconds`,
-`wq2a_division_seconds`, `wq2a_qpu_access_seconds`, `wq2a_bruteforce_seconds`,
-`wq2a_hybrid_solver_seconds`, `wq2a_other_overhead_seconds`.
+`wqfm_end_to_end_seconds`, `quanta_end_to_end_seconds`, `wqfm_division_seconds`,
+`quanta_division_seconds`, `quanta_qpu_access_seconds`, `quanta_bruteforce_seconds`,
+`quanta_hybrid_solver_seconds`, `quanta_other_overhead_seconds`.
 
 `timing_summary.csv` and `timing_by_taxa.csv` also have `files` (samples
 averaged), `end_to_end_files` (samples with end-to-end times for both methods;
@@ -125,34 +125,34 @@ names the results CSV that lists its files (`files_from`, optionally narrowed wi
 `only`) and the run directory holding `<file>/quantum.log` (`run`). wQFM logs
 (`<file>/wqfm.log`) are read from `run` too, or from `wqfm_run` if set. A run
 with its logs directly in one directory uses `single_run` with `wqfm_log` /
-`wq2a_log`. An optional `note` is shown in that group's panel. Then rerun
+`quanta_log`. An optional `note` is shown in that group's panel. Then rerun
 `run.sh`.
 
 ---
 
 ## Extra: rerunning wQFM on the server (48-taxon simulated)
 
-For a fair comparison, wQFM must run on the same machine as the wQ²A run it is
-compared with — the server, `root@2.25.83.243`. `run_wqfm_only.sh` runs wQFM
+For a fair comparison, wQFM must run on the same machine as the QUANTA run it is
+compared with — the server, `USER@SERVER`. `run_wqfm_only.sh` runs wQFM
 only, one file at a time, with the full heap (`-Xmx6g -Xms6g`; override with
 `JAVA_TOOL_OPTIONS`), writes `<WORK_DIR>/<file>/wqfm.{tre,log}` and skips
 finished files when rerun (`FORCE=1` redoes them). No D-Wave token is needed.
 
 ```bash
 # 1. Copy the runner to the server (same place relative to the repo root)
-ssh root@2.25.83.243 'mkdir -p "/root/dwave/result_analysis/running time analysis"'
+ssh USER@SERVER 'mkdir -p "QUANTA-Phylogenomics/result_analysis/running time analysis"'
 scp "result_analysis/running time analysis/run_wqfm_only.sh" \
-    'root@2.25.83.243:"/root/dwave/result_analysis/running time analysis/"'
+    'USER@SERVER:"QUANTA-Phylogenomics/result_analysis/running time analysis/"'
 
 # 2. On the server: run wQFM only on the 114 files (detached, survives logout)
-ssh root@2.25.83.243
-cd /root/dwave
+ssh USER@SERVER
+cd QUANTA-Phylogenomics
 JAVA_TOOL_OPTIONS="-Xmx6g -Xms6g" setsid nohup bash "result_analysis/running time analysis/run_wqfm_only.sh" \
   QWQFM/WQFM/input_files/48-taxa-weighted-quartets \
   QWQFM/benchmark/work/48_taxa_wqfm_only_server > 48_wqfm_server.log 2>&1 &
 
 # 3. Back on this machine: copy the logs back
-scp -r root@2.25.83.243:/root/dwave/QWQFM/benchmark/work/48_taxa_wqfm_only_server QWQFM/benchmark/work/
+scp -r USER@SERVER:QUANTA-Phylogenomics/QWQFM/benchmark/work/48_taxa_wqfm_only_server QWQFM/benchmark/work/
 ```
 
 Keep other heavy jobs off the server while it runs so the times are not skewed.

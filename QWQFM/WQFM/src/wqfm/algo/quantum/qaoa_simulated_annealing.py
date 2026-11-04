@@ -3,11 +3,11 @@ instead of the D-Wave QPU. Selected with `run-wqfm.sh ... -algo 2 --simulated_an
 
 Same QUBO and stdin/stdout protocol as qaoa.py (whose QUBO building and
 sample selection it reuses); only the solver choice differs:
-  n > WQ2A_SA_THRESHOLD (default 20)  -> simulated annealing (neal)
+  n > QUANTA_SA_THRESHOLD (default 20)  -> simulated annealing (neal)
   otherwise                           -> exact brute force (as in qaoa.py)
 
-Environment overrides: WQ2A_SA_THRESHOLD (20), WQ2A_A (1.0), WQ2A_B (0.4),
-WQ2A_SA_READS (100), WQ2A_SA_SWEEPS (1000).
+Environment overrides: QUANTA_SA_THRESHOLD (20), QUANTA_A (1.0), QUANTA_B (0.4),
+QUANTA_SA_READS (100), QUANTA_SA_SWEEPS (1000).
 """
 
 import os
@@ -18,11 +18,11 @@ import numpy as np
 
 import qaoa
 
-THRESHOLD = int(os.environ.get("WQ2A_SA_THRESHOLD", "20"))
-A = float(os.environ.get("WQ2A_A", "1.0"))
-B = float(os.environ.get("WQ2A_B", "0.4"))
-SA_READS = int(os.environ.get("WQ2A_SA_READS", "100"))
-SA_SWEEPS = int(os.environ.get("WQ2A_SA_SWEEPS", "1000"))
+THRESHOLD = int(os.environ.get("QUANTA_SA_THRESHOLD", "20"))
+A = float(os.environ.get("QUANTA_A", "1.0"))
+B = float(os.environ.get("QUANTA_B", "0.4"))
+SA_READS = int(os.environ.get("QUANTA_SA_READS", "100"))
+SA_SWEEPS = int(os.environ.get("QUANTA_SA_SWEEPS", "1000"))
 
 
 def brute_force(Q, n):

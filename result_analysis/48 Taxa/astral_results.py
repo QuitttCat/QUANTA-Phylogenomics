@@ -2,7 +2,7 @@
 """Collect the ASTRAL (ASTER wastral) results on the 48-taxon dataset.
 
 Reads the 48-taxon rows of baselines/results/astral_results.csv (written by
-baselines/scripts/run_astral.py --only 48), adds the wQFM and wQ²A RF distances
+baselines/scripts/run_astral.py --only 48), adds the wQFM and QUANTA RF distances
 of the same input file from the Z12 results CSV, and writes:
 
   result/astral_48_taxa.csv          one row per input file
@@ -89,7 +89,7 @@ def main():
             return [float(r[name]) for r in group if r[name] != ""]
         line = {"condition": f"{ils}-{genes}-{bp}", "ils": ils, "genes": genes, "bp": bp, "replicates": len(group)}
         for name, label in [("rf_astral_wrt_base", "rf_astral"), ("rf_wqfm_wrt_base", "rf_wqfm"),
-                            ("rf_quantum_wrt_base", "rf_wq2a"),
+                            ("rf_quantum_wrt_base", "rf_quanta"),
                             ("astral_quartet_score_fraction", "astral_quartet_score_fraction"),
                             ("astral_end_to_end_seconds", "astral_seconds")]:
             mean, se = mean_se(column(name))

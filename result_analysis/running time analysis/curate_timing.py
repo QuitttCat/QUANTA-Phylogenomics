@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Curate wQFM vs wQ²A timing from benchmark run logs into two CSVs.
+"""Curate wQFM vs QUANTA timing from benchmark run logs into two CSVs.
 
 For every input file of every dataset below, it reads the wQFM log and the
-wQ²A log of one run and records, in seconds:
+QUANTA log of one run and records, in seconds:
   end-to-end        whole run ("Time taken = N ms")
   division          sum of all division (bipartition) steps, wall clock
   qpu_access        D-Wave qpu_access_time of every QPU and Leap Hybrid job
@@ -38,7 +38,7 @@ DATASETS = [
     dict(dataset="48 taxa (avian, intron)", taxa=48, files_from=BIO_CSV, only=["avian-intron.weighted_quartets"], run=BIO_RUN),
     dict(dataset="48 taxa (avian, UCE)", taxa=48, files_from=BIO_CSV, only=["avian-uce.weighted_quartets"], run=BIO_RUN),
     # Excluded until wQFM is rerun on the server: the Z12 run kept no wQFM logs,
-    # and the local rerun's machine is ~3.3x slower than the server used for wQ²A.
+    # and the local rerun's machine is ~3.3x slower than the server used for QUANTA.
     # dict(dataset="48 taxa (simulated)", taxa=48,
     #      files_from="QWQFM/benchmark/output_csv/results_48_taxa_z12_qpu_plus_bruteforce_n>20.csv",
     #      run="QWQFM/benchmark/work/48_taxa_z12_qpu_plus_bruteforce_n_gt_20",
@@ -52,7 +52,7 @@ DATASETS = [
     # The 200-taxon run keeps its logs directly in the run directory.
     dict(dataset="200 taxa (simulated)", taxa=200,
          single_run="QWQFM/benchmark/work/200_taxa_full",
-         wqfm_log="algorithm1_wqfm.log", wq2a_log="algorithm2_quantum.log"),
+         wqfm_log="algorithm1_wqfm.log", quanta_log="algorithm2_quantum.log"),
 ]
 
 END_TO_END = re.compile(r"Time taken = (\d+) ms")
@@ -64,17 +64,17 @@ HYBRID = re.compile(r"LEAP_HYBRID timing:.*?['\"]qpu_access_time['\"]\s*:\s*(\d+
 
 TIMES = [
     "wqfm_end_to_end_seconds",
-    "wq2a_end_to_end_seconds",
+    "quanta_end_to_end_seconds",
     "wqfm_division_seconds",
-    "wq2a_division_seconds",
-    "wq2a_qpu_access_seconds",
-    "wq2a_bruteforce_seconds",
-    "wq2a_hybrid_solver_seconds",
-    "wq2a_other_overhead_seconds",
+    "quanta_division_seconds",
+    "quanta_qpu_access_seconds",
+    "quanta_bruteforce_seconds",
+    "quanta_hybrid_solver_seconds",
+    "quanta_other_overhead_seconds",
 ]
-PER_FILE_FIELDS = ["dataset", "taxa", "quartet_file_name", "wqfm_log", "wq2a_log"] + TIMES
+PER_FILE_FIELDS = ["dataset", "taxa", "quartet_file_name", "wqfm_log", "quanta_log"] + TIMES
 SUMMARY_FIELDS = ["dataset", "taxa", "files", "end_to_end_files"] + TIMES + ["note"]
-END_TO_END_TIMES = ["wqfm_end_to_end_seconds", "wq2a_end_to_end_seconds"]
+END_TO_END_TIMES = ["wqfm_end_to_end_seconds", "quanta_end_to_end_seconds"]
 
 
 def average(rows):
@@ -115,10 +115,10 @@ def required(pattern, text, path, what):
     return values
 
 
-def timing(wqfm_path, wq2a_path, wqfm_division=None):
+def timing(wqfm_path, quanta_path, wqfm_division=None):
     """Timing for one file. Without a wQFM log (wqfm_path None), the wQFM
     division time must be given and wQFM end-to-end is unknown (None)."""
-    wq2a = wq2a_path.read_text(errors="replace")
+    quanta = quanta_path.read_text(errors="replace")
     if wqfm_path is None:
         wqfm_end_to_end = None
     else:
@@ -126,23 +126,23 @@ def timing(wqfm_path, wq2a_path, wqfm_division=None):
         wqfm_end_to_end = int(required(END_TO_END, wqfm, wqfm_path, "'Time taken' line")[-1]) / 1000
         wqfm_division = sum(int(v) for v in required(DIVISION.format(algo=1), wqfm, wqfm_path,
                                                      "division markers")) / 1e9
-    division_wq2a = sum(int(v) for v in required(DIVISION.format(algo=2), wq2a, wq2a_path, "division markers")) / 1e9
+    division_quanta = sum(int(v) for v in required(DIVISION.format(algo=2), quanta, quanta_path, "division markers")) / 1e9
     # D-Wave reports times in microseconds.
-    qpu_access = sum(float(v) for v in QPU_ACCESS.findall(wq2a)) / 1e6
-    bruteforce = sum(int(v) for v in BRUTE_FORCE.findall(wq2a)) / 1e9
-    hybrid_solver = sum(float(run) - float(qpu) for qpu, run in HYBRID.findall(wq2a)) / 1e6
-    overhead = division_wq2a - qpu_access - bruteforce - hybrid_solver
+    qpu_access = sum(float(v) for v in QPU_ACCESS.findall(quanta)) / 1e6
+    bruteforce = sum(int(v) for v in BRUTE_FORCE.findall(quanta)) / 1e9
+    hybrid_solver = sum(float(run) - float(qpu) for qpu, run in HYBRID.findall(quanta)) / 1e6
+    overhead = division_quanta - qpu_access - bruteforce - hybrid_solver
     if overhead < -1e-6:
-        raise ValueError(f"Division time smaller than its measured parts in {wq2a_path}")
+        raise ValueError(f"Division time smaller than its measured parts in {quanta_path}")
     return {
         "wqfm_end_to_end_seconds": wqfm_end_to_end,
-        "wq2a_end_to_end_seconds": int(required(END_TO_END, wq2a, wq2a_path, "'Time taken' line")[-1]) / 1000,
+        "quanta_end_to_end_seconds": int(required(END_TO_END, quanta, quanta_path, "'Time taken' line")[-1]) / 1000,
         "wqfm_division_seconds": wqfm_division,
-        "wq2a_division_seconds": division_wq2a,
-        "wq2a_qpu_access_seconds": qpu_access,
-        "wq2a_bruteforce_seconds": bruteforce,
-        "wq2a_hybrid_solver_seconds": hybrid_solver,
-        "wq2a_other_overhead_seconds": max(overhead, 0.0),
+        "quanta_division_seconds": division_quanta,
+        "quanta_qpu_access_seconds": qpu_access,
+        "quanta_bruteforce_seconds": bruteforce,
+        "quanta_hybrid_solver_seconds": hybrid_solver,
+        "quanta_other_overhead_seconds": max(overhead, 0.0),
     }
 
 
@@ -164,10 +164,10 @@ def main():
     by_taxa = {}
 
     for spec in DATASETS:
-        # jobs: (file name, wQFM log or None, wQ²A log, wQFM division time if no wQFM log)
+        # jobs: (file name, wQFM log or None, QUANTA log, wQFM division time if no wQFM log)
         if "single_run" in spec:
             run = root / spec["single_run"]
-            jobs = [(run.name, run / spec["wqfm_log"], run / spec["wq2a_log"], None)]
+            jobs = [(run.name, run / spec["wqfm_log"], run / spec["quanta_log"], None)]
         else:
             run = root / spec["run"]
             wqfm_run = root / spec.get("wqfm_run", spec["run"])
@@ -179,15 +179,15 @@ def main():
                     for r in rows_of(spec, root)]
 
         rows = []
-        for name, wqfm_log, wq2a_log, wqfm_division in jobs:
-            for log in (wqfm_log, wq2a_log):
+        for name, wqfm_log, quanta_log, wqfm_division in jobs:
+            for log in (wqfm_log, quanta_log):
                 if log is not None and not log.is_file():
                     raise FileNotFoundError(f"Missing log for {spec['dataset']} / {name}: {log}")
-            rows.append(timing(wqfm_log, wq2a_log, wqfm_division))
+            rows.append(timing(wqfm_log, quanta_log, wqfm_division))
             wqfm_source = (str(wqfm_log.relative_to(root)) if wqfm_log else
                            f"{spec['files_from']} ({spec['wqfm_division_from_csv']}; no end-to-end)")
             per_file.append({"dataset": spec["dataset"], "taxa": spec["taxa"], "quartet_file_name": name,
-                             "wqfm_log": wqfm_source, "wq2a_log": str(wq2a_log.relative_to(root)),
+                             "wqfm_log": wqfm_source, "quanta_log": str(quanta_log.relative_to(root)),
                              **{k: fmt(rows[-1][k]) for k in TIMES}})
         group = by_taxa.setdefault(spec["taxa"], {"datasets": [], "rows": [], "notes": []})
         group["datasets"].append(spec["dataset"])

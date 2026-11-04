@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Run ASTRAL (ASTER v1.25.4.8) on the inputs used for wQFM and wQ2A.
+"""Run ASTRAL (ASTER v1.25.4.8) on the inputs used for wQFM and QUANTA.
 
 Weighted-quartet inputs (biological datasets; 101-taxon replicates whose
 gene trees are not available) are run with
 `wastral --mode 4 --treeweights`: every quartet becomes a four-taxon tree
 weighted by its quartet weight, so ASTRAL maximizes exactly the same
-weighted quartet score as wQFM and wQ2A. Gene-tree inputs are run with
+weighted quartet score as wQFM and QUANTA. Gene-tree inputs are run with
 `astral4` on the gene trees themselves, which carry the same quartet
 information as their weighted-quartet files: the 144- and 200-taxon single
 gene trees, and the 101-taxon replicates when their 1000 true gene trees

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Recover the true species trees used to score the 11-, 15-, 37- and 48-taxon
-wQFM / wQ2A runs, and verify them against the stored RF values.
+wQFM / QUANTA runs, and verify them against the stored RF values.
 
 - 37 and 48 taxa: the true tree is the MODEL_TREE default in the benchmark scripts.
 - 11 and 15 taxa: a wQFM tree with stored RF = 0 is the true tree (RF 0 means

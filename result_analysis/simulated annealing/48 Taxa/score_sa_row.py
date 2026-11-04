@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Score one wQFM / wQ²A (simulated annealing) pair and upsert its CSV row:
+"""Score one wQFM / QUANTA (simulated annealing) pair and upsert its CSV row:
 both trees, both RF distances to the true tree, both end-to-end times."""
 
 import argparse
@@ -13,11 +13,11 @@ from pathlib import Path
 FIELDNAMES = [
     "quartet_file_name",
     "wqfm_tree",
-    "wq2a_sa_tree",
+    "quanta_sa_tree",
     "rf_wqfm_wrt_base",
-    "rf_wq2a_sa_wrt_base",
+    "rf_quanta_sa_wrt_base",
     "wqfm_end_to_end_seconds",
-    "wq2a_sa_end_to_end_seconds",
+    "quanta_sa_end_to_end_seconds",
 ]
 END_TO_END = re.compile(r"Time taken = (\d+) ms")
 
@@ -90,15 +90,15 @@ def main():
     row = {
         "quartet_file_name": Path(args.quartet_file).name,
         "wqfm_tree": wqfm_tree,
-        "wq2a_sa_tree": sa_tree,
+        "quanta_sa_tree": sa_tree,
         "rf_wqfm_wrt_base": f"{rf_distance(rf, model, wqfm_tree):.12f}",
-        "rf_wq2a_sa_wrt_base": f"{rf_distance(rf, model, sa_tree):.12f}",
+        "rf_quanta_sa_wrt_base": f"{rf_distance(rf, model, sa_tree):.12f}",
         "wqfm_end_to_end_seconds": f"{end_to_end_seconds(args.wqfm_log):.3f}",
-        "wq2a_sa_end_to_end_seconds": f"{end_to_end_seconds(args.sa_log):.3f}",
+        "quanta_sa_end_to_end_seconds": f"{end_to_end_seconds(args.sa_log):.3f}",
     }
     upsert_csv(args.output_csv, row)
-    print(f"  CSV row: RF wQFM={float(row['rf_wqfm_wrt_base']):.4f}, RF wQ2A-SA={float(row['rf_wq2a_sa_wrt_base']):.4f}, "
-          f"time wQFM={row['wqfm_end_to_end_seconds']}s, wQ2A-SA={row['wq2a_sa_end_to_end_seconds']}s")
+    print(f"  CSV row: RF wQFM={float(row['rf_wqfm_wrt_base']):.4f}, RF QUANTA-SA={float(row['rf_quanta_sa_wrt_base']):.4f}, "
+          f"time wQFM={row['wqfm_end_to_end_seconds']}s, QUANTA-SA={row['quanta_sa_end_to_end_seconds']}s")
 
 
 if __name__ == "__main__":

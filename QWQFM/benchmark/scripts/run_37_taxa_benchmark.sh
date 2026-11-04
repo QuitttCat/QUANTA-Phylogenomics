@@ -15,6 +15,10 @@ WQFM_PYTHON="${WQFM_PYTHON:-${REPO_DIR}/.venv/bin/python}"
 RF_PYTHON="${RF_PYTHON:-${REPO_DIR}/.venv/bin/python}"
 SCORER="${SCRIPT_DIR}/score_benchmark_row.py"
 ENV_FILE="${ENV_FILE:-${WORKSPACE_DIR}/.env}"
+# Algorithms run after `cd "$APP_DIR"`, so caller-relative paths must be anchored now.
+INPUT_DIR="$(realpath -m "$INPUT_DIR")"
+OUTPUT_CSV="$(realpath -m "$OUTPUT_CSV")"
+WORK_DIR="$(realpath -m "$WORK_DIR")"
 
 MODEL_TREE="${MODEL_TREE:-(GAL,(ORN,(((((PRO,LOX),ECH),(DAS,CHO)),((((OTO,MIC),((CAL,((PON,(GOR,(HOM,PAN))),NEW)),TAR)),(((OCH,ORY),(SPE,((DIP,(RAT,MUS)),CAV))),TUP)),(((PTE,MYO),((EQU,(FEL,CAN)),((SUS,(BOS,TUR)),VIC))),(ERI,SOR)))),(MON,MAC))));}"
 MODEL_TREE_DIR="${MODEL_TREE_DIR:-}"

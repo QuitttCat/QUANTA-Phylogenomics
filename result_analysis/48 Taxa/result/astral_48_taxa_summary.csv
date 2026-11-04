@@ -1,4 +1,4 @@
-condition,ils,genes,bp,replicates,rf_astral_mean,rf_astral_se,rf_wqfm_mean,rf_wqfm_se,rf_wq2a_mean,rf_wq2a_se,astral_quartet_score_fraction_mean,astral_quartet_score_fraction_se,astral_seconds_mean,astral_seconds_se
+condition,ils,genes,bp,replicates,rf_astral_mean,rf_astral_se,rf_wqfm_mean,rf_wqfm_se,rf_quanta_mean,rf_quanta_se,astral_quartet_score_fraction_mean,astral_quartet_score_fraction_se,astral_seconds_mean,astral_seconds_se
 0.5X-1000-500,0.5X,1000,500,18,0.107407,0.008474,0.101235,0.007009,0.098765,0.006533,0.568721,0.000496,4440.919444,169.204936
 1X-50-500,1X,50,500,16,0.298611,0.007018,0.272222,0.006253,0.273611,0.006642,0.638954,0.002535,7184.482500,945.644630
 1X-100-500,1X,100,500,13,0.254701,0.008937,0.235897,0.008910,0.244444,0.010374,0.635628,0.001755,5064.588462,507.972253

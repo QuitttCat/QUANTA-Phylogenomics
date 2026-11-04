@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Compare the solving time of wQFM's Fiduccia-Mattheyses (FM) heuristic with
-the quantum annealer time of wQ2A, per number of taxa.
+the quantum annealer time of QUANTA, per number of taxa.
 
 For each run, both times are summed over all division steps; the table then
 averages these per-run totals over all runs with the same number of taxa.

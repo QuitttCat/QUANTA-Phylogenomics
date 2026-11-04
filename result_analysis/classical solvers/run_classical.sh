@@ -11,6 +11,7 @@
 # Memory: biological runs fit a laptop (about 0.65 GB each). 101, 144 and 200
 # need the server, with the Java heap of their QPU runs (16, 16 and 26 GB).
 #
+# Set WORK_DIR and RESULT_CSV to keep a rerun apart from the stored results.
 # Usage: [JOBS=N] bash "result_analysis/classical solvers/run_classical.sh" biological|101|144|200 sa|tabu
 set -Eeuo pipefail
 
@@ -27,7 +28,9 @@ esac
 
 case "$group" in
     biological)
-        export INPUT_DIR="${INPUTS}/biological_dataset_weigted_quartets" ;;
+        export INPUT_DIR="${INPUTS}/biological_dataset_weigted_quartets"
+        # the datasets in the paper
+        export INPUT_NAMES="${INPUT_NAMES-aminota-aa.weighted_quartets aminota-nt.weighted_quartets avian-all.weighted_quartets mamalian.weighted_quartets}" ;;
     101)
         export INPUT_DIR="${INPUTS}/101-taxa-weighted-quartets"
         export REFERENCE_DIR="${INPUTS}/101-taxa-true-species-tree" REFERENCE_SUFFIX=".SPECIES_TREE"
@@ -43,6 +46,6 @@ case "$group" in
     *) echo "Usage: $0 biological|101|144|200 sa|tabu" >&2; exit 2 ;;
 esac
 
-WORK_DIR="${ROOT}/QWQFM/benchmark/work/${group}_${name}_n_gt_20" \
-RESULT_CSV="${HERE}/result/results_${group}_${name}_plus_bruteforce_n>20.csv" \
+WORK_DIR="${WORK_DIR:-${ROOT}/QWQFM/benchmark/work/${group}_${name}_n_gt_20}" \
+RESULT_CSV="${RESULT_CSV:-${HERE}/result/results_${group}_${name}_plus_bruteforce_n>20.csv}" \
     bash "${ROOT}/QWQFM/benchmark/scripts/run_classical_benchmark.sh" "$2"

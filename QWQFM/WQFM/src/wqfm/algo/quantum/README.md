@@ -6,11 +6,11 @@ This module contains the QAOA (Quantum Approximate Optimization Algorithm) imple
 
 ### Option 1: Use Existing Virtual Environment
 
-The project has a virtual environment at `/home/niloy/wQFM-2020/.venv`:
+The project has a virtual environment at `QWQFM/.venv`:
 
 ```bash
-# Activate it
-source /home/niloy/wQFM-2020/.venv/bin/activate
+# Activate it (from the repository root)
+source QWQFM/.venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
@@ -19,7 +19,7 @@ pip install -r requirements.txt
 ### Option 2: Create a New Virtual Environment
 
 ```bash
-cd /home/niloy/wQFM-2020/WQFM/src/wqfm/algo/quantum
+cd QWQFM/WQFM/src/wqfm/algo/quantum
 
 # Create virtual environment
 python3 -m venv venv
@@ -37,7 +37,7 @@ pip install -r requirements.txt
 
 ```bash
 # Using existing venv
-/home/niloy/wQFM-2020/.venv/bin/python qaoa.py
+../../../../../.venv/bin/python qaoa.py
 
 # Or if venv is activated
 python qaoa.py

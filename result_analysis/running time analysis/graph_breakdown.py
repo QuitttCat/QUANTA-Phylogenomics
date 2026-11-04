@@ -119,11 +119,11 @@ def draw_bars(ax, row, s, c, scale, short):
     bar(ax, 0, [(get("wqfm_division_seconds"), c["wqfm"], None)],
         get("wqfm_end_to_end_seconds"), get("wqfm_division_seconds"), scale, short)
     # the hybrid solver's classical part (200-taxon root) counts as solver time
-    solver = get("wq2a_qpu_access_seconds") + get("wq2a_hybrid_solver_seconds")
+    solver = get("quanta_qpu_access_seconds") + get("quanta_hybrid_solver_seconds")
     bar(ax, 1, [(solver, c["qpu"], None),
-                (get("wq2a_bruteforce_seconds"), c["exact"], None),
-                (get("wq2a_other_overhead_seconds"), c["other_qpu"], HATCH_QPU)],
-        get("wq2a_end_to_end_seconds"), get("wq2a_division_seconds"), scale, short)
+                (get("quanta_bruteforce_seconds"), c["exact"], None),
+                (get("quanta_other_overhead_seconds"), c["other_qpu"], HATCH_QPU)],
+        get("quanta_end_to_end_seconds"), get("quanta_division_seconds"), scale, short)
     other = s["division_seconds"] - s["sampler_seconds"] - s["bruteforce_seconds"]
     bar(ax, 2, [(s["sampler_seconds"], c["sa"], None),
                 (s["bruteforce_seconds"], c["exact"], None),
@@ -152,7 +152,7 @@ def draw_panel(top, ax, row, s, c, f, label_x=-0.14):
     """One dataset's three bars on ax, or, with top given, on a cut axis: the lower
     axis reaches just above the QUANTA bars and the upper one shows the top of wQFM's."""
     wqfm_end = float(row["wqfm_end_to_end_seconds"])
-    quanta_ends = [float(row["wq2a_end_to_end_seconds"]), s["end_to_end_seconds"]]
+    quanta_ends = [float(row["quanta_end_to_end_seconds"]), s["end_to_end_seconds"]]
     scale, unit, short = unit_for(max([wqfm_end] + quanta_ends))
     for a in (top, ax):
         if a is not None:

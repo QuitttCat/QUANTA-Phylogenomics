@@ -20,7 +20,7 @@ from pathlib import Path
 import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "QWQFM" / "WQFM" / "src" / "wqfm" / "algo" / "quantum"))
-os.environ.setdefault("WQ2A_CLASSICAL_SOLVER", "sa")
+os.environ.setdefault("QUANTA_CLASSICAL_SOLVER", "sa")
 import qaoa  # noqa: E402
 import qaoa_classical  # noqa: E402
 

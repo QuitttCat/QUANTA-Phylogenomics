@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Plot average RF distance of wQFM vs wQ²A (simulated annealing) on the 48-taxon
+"""Plot average RF distance of wQFM vs QUANTA (simulated annealing) on the 48-taxon
 simulated avian dataset, all panels in one row.
 
 Panels, drawn only when the CSV has rows for them:
@@ -34,7 +34,7 @@ PANELS = [
 ]
 SERIES = [
     ("rf_wqfm_wrt_base", "wQFM", "#eb6834"),
-    ("rf_wq2a_sa_wrt_base", r"wQ$^2$A (simulated annealing)", "#2a78d6"),
+    ("rf_quanta_sa_wrt_base", r"QUANTA (simulated annealing)", "#2a78d6"),
 ]
 
 

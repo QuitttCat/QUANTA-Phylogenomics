@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Run wQFM and wQ²A on the amniota DNA (nt) and AA quartet files, score both
+# Run wQFM and QUANTA on the amniota DNA (nt) and AA quartet files, score both
 # trees by weighted quartet score, collect the CSV, and draw every tree.
 # Usage: bash result_analysis/aminota/run_aminota.sh [output_csv_name]
 set -Eeuo pipefail
@@ -26,14 +26,14 @@ rm -f "$benchmark_csv"
 echo "Building wQFM..."
 (cd "$APP_DIR" && ant -q jar)
 
-# 16 taxa never cross the n>20 QPU threshold, so algorithm 2 (wQ²A) is brute
+# 16 taxa never cross the n>20 QPU threshold, so algorithm 2 (QUANTA) is brute
 # force here and needs no D-Wave token.
 for dataset in aminota-nt aminota-aa; do
     quartets="${INPUT_DIR}/${dataset}.weighted_quartets"
     result_dir="${work_dir}/${dataset}.weighted_quartets"
     mkdir -p "$result_dir"
     for algo in 1 2; do
-        label=$([[ $algo == 1 ]] && echo wqfm || echo wq2a)
+        label=$([[ $algo == 1 ]] && echo wqfm || echo quanta)
         echo "[$dataset] algorithm $algo ($label)"
         (
             cd "$APP_DIR"
@@ -45,13 +45,13 @@ for dataset in aminota-nt aminota-aa; do
     "$PYTHON" "$SCORER" \
         --quartet-file "$quartets" \
         --wqfm-tree "${result_dir}/wqfm.tre" \
-        --quantum-tree "${result_dir}/wq2a.tre" \
+        --quantum-tree "${result_dir}/quanta.tre" \
         --wqfm-log "${result_dir}/wqfm.log" \
-        --quantum-log "${result_dir}/wq2a.log" \
+        --quantum-log "${result_dir}/quanta.log" \
         --output-csv "$benchmark_csv" \
         --progress-every 0
 
-    for label in wqfm wq2a; do
+    for label in wqfm quanta; do
         "$PYTHON" "${HERE}/draw_tree.py" \
             --tree "${result_dir}/${label}.tre" \
             --outgroup protopterus \
