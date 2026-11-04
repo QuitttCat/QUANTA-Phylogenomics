@@ -9,6 +9,16 @@ QUANTA estimates species trees from weighted quartets. It keeps the
 divide-and-conquer framework of wQFM and solves each bipartition step as a
 QUBO on a quantum annealer (D-Wave).
 
+## Authors
+
+**QUANTA: A quantum annealing framework for species tree estimation using weighted quartet amalgamation**
+
+Niloy Kumar Mondal<sup>1</sup> and Md. Shamsuzzoha Bayzid<sup>1,\*</sup>
+
+<sup>1</sup>Department of Computer Science and Engineering, Bangladesh University of Engineering and Technology, Dhaka-1205, Bangladesh
+
+<sup>\*</sup>Corresponding author: [shams_bayzid@cse.buet.ac.bd](mailto:shams_bayzid@cse.buet.ac.bd)
+
 ## Installation
 
 Tested on Ubuntu 24.04 with Python 3.12 and OpenJDK 21. Run these commands in order:
