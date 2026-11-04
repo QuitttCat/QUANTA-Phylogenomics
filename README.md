@@ -1,4 +1,5 @@
-# QUANTA (Version 1.0)
+# QUANTA
+(Version 1.0)
 
 QUANTA estimates species trees from weighted quartets. It keeps the
 divide-and-conquer framework of wQFM and solves each bipartition step as a
