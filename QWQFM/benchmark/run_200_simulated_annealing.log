@@ -1,0 +1,25 @@
+Picked up JAVA_TOOL_OPTIONS: -Xmx4500m -XX:+UseG1GC
+
+BUILD SUCCESSFUL
+Total time: 1 second
+Error: sa run failed for s200_rep01_true_gene_tree_001_200_taxa.weighted_quartets; see /home/niloy/Downloads/dwave/QWQFM/benchmark/work/200_simulated_annealing_n_gt_20/s200_rep01_true_gene_tree_001_200_taxa.weighted_quartets/quantum.log.failed
+	at java.base/java.lang.StringLatin1.newString(StringLatin1.java:756)
+	at java.base/java.lang.String.substring(String.java:2828)
+	at java.base/java.lang.String.split(String.java:3360)
+	at java.base/java.lang.String.split(String.java:3343)
+	at java.base/java.lang.String.split(String.java:3436)
+	at wqfm.ds.Quartet.<init>(Quartet.java:76)
+	at wqfm.algo.FMRunner.populatePerInputLine(FMRunner.java:222)
+	at wqfm.algo.FMRunner.readFileAndPopulateInitialTables(FMRunner.java:240)
+	at wqfm.algo.FMRunner.runFunctions(FMRunner.java:34)
+	at wqfm.main.Main.runwQFM(Main.java:171)
+	at wqfm.main.Main.call(Main.java:151)
+	at wqfm.main.Main.call(Main.java:16)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:1953)
+	at picocli.CommandLine.access$1300(CommandLine.java:145)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2352)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2346)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2311)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179)
+	at picocli.CommandLine.execute(CommandLine.java:2078)
+	at wqfm.main.Main.main(Main.java:197)

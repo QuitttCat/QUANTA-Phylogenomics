@@ -1,0 +1,412 @@
+Gene Trees path: /home/niloy/Downloads/dwave/wqfm-tree/runs/200_taxa/gene_trees.tre, output path: /home/niloy/Downloads/dwave/wqfm-tree/runs/200_taxa/wqfmtree.tre
+Cleaning input file
+Cleaned input file written to /home/niloy/Downloads/dwave/wqfm-tree/runs/200_taxa/gene_trees.tre-cleaned
+Generating consensus tree using paup
+warning: please limit length of filenames
+output at:
+/home/niloy/Downloads/dwave/wqfm-tree/runs/200_taxa/gene_trees.tre-cleaned-cons.strict.tree
+/home/niloy/Downloads/dwave/wqfm-tree/runs/200_taxa/gene_trees.tre-cleaned-cons.majority.tree
+/home/niloy/Downloads/dwave/wqfm-tree/runs/200_taxa/gene_trees.tre-cleaned-cons.greedy.tree
+done.
+ ===================== Running wQFM-TREE ===================== 
+taxon count : 200
+Gene trees count : 200
+total internal nodes : 39800
+unique partitions : 4240
+level : 1
+#iterations: 0
+level : 2
+#iterations: 0
+level : 3
+#iterations: 0
+level : 4
+#iterations: 0
+level : 5
+#iterations: 0
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 1
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 1
+level : 5
+#iterations: 0
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 9
+#iterations: 1
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 9
+#iterations: 1
+level : 4
+#iterations: 0
+level : 5
+#iterations: 0
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 1
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 8
+#iterations: 0
+level : 9
+#iterations: 0
+level : 10
+#iterations: 1
+level : 11
+#iterations: 1
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 8
+#iterations: 1
+level : 5
+#iterations: 0
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 8
+#iterations: 0
+level : 9
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 9
+#iterations: 0
+level : 8
+#iterations: 0
+level : 9
+#iterations: 0
+level : 10
+#iterations: 1
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 9
+#iterations: 1
+level : 8
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 8
+#iterations: 0
+level : 9
+#iterations: 1
+level : 10
+#iterations: 1
+level : 3
+#iterations: 0
+level : 4
+#iterations: 0
+level : 5
+#iterations: 0
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 1
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 5
+#iterations: 0
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 7
+#iterations: 0
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 8
+#iterations: 1
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 8
+#iterations: 0
+level : 9
+#iterations: 1
+level : 4
+#iterations: 0
+level : 5
+#iterations: 0
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 8
+#iterations: 0
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 8
+#iterations: 1
+level : 7
+#iterations: 0
+level : 5
+#iterations: 0
+level : 6
+#iterations: 0
+level : 7
+#iterations: 1
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 9
+#iterations: 1
+level : 8
+#iterations: 0
+level : 7
+#iterations: 0
+level : 2
+#iterations: 0
+level : 3
+#iterations: 0
+level : 4
+#iterations: 0
+level : 5
+#iterations: 0
+level : 6
+#iterations: 0
+level : 7
+#iterations: 1
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 7
+#iterations: 0
+level : 5
+#iterations: 0
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 1
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 8
+#iterations: 0
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 1
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 4
+#iterations: 0
+level : 5
+#iterations: 0
+level : 6
+#iterations: 0
+level : 7
+#iterations: 1
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 7
+#iterations: 0
+level : 5
+#iterations: 0
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 9
+#iterations: 0
+level : 3
+#iterations: 0
+level : 4
+#iterations: 0
+level : 5
+#iterations: 0
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 9
+#iterations: 1
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 5
+#iterations: 0
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 1
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 4
+#iterations: 0
+level : 5
+#iterations: 0
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 9
+#iterations: 1
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 5
+#iterations: 0
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 1
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 8
+#iterations: 1
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+
+Elapsed Time taken = 88845 ms ==> 1 minutes and 28 seconds.
+CPU time used: 1 minutes, 27 seconds

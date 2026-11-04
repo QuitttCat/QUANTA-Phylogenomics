@@ -1,0 +1,168 @@
+Input directory: /root/dwave/QWQFM/WQFM/input_files/37-taxa-weighted-quartets
+Quartet files selected: 240 of 240
+CSV output: /root/dwave/QWQFM/benchmark/output_csv/results_37_taxa_quantum_A1_B2_n_gt_20.csv
+Checkpoint directory: /root/dwave/QWQFM/benchmark/work/37_taxa_quantum_A1_B2_n_gt_20
+Algorithm order: 1 (wqfm), then 2 (quantum)
+D-Wave token: available from /root/dwave/.env
+Building wQFM...
+Picked up JAVA_TOOL_OPTIONS: -Xms1g -Xmx8g -XX:+UseG1GC
+Buildfile: /root/dwave/QWQFM/WQFM/build.xml
+
+-pre-init:
+
+-init-private:
+
+-init-user:
+
+-init-project:
+
+-init-macrodef-property:
+
+-do-init:
+
+-post-init:
+
+-init-check:
+
+-init-ap-cmdline-properties:
+
+-init-macrodef-javac-with-processors:
+
+-init-macrodef-javac-without-processors:
+
+-init-macrodef-javac:
+
+-init-macrodef-test-impl:
+
+-init-macrodef-junit-init:
+
+-init-macrodef-junit-single:
+
+-init-test-properties:
+
+-init-macrodef-junit-batch:
+
+-init-macrodef-junit:
+
+-init-macrodef-junit-impl:
+
+-init-macrodef-testng:
+
+-init-macrodef-testng-impl:
+
+-init-macrodef-test:
+
+-init-macrodef-junit-debug:
+
+-init-macrodef-junit-debug-batch:
+
+-init-macrodef-junit-debug-impl:
+
+-init-macrodef-test-debug-junit:
+
+-init-macrodef-testng-debug:
+
+-init-macrodef-testng-debug-impl:
+
+-init-macrodef-test-debug-testng:
+
+-init-macrodef-test-debug:
+
+-init-debug-args:
+
+-init-macrodef-nbjpda:
+
+-init-macrodef-debug:
+
+-init-macrodef-java:
+
+-init-presetdef-jar:
+
+-init-ap-cmdline-supported:
+
+-init-ap-cmdline:
+
+init:
+
+-deps-jar-init:
+   [delete] Deleting: /root/dwave/QWQFM/WQFM/build/built-jar.properties
+
+deps-jar:
+
+-warn-already-built-jar:
+[propertyfile] Updating property file: /root/dwave/QWQFM/WQFM/build/built-jar.properties
+
+-check-automatic-build:
+
+-clean-after-automatic-build:
+
+-verify-automatic-build:
+
+-pre-pre-compile:
+
+-pre-compile:
+
+-copy-persistence-xml:
+
+-compile-depend:
+
+-do-compile:
+     [copy] Copying 1 file to /root/dwave/QWQFM/WQFM/build/classes
+
+-post-compile:
+
+compile:
+
+-pre-jar:
+
+-pre-pre-jar:
+
+-do-jar-create-manifest:
+
+-do-jar-copy-manifest:
+     [copy] Copying 1 file to /root/dwave/QWQFM/WQFM/build
+
+-do-jar-set-mainclass:
+
+-do-jar-set-profile:
+
+-do-jar-set-splashscreen:
+
+-do-jar-jar:
+[j2seproject1:jar] Building jar: /root/dwave/QWQFM/WQFM/dist/wQFM.jar
+     [echo] To run this application from the command line without Ant, try:
+     [echo] /usr/lib/jvm/java-17-openjdk-amd64/bin/java -cp /root/dwave/QWQFM/WQFM/main.jar:/root/dwave/QWQFM/WQFM/D:/Personal-Projects-Data/picocli-4.6.1.jar:/root/dwave/QWQFM/lib/picocli-4.6.1.jar:/root/dwave/QWQFM/lib/main.jar:/root/dwave/QWQFM/WQFM/dist/wQFM.jar wqfm.main.Main
+
+-init-macrodef-copylibs:
+
+-do-jar-copylibs:
+
+-do-jar-delete-manifest:
+
+-do-jar-without-libraries:
+
+-do-jar-with-libraries:
+
+-post-jar:
+
+-do-jar:
+
+jar:
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+[1/240] noscale.100g.500b_R10_weighted_quartets
+  Running Algorithm 1 (wqfm)...
+  Running Algorithm 2 (quantum)...
+  CSV row: RF WQFM=0.029412, RF quantum=0.088235, better=-1
+[2/240] noscale.100g.500b_R11_weighted_quartets
+  Running Algorithm 1 (wqfm)...
+  Running Algorithm 2 (quantum)...
+  CSV row: RF WQFM=0.029412, RF quantum=0.088235, better=-1
+[3/240] noscale.100g.500b_R12_weighted_quartets
+  Running Algorithm 1 (wqfm)...
+  Running Algorithm 2 (quantum)...
+  CSV row: RF WQFM=0.058824, RF quantum=0.058824, better=0
+[4/240] noscale.100g.500b_R13_weighted_quartets
+  Running Algorithm 1 (wqfm)...
+  Running Algorithm 2 (quantum)...

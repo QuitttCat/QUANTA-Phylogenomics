@@ -1,0 +1,202 @@
+Gene Trees path: /home/niloy/Downloads/dwave/wqfm-tree/runs/a2/m500/01/g1000/gene_trees.tre, output path: /home/niloy/Downloads/dwave/wqfm-tree/runs/a2/m500/01/g1000/wqfmtree.tre
+Cleaning input file
+Cleaned input file written to /home/niloy/Downloads/dwave/wqfm-tree/runs/a2/m500/01/g1000/gene_trees.tre-cleaned
+Generating consensus tree using paup
+warning: please limit length of filenames
+output at:
+/home/niloy/Downloads/dwave/wqfm-tree/runs/a2/m500/01/g1000/gene_trees.tre-cleaned-cons.strict.tree
+/home/niloy/Downloads/dwave/wqfm-tree/runs/a2/m500/01/g1000/gene_trees.tre-cleaned-cons.majority.tree
+/home/niloy/Downloads/dwave/wqfm-tree/runs/a2/m500/01/g1000/gene_trees.tre-cleaned-cons.greedy.tree
+done.
+ ===================== Running wQFM-TREE ===================== 
+Picked up JAVA_TOOL_OPTIONS: -Xmx5g -XX:+UseSerialGC
+taxon count : 501
+Gene trees count : 1000
+total internal nodes : 499995
+unique partitions : 101523
+level : 1
+#iterations: 0
+level : 2
+#iterations: 0
+level : 3
+#iterations: 0
+level : 4
+#iterations: 0
+level : 5
+#iterations: 0
+level : 6
+#iterations: 0
+level : 7
+#iterations: 1
+level : 7
+#iterations: 0
+level : 8
+#iterations: 1
+level : 6
+#iterations: 0
+level : 7
+#iterations: 1
+level : 5
+#iterations: 0
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 4
+#iterations: 0
+level : 5
+#iterations: 0
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 1
+level : 7
+#iterations: 0
+level : 8
+#iterations: 1
+level : 5
+#iterations: 0
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 1
+level : 7
+#iterations: 0
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 1
+level : 9
+#iterations: 1
+level : 8
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 9
+#iterations: 0
+level : 10
+#iterations: 1
+level : 11
+#iterations: 1
+level : 11
+#iterations: 1
+level : 12
+#iterations: 1
+level : 13
+#iterations: 1
+level : 8
+#iterations: 0
+level : 9
+#iterations: 0
+level : 9
+#iterations: 0
+level : 10
+#iterations: 0
+level : 3
+#iterations: 0
+level : 4
+#iterations: 0
+level : 5
+#iterations: 0
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 1
+level : 9
+#iterations: 1
+level : 10
+#iterations: 1
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 9
+#iterations: 0
+level : 10
+#iterations: 1
+level : 11
+#iterations: 1
+level : 5
+#iterations: 0
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 1
+level : 7
+#iterations: 0
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 1
+level : 8
+#iterations: 0
+level : 4
+#iterations: 0
+level : 5
+#iterations: 0
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0
+level : 8
+#iterations: 1
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 1
+level : 7
+#iterations: 0
+level : 8
+#iterations: 1
+level : 5
+#iterations: 0
+level : 6
+#iterations: 0
+level : 7
+#iterations: 0
+level : 8
+#iterations: 0

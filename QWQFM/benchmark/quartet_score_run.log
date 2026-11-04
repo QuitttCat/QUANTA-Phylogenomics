@@ -1,0 +1,416 @@
+nohup: ignoring input
+[37 taxa] source: /root/dwave/QWQFM/benchmark/output_csv/results_37_taxa_qpu_plus_bruteforce_n>12.csv
+[37 taxa] 240 to score, 0 reused
+[37 taxa] completed noscale.100g.500b_R10_weighted_quartets: quartets=173,338, total_weight=6604500, WQFM=5672261, quantum=5672261
+[37 taxa] completed noscale.100g.500b_R11_weighted_quartets: quartets=174,825, total_weight=6604500, WQFM=5645133, quantum=5645133
+[37 taxa] completed noscale.100g.500b_R13_weighted_quartets: quartets=176,166, total_weight=6604500, WQFM=5606850, quantum=5606850
+[37 taxa] completed noscale.100g.500b_R12_weighted_quartets: quartets=173,110, total_weight=6604500, WQFM=5613667, quantum=5613667
+[37 taxa] completed noscale.100g.500b_R14_weighted_quartets: quartets=173,538, total_weight=6604500, WQFM=5651457, quantum=5651457
+[37 taxa] completed noscale.100g.500b_R16_weighted_quartets: quartets=173,437, total_weight=6604500, WQFM=5632263, quantum=5632263
+[37 taxa] completed noscale.100g.500b_R15_weighted_quartets: quartets=177,253, total_weight=6604500, WQFM=5630308, quantum=5630308
+[37 taxa] completed noscale.100g.500b_R17_weighted_quartets: quartets=169,197, total_weight=6604500, WQFM=5678949, quantum=5678949
+[37 taxa] completed noscale.100g.500b_R1_weighted_quartets: quartets=173,387, total_weight=6604500, WQFM=5639284, quantum=5639284
+[37 taxa] completed noscale.100g.500b_R19_weighted_quartets: quartets=177,230, total_weight=6604500, WQFM=5618493, quantum=5618493
+[37 taxa] completed noscale.100g.500b_R20_weighted_quartets: quartets=175,142, total_weight=6604500, WQFM=5606711, quantum=5606711
+[37 taxa] completed noscale.100g.500b_R18_weighted_quartets: quartets=172,674, total_weight=6604500, WQFM=5595050, quantum=5595050
+[37 taxa] completed noscale.100g.500b_R2_weighted_quartets: quartets=167,963, total_weight=6604500, WQFM=5732255, quantum=5732255
+[37 taxa] completed noscale.100g.500b_R5_weighted_quartets: quartets=174,637, total_weight=6604500, WQFM=5631039, quantum=5631039
+[37 taxa] completed noscale.100g.500b_R3_weighted_quartets: quartets=174,389, total_weight=6604500, WQFM=5664109, quantum=5664109
+[37 taxa] completed noscale.100g.500b_R4_weighted_quartets: quartets=178,257, total_weight=6604500, WQFM=5550303, quantum=5550303
+[37 taxa] completed noscale.100g.500b_R6_weighted_quartets: quartets=171,800, total_weight=6604500, WQFM=5673183, quantum=5673183
+[37 taxa] completed noscale.100g.500b_R9_weighted_quartets: quartets=174,520, total_weight=6604500, WQFM=5614152, quantum=5614089
+[37 taxa] completed noscale.100g.500b_R7_weighted_quartets: quartets=172,680, total_weight=6604500, WQFM=5677057, quantum=5677057
+[37 taxa] completed noscale.100g.500b_R8_weighted_quartets: quartets=179,570, total_weight=6604500, WQFM=5582727, quantum=5582727
+[37 taxa] completed noscale.200g.1000b_R10_weighted_quartets: quartets=175,209, total_weight=13209000, WQFM=11585349, quantum=11585349
+[37 taxa] completed noscale.200g.1000b_R11_weighted_quartets: quartets=178,303, total_weight=13209000, WQFM=11608030, quantum=11608030
+[37 taxa] completed noscale.200g.1000b_R12_weighted_quartets: quartets=178,843, total_weight=13209000, WQFM=11539880, quantum=11539880
+[37 taxa] completed noscale.200g.1000b_R13_weighted_quartets: quartets=175,816, total_weight=13209000, WQFM=11542499, quantum=11542499
+[37 taxa] completed noscale.200g.1000b_R14_weighted_quartets: quartets=176,610, total_weight=13209000, WQFM=11598351, quantum=11598351
+[37 taxa] completed noscale.200g.1000b_R15_weighted_quartets: quartets=177,402, total_weight=13209000, WQFM=11586274, quantum=11586274
+[37 taxa] completed noscale.200g.1000b_R16_weighted_quartets: quartets=175,440, total_weight=13209000, WQFM=11631278, quantum=11631278
+[37 taxa] completed noscale.200g.1000b_R17_weighted_quartets: quartets=175,463, total_weight=13209000, WQFM=11593217, quantum=11593217
+[37 taxa] completed noscale.200g.1000b_R18_weighted_quartets: quartets=178,485, total_weight=13209000, WQFM=11496058, quantum=11496058
+[37 taxa] completed noscale.200g.1000b_R19_weighted_quartets: quartets=176,382, total_weight=13209000, WQFM=11600968, quantum=11600968
+[37 taxa] completed noscale.200g.1000b_R1_weighted_quartets: quartets=175,109, total_weight=13209000, WQFM=11567521, quantum=11567521
+[37 taxa] completed noscale.200g.1000b_R20_weighted_quartets: quartets=178,474, total_weight=13209000, WQFM=11615624, quantum=11615624
+[37 taxa] completed noscale.200g.1000b_R2_weighted_quartets: quartets=176,904, total_weight=13209000, WQFM=11634185, quantum=11634185
+[37 taxa] completed noscale.200g.1000b_R3_weighted_quartets: quartets=178,300, total_weight=13209000, WQFM=11531822, quantum=11528599
+[37 taxa] completed noscale.200g.1000b_R4_weighted_quartets: quartets=181,645, total_weight=13209000, WQFM=11500564, quantum=11500564
+[37 taxa] completed noscale.200g.1000b_R5_weighted_quartets: quartets=177,408, total_weight=13209000, WQFM=11691463, quantum=11691463
+[37 taxa] completed noscale.200g.1000b_R6_weighted_quartets: quartets=174,182, total_weight=13209000, WQFM=11665594, quantum=11665594
+[37 taxa] completed noscale.200g.1000b_R7_weighted_quartets: quartets=177,913, total_weight=13209000, WQFM=11645711, quantum=11645711
+[37 taxa] completed noscale.200g.1000b_R9_weighted_quartets: quartets=176,683, total_weight=13209000, WQFM=11554757, quantum=11554757
+[37 taxa] completed noscale.200g.1000b_R8_weighted_quartets: quartets=181,053, total_weight=13209000, WQFM=11537947, quantum=11537947
+[37 taxa] completed noscale.200g.1500b_R10_weighted_quartets: quartets=174,556, total_weight=13209000, WQFM=11657238, quantum=11657238
+[37 taxa] completed noscale.200g.1500b_R11_weighted_quartets: quartets=176,917, total_weight=13209000, WQFM=11658438, quantum=11658438
+[37 taxa] completed noscale.200g.1500b_R12_weighted_quartets: quartets=176,752, total_weight=13209000, WQFM=11624795, quantum=11624795
+[37 taxa] completed noscale.200g.1500b_R13_weighted_quartets: quartets=175,671, total_weight=13209000, WQFM=11584068, quantum=11584068
+[37 taxa] completed noscale.200g.1500b_R14_weighted_quartets: quartets=175,222, total_weight=13209000, WQFM=11653733, quantum=11653733
+[37 taxa] completed noscale.200g.1500b_R15_weighted_quartets: quartets=175,221, total_weight=13209000, WQFM=11655287, quantum=11655287
+[37 taxa] completed noscale.200g.1500b_R16_weighted_quartets: quartets=173,885, total_weight=13209000, WQFM=11708986, quantum=11708986
+[37 taxa] completed noscale.200g.1500b_R17_weighted_quartets: quartets=174,379, total_weight=13209000, WQFM=11668561, quantum=11668561
+[37 taxa] completed noscale.200g.1500b_R18_weighted_quartets: quartets=177,871, total_weight=13209000, WQFM=11581907, quantum=11581907
+[37 taxa] completed noscale.200g.1500b_R19_weighted_quartets: quartets=176,061, total_weight=13209000, WQFM=11652604, quantum=11652604
+[37 taxa] completed noscale.200g.1500b_R1_weighted_quartets: quartets=172,349, total_weight=13209000, WQFM=11646175, quantum=11646175
+[37 taxa] completed noscale.200g.1500b_R20_weighted_quartets: quartets=177,548, total_weight=13209000, WQFM=11709285, quantum=11709285
+[37 taxa] completed noscale.200g.1500b_R2_weighted_quartets: quartets=173,347, total_weight=13209000, WQFM=11729116, quantum=11729116
+[37 taxa] completed noscale.200g.1500b_R3_weighted_quartets: quartets=177,269, total_weight=13209000, WQFM=11574976, quantum=11574976
+[37 taxa] completed noscale.200g.1500b_R4_weighted_quartets: quartets=179,348, total_weight=13209000, WQFM=11603023, quantum=11603023
+[37 taxa] completed noscale.200g.1500b_R5_weighted_quartets: quartets=177,646, total_weight=13209000, WQFM=11745995, quantum=11745995
+[37 taxa] completed noscale.200g.1500b_R6_weighted_quartets: quartets=172,422, total_weight=13209000, WQFM=11721829, quantum=11721829
+[37 taxa] completed noscale.200g.1500b_R7_weighted_quartets: quartets=176,221, total_weight=13209000, WQFM=11709786, quantum=11709786
+[37 taxa] completed noscale.200g.1500b_R8_weighted_quartets: quartets=179,942, total_weight=13209000, WQFM=11604227, quantum=11604227
+[37 taxa] completed noscale.200g.1500b_R9_weighted_quartets: quartets=173,565, total_weight=13209000, WQFM=11676192, quantum=11676192
+[37 taxa] completed noscale.200g.250b_R10_weighted_quartets: quartets=188,439, total_weight=13209000, WQFM=10536748, quantum=10536748
+[37 taxa] completed noscale.200g.250b_R11_weighted_quartets: quartets=190,029, total_weight=13209000, WQFM=10582235, quantum=10582235
+[37 taxa] completed noscale.200g.250b_R12_weighted_quartets: quartets=189,260, total_weight=13209000, WQFM=10546445, quantum=10546445
+[37 taxa] completed noscale.200g.250b_R13_weighted_quartets: quartets=190,370, total_weight=13209000, WQFM=10516843, quantum=10516843
+[37 taxa] completed noscale.200g.250b_R14_weighted_quartets: quartets=188,684, total_weight=13209000, WQFM=10641290, quantum=10641290
+[37 taxa] completed noscale.200g.250b_R15_weighted_quartets: quartets=188,705, total_weight=13209000, WQFM=10608917, quantum=10608917
+[37 taxa] completed noscale.200g.250b_R16_weighted_quartets: quartets=187,534, total_weight=13209000, WQFM=10731753, quantum=10731753
+[37 taxa] completed noscale.200g.250b_R17_weighted_quartets: quartets=190,043, total_weight=13209000, WQFM=10374056, quantum=10374056
+[37 taxa] completed noscale.200g.250b_R18_weighted_quartets: quartets=189,769, total_weight=13209000, WQFM=10451233, quantum=10451233
+[37 taxa] completed noscale.200g.250b_R19_weighted_quartets: quartets=190,998, total_weight=13209000, WQFM=10584521, quantum=10584521
+[37 taxa] completed noscale.200g.250b_R1_weighted_quartets: quartets=188,958, total_weight=13209000, WQFM=10537354, quantum=10537354
+[37 taxa] completed noscale.200g.250b_R20_weighted_quartets: quartets=189,652, total_weight=13209000, WQFM=10580742, quantum=10580742
+[37 taxa] completed noscale.200g.250b_R2_weighted_quartets: quartets=189,728, total_weight=13209000, WQFM=10557319, quantum=10557319
+[37 taxa] completed noscale.200g.250b_R3_weighted_quartets: quartets=190,053, total_weight=13209000, WQFM=10565583, quantum=10565583
+[37 taxa] completed noscale.200g.250b_R4_weighted_quartets: quartets=189,580, total_weight=13209000, WQFM=10527989, quantum=10527989
+[37 taxa] completed noscale.200g.250b_R5_weighted_quartets: quartets=189,845, total_weight=13209000, WQFM=10617264, quantum=10617264
+[37 taxa] completed noscale.200g.250b_R6_weighted_quartets: quartets=189,600, total_weight=13209000, WQFM=10606950, quantum=10606950
+[37 taxa] completed noscale.200g.250b_R7_weighted_quartets: quartets=190,722, total_weight=13209000, WQFM=10549294, quantum=10549876
+[37 taxa] completed noscale.200g.250b_R8_weighted_quartets: quartets=190,187, total_weight=13209000, WQFM=10480895, quantum=10481257
+[37 taxa] completed noscale.200g.250b_R9_weighted_quartets: quartets=190,208, total_weight=13209000, WQFM=10611657, quantum=10611657
+[37 taxa] completed noscale.200g.500b_R10_weighted_quartets: quartets=181,074, total_weight=13209000, WQFM=11303220, quantum=11303220
+[37 taxa] completed noscale.200g.500b_R12_weighted_quartets: quartets=182,164, total_weight=13209000, WQFM=11209150, quantum=11209150
+[37 taxa] completed noscale.200g.500b_R11_weighted_quartets: quartets=181,896, total_weight=13209000, WQFM=11281300, quantum=11281300
+[37 taxa] completed noscale.200g.500b_R13_weighted_quartets: quartets=181,882, total_weight=13209000, WQFM=11228199, quantum=11228199
+[37 taxa] completed noscale.200g.500b_R14_weighted_quartets: quartets=181,733, total_weight=13209000, WQFM=11259233, quantum=11259233
+[37 taxa] completed noscale.200g.500b_R15_weighted_quartets: quartets=181,609, total_weight=13209000, WQFM=11300443, quantum=11300443
+[37 taxa] completed noscale.200g.500b_R16_weighted_quartets: quartets=180,537, total_weight=13209000, WQFM=11350402, quantum=11350402
+[37 taxa] completed noscale.200g.500b_R17_weighted_quartets: quartets=181,051, total_weight=13209000, WQFM=11228271, quantum=11228271
+[37 taxa] completed noscale.200g.500b_R18_weighted_quartets: quartets=181,214, total_weight=13209000, WQFM=11192733, quantum=11192733
+[37 taxa] completed noscale.200g.500b_R19_weighted_quartets: quartets=184,088, total_weight=13209000, WQFM=11270514, quantum=11270514
+[37 taxa] completed noscale.200g.500b_R1_weighted_quartets: quartets=181,455, total_weight=13209000, WQFM=11299596, quantum=11299596
+[37 taxa] completed noscale.200g.500b_R20_weighted_quartets: quartets=183,661, total_weight=13209000, WQFM=11302453, quantum=11302453
+[37 taxa] completed noscale.200g.500b_R2_weighted_quartets: quartets=182,249, total_weight=13209000, WQFM=11349413, quantum=11349413
+[37 taxa] completed noscale.200g.500b_R3_weighted_quartets: quartets=182,177, total_weight=13209000, WQFM=11246517, quantum=11246517
+[37 taxa] completed noscale.200g.500b_R4_weighted_quartets: quartets=184,390, total_weight=13209000, WQFM=11160873, quantum=11160873
+[37 taxa] completed noscale.200g.500b_R5_weighted_quartets: quartets=182,229, total_weight=13209000, WQFM=11325718, quantum=11325718
+[37 taxa] completed noscale.200g.500b_R6_weighted_quartets: quartets=181,846, total_weight=13209000, WQFM=11311266, quantum=11311266
+[37 taxa] completed noscale.200g.500b_R7_weighted_quartets: quartets=182,666, total_weight=13209000, WQFM=11338996, quantum=11338996
+[37 taxa] completed noscale.200g.500b_R8_weighted_quartets: quartets=184,901, total_weight=13209000, WQFM=11204061, quantum=11204061
+[37 taxa] completed noscale.200g.500b_R9_weighted_quartets: quartets=182,773, total_weight=13209000, WQFM=11242459, quantum=11242459
+[37 taxa] completed noscale.200g.true_R10_weighted_quartets: quartets=173,086, total_weight=13209000, WQFM=11773211, quantum=11773211
+[37 taxa] completed noscale.200g.true_R11_weighted_quartets: quartets=175,210, total_weight=13209000, WQFM=11775632, quantum=11775632
+[37 taxa] completed noscale.200g.true_R12_weighted_quartets: quartets=173,654, total_weight=13209000, WQFM=11703659, quantum=11703659
+[37 taxa] completed noscale.200g.true_R13_weighted_quartets: quartets=175,048, total_weight=13209000, WQFM=11667673, quantum=11667673
+[37 taxa] completed noscale.200g.true_R15_weighted_quartets: quartets=173,091, total_weight=13209000, WQFM=11765256, quantum=11765256
+[37 taxa] completed noscale.200g.true_R14_weighted_quartets: quartets=175,079, total_weight=13209000, WQFM=11723062, quantum=11723062
+[37 taxa] completed noscale.200g.true_R16_weighted_quartets: quartets=170,870, total_weight=13209000, WQFM=11806431, quantum=11806431
+[37 taxa] completed noscale.200g.true_R17_weighted_quartets: quartets=171,196, total_weight=13209000, WQFM=11762398, quantum=11762398
+[37 taxa] completed noscale.200g.true_R18_weighted_quartets: quartets=175,178, total_weight=13209000, WQFM=11655024, quantum=11655024
+[37 taxa] completed noscale.200g.true_R19_weighted_quartets: quartets=176,103, total_weight=13209000, WQFM=11753326, quantum=11753326
+[37 taxa] completed noscale.200g.true_R1_weighted_quartets: quartets=171,311, total_weight=13209000, WQFM=11729419, quantum=11729419
+[37 taxa] completed noscale.200g.true_R20_weighted_quartets: quartets=174,892, total_weight=13209000, WQFM=11784414, quantum=11784414
+[37 taxa] completed noscale.200g.true_R2_weighted_quartets: quartets=169,920, total_weight=13209000, WQFM=11826709, quantum=11826709
+[37 taxa] completed noscale.200g.true_R3_weighted_quartets: quartets=175,851, total_weight=13209000, WQFM=11676547, quantum=11676547
+[37 taxa] completed noscale.200g.true_R4_weighted_quartets: quartets=178,352, total_weight=13209000, WQFM=11676683, quantum=11676683
+[37 taxa] completed noscale.200g.true_R5_weighted_quartets: quartets=177,539, total_weight=13209000, WQFM=11786664, quantum=11786664
+[37 taxa] completed noscale.200g.true_R6_weighted_quartets: quartets=170,721, total_weight=13209000, WQFM=11820000, quantum=11820000
+[37 taxa] completed noscale.200g.true_R7_weighted_quartets: quartets=175,047, total_weight=13209000, WQFM=11781517, quantum=11781517
+[37 taxa] completed noscale.200g.true_R8_weighted_quartets: quartets=176,755, total_weight=13209000, WQFM=11717201, quantum=11717201
+[37 taxa] completed noscale.200g.true_R9_weighted_quartets: quartets=172,410, total_weight=13209000, WQFM=11736711, quantum=11736711
+[37 taxa] completed noscale.25g.500b_R10_weighted_quartets: quartets=141,296, total_weight=1651125, WQFM=1418869, quantum=1419174
+[37 taxa] completed noscale.25g.500b_R11_weighted_quartets: quartets=142,750, total_weight=1651125, WQFM=1431611, quantum=1431611
+[37 taxa] completed noscale.25g.500b_R12_weighted_quartets: quartets=143,098, total_weight=1651125, WQFM=1414181, quantum=1414181
+[37 taxa] completed noscale.25g.500b_R13_weighted_quartets: quartets=152,768, total_weight=1651125, WQFM=1406378, quantum=1406378
+[37 taxa] completed noscale.25g.500b_R14_weighted_quartets: quartets=142,032, total_weight=1651125, WQFM=1436056, quantum=1435300
+[37 taxa] completed noscale.25g.500b_R15_weighted_quartets: quartets=144,551, total_weight=1651125, WQFM=1431391, quantum=1431391
+[37 taxa] completed noscale.25g.500b_R16_weighted_quartets: quartets=153,248, total_weight=1651125, WQFM=1373686, quantum=1373686
+[37 taxa] completed noscale.25g.500b_R17_weighted_quartets: quartets=144,863, total_weight=1651125, WQFM=1432789, quantum=1432789
+[37 taxa] completed noscale.25g.500b_R18_weighted_quartets: quartets=152,906, total_weight=1651125, WQFM=1374851, quantum=1374851
+[37 taxa] completed noscale.25g.500b_R19_weighted_quartets: quartets=155,838, total_weight=1651125, WQFM=1398011, quantum=1398011
+[37 taxa] completed noscale.25g.500b_R1_weighted_quartets: quartets=139,825, total_weight=1651125, WQFM=1423680, quantum=1423680
+[37 taxa] completed noscale.25g.500b_R20_weighted_quartets: quartets=150,941, total_weight=1651125, WQFM=1383000, quantum=1383000
+[37 taxa] completed noscale.25g.500b_R2_weighted_quartets: quartets=141,244, total_weight=1651125, WQFM=1422635, quantum=1422635
+[37 taxa] completed noscale.25g.500b_R3_weighted_quartets: quartets=144,370, total_weight=1651125, WQFM=1429535, quantum=1429612
+[37 taxa] completed noscale.25g.500b_R4_weighted_quartets: quartets=155,947, total_weight=1651125, WQFM=1392316, quantum=1392316
+[37 taxa] completed noscale.25g.500b_R6_weighted_quartets: quartets=136,190, total_weight=1651125, WQFM=1442833, quantum=1442833
+[37 taxa] completed noscale.25g.500b_R5_weighted_quartets: quartets=143,534, total_weight=1651125, WQFM=1410106, quantum=1410106
+[37 taxa] completed noscale.25g.500b_R8_weighted_quartets: quartets=144,959, total_weight=1651125, WQFM=1440131, quantum=1440131
+[37 taxa] completed noscale.25g.500b_R7_weighted_quartets: quartets=148,008, total_weight=1651125, WQFM=1412253, quantum=1412253
+[37 taxa] completed noscale.25g.500b_R9_weighted_quartets: quartets=154,829, total_weight=1651125, WQFM=1413658, quantum=1413658
+[37 taxa] completed noscale.400g.500b_R10_weighted_quartets: quartets=188,496, total_weight=26418000, WQFM=22604999, quantum=22604999
+[37 taxa] completed noscale.400g.500b_R11_weighted_quartets: quartets=186,915, total_weight=26418000, WQFM=22726247, quantum=22726247
+[37 taxa] completed noscale.400g.500b_R12_weighted_quartets: quartets=187,573, total_weight=26418000, WQFM=22467617, quantum=22467617
+[37 taxa] completed noscale.400g.500b_R13_weighted_quartets: quartets=187,959, total_weight=26418000, WQFM=22515307, quantum=22515307
+[37 taxa] completed noscale.400g.500b_R14_weighted_quartets: quartets=187,091, total_weight=26418000, WQFM=22513418, quantum=22513418
+[37 taxa] completed noscale.400g.500b_R15_weighted_quartets: quartets=185,804, total_weight=26418000, WQFM=22482028, quantum=22482028
+[37 taxa] completed noscale.400g.500b_R16_weighted_quartets: quartets=187,101, total_weight=26418000, WQFM=22488081, quantum=22488081
+[37 taxa] completed noscale.400g.500b_R17_weighted_quartets: quartets=185,953, total_weight=26418000, WQFM=22541964, quantum=22541964
+[37 taxa] completed noscale.400g.500b_R18_weighted_quartets: quartets=188,164, total_weight=26418000, WQFM=22478271, quantum=22478271
+[37 taxa] completed noscale.400g.500b_R19_weighted_quartets: quartets=187,255, total_weight=26418000, WQFM=22543440, quantum=22543440
+[37 taxa] completed noscale.400g.500b_R1_weighted_quartets: quartets=185,958, total_weight=26418000, WQFM=22580510, quantum=22580510
+[37 taxa] completed noscale.400g.500b_R20_weighted_quartets: quartets=189,054, total_weight=26418000, WQFM=22556891, quantum=22556891
+[37 taxa] completed noscale.400g.500b_R2_weighted_quartets: quartets=186,949, total_weight=26418000, WQFM=22557463, quantum=22557463
+[37 taxa] completed noscale.400g.500b_R4_weighted_quartets: quartets=188,467, total_weight=26418000, WQFM=22420106, quantum=22420106
+[37 taxa] completed noscale.400g.500b_R3_weighted_quartets: quartets=187,157, total_weight=26418000, WQFM=22458442, quantum=22458442
+[37 taxa] completed noscale.400g.500b_R5_weighted_quartets: quartets=186,908, total_weight=26418000, WQFM=22616654, quantum=22616654
+[37 taxa] completed noscale.400g.500b_R6_weighted_quartets: quartets=186,368, total_weight=26418000, WQFM=22660287, quantum=22660287
+[37 taxa] completed noscale.400g.500b_R8_weighted_quartets: quartets=187,170, total_weight=26418000, WQFM=22397108, quantum=22397108
+[37 taxa] completed noscale.400g.500b_R7_weighted_quartets: quartets=186,849, total_weight=26418000, WQFM=22566548, quantum=22566548
+[37 taxa] completed noscale.400g.500b_R9_weighted_quartets: quartets=188,105, total_weight=26418000, WQFM=22512973, quantum=22512973
+[37 taxa] completed noscale.50g.500b_R10_weighted_quartets: quartets=153,240, total_weight=3302250, WQFM=2842446, quantum=2842446
+[37 taxa] completed noscale.50g.500b_R12_weighted_quartets: quartets=160,548, total_weight=3302250, WQFM=2814326, quantum=2814326
+[37 taxa] completed noscale.50g.500b_R11_weighted_quartets: quartets=159,606, total_weight=3302250, WQFM=2848457, quantum=2848457
+[37 taxa] completed noscale.50g.500b_R13_weighted_quartets: quartets=164,949, total_weight=3302250, WQFM=2798045, quantum=2798045
+[37 taxa] completed noscale.50g.500b_R14_weighted_quartets: quartets=161,337, total_weight=3302250, WQFM=2837036, quantum=2837036
+[37 taxa] completed noscale.50g.500b_R16_weighted_quartets: quartets=164,762, total_weight=3302250, WQFM=2807768, quantum=2807768
+[37 taxa] completed noscale.50g.500b_R15_weighted_quartets: quartets=169,409, total_weight=3302250, WQFM=2791123, quantum=2791123
+[37 taxa] completed noscale.50g.500b_R17_weighted_quartets: quartets=159,222, total_weight=3302250, WQFM=2863571, quantum=2863571
+[37 taxa] completed noscale.50g.500b_R18_weighted_quartets: quartets=165,829, total_weight=3302250, WQFM=2780635, quantum=2780635
+[37 taxa] completed noscale.50g.500b_R19_weighted_quartets: quartets=164,801, total_weight=3302250, WQFM=2835062, quantum=2835062
+[37 taxa] completed noscale.50g.500b_R1_weighted_quartets: quartets=162,572, total_weight=3302250, WQFM=2822180, quantum=2822180
+[37 taxa] completed noscale.50g.500b_R20_weighted_quartets: quartets=166,501, total_weight=3302250, WQFM=2780904, quantum=2780904
+[37 taxa] completed noscale.50g.500b_R2_weighted_quartets: quartets=154,576, total_weight=3302250, WQFM=2865652, quantum=2865652
+[37 taxa] completed noscale.50g.500b_R3_weighted_quartets: quartets=161,730, total_weight=3302250, WQFM=2850836, quantum=2850836
+[37 taxa] completed noscale.50g.500b_R4_weighted_quartets: quartets=169,705, total_weight=3302250, WQFM=2778959, quantum=2778959
+[37 taxa] completed noscale.50g.500b_R5_weighted_quartets: quartets=160,755, total_weight=3302250, WQFM=2806917, quantum=2805704
+[37 taxa] completed noscale.50g.500b_R6_weighted_quartets: quartets=161,771, total_weight=3302250, WQFM=2810608, quantum=2810608
+[37 taxa] completed noscale.50g.500b_R7_weighted_quartets: quartets=165,541, total_weight=3302250, WQFM=2823549, quantum=2823549
+[37 taxa] completed noscale.50g.500b_R8_weighted_quartets: quartets=166,561, total_weight=3302250, WQFM=2826986, quantum=2826986
+[37 taxa] completed noscale.50g.500b_R9_weighted_quartets: quartets=165,161, total_weight=3302250, WQFM=2827759, quantum=2827759
+[37 taxa] completed noscale.800g.500b_R10_weighted_quartets: quartets=191,710, total_weight=52836000, WQFM=45098486, quantum=45098486
+[37 taxa] completed noscale.800g.500b_R11_weighted_quartets: quartets=190,477, total_weight=52836000, WQFM=45250347, quantum=45250347
+[37 taxa] completed noscale.800g.500b_R12_weighted_quartets: quartets=191,739, total_weight=52836000, WQFM=44898586, quantum=44898586
+[37 taxa] completed noscale.800g.500b_R13_weighted_quartets: quartets=191,693, total_weight=52836000, WQFM=45098852, quantum=45098852
+[37 taxa] completed noscale.800g.500b_R14_weighted_quartets: quartets=191,861, total_weight=52836000, WQFM=45073971, quantum=45073971
+[37 taxa] completed noscale.800g.500b_R15_weighted_quartets: quartets=190,932, total_weight=52836000, WQFM=45109259, quantum=45109259
+[37 taxa] completed noscale.800g.500b_R16_weighted_quartets: quartets=189,253, total_weight=52836000, WQFM=45342669, quantum=45342669
+[37 taxa] completed noscale.800g.500b_R17_weighted_quartets: quartets=191,089, total_weight=52836000, WQFM=45328959, quantum=45328959
+[37 taxa] completed noscale.800g.500b_R19_weighted_quartets: quartets=191,968, total_weight=52836000, WQFM=45112384, quantum=45112384
+[37 taxa] completed noscale.800g.500b_R18_weighted_quartets: quartets=190,323, total_weight=52836000, WQFM=45099484, quantum=45099484
+[37 taxa] completed noscale.800g.500b_R1_weighted_quartets: quartets=191,397, total_weight=52836000, WQFM=45039889, quantum=45039889
+[37 taxa] completed noscale.800g.500b_R20_weighted_quartets: quartets=190,782, total_weight=52836000, WQFM=44983066, quantum=44983066
+[37 taxa] completed noscale.800g.500b_R3_weighted_quartets: quartets=189,938, total_weight=52836000, WQFM=45028671, quantum=45028671
+[37 taxa] completed noscale.800g.500b_R2_weighted_quartets: quartets=191,748, total_weight=52836000, WQFM=45176922, quantum=45176922
+[37 taxa] completed noscale.800g.500b_R4_weighted_quartets: quartets=189,890, total_weight=52836000, WQFM=45103822, quantum=45103822
+[37 taxa] completed noscale.800g.500b_R5_weighted_quartets: quartets=191,264, total_weight=52836000, WQFM=44985019, quantum=44985019
+[37 taxa] completed noscale.800g.500b_R6_weighted_quartets: quartets=190,904, total_weight=52836000, WQFM=45193864, quantum=45193864
+[37 taxa] completed noscale.800g.500b_R7_weighted_quartets: quartets=191,349, total_weight=52836000, WQFM=45028725, quantum=45028725
+[37 taxa] completed noscale.800g.500b_R8_weighted_quartets: quartets=190,212, total_weight=52836000, WQFM=44966923, quantum=44966923
+[37 taxa] completed noscale.800g.500b_R9_weighted_quartets: quartets=191,252, total_weight=52836000, WQFM=45017281, quantum=45017281
+[37 taxa] completed scale2d.200g.500b_R10_weighted_quartets: quartets=196,168, total_weight=13209000, WQFM=10093649, quantum=10093649
+[37 taxa] completed scale2d.200g.500b_R12_weighted_quartets: quartets=196,553, total_weight=13209000, WQFM=9909397, quantum=9909397
+[37 taxa] completed scale2d.200g.500b_R11_weighted_quartets: quartets=196,459, total_weight=13209000, WQFM=9963358, quantum=9963358
+[37 taxa] completed scale2d.200g.500b_R13_weighted_quartets: quartets=196,846, total_weight=13209000, WQFM=10083043, quantum=10083043
+[37 taxa] completed scale2d.200g.500b_R14_weighted_quartets: quartets=196,285, total_weight=13209000, WQFM=10234591, quantum=10234591
+[37 taxa] completed scale2d.200g.500b_R15_weighted_quartets: quartets=195,894, total_weight=13209000, WQFM=10071839, quantum=10071839
+[37 taxa] completed scale2d.200g.500b_R16_weighted_quartets: quartets=196,342, total_weight=13209000, WQFM=10006573, quantum=10006573
+[37 taxa] completed scale2d.200g.500b_R17_weighted_quartets: quartets=196,634, total_weight=13209000, WQFM=9942686, quantum=9942686
+[37 taxa] completed scale2d.200g.500b_R18_weighted_quartets: quartets=196,739, total_weight=13209000, WQFM=9835040, quantum=9835040
+[37 taxa] completed scale2d.200g.500b_R19_weighted_quartets: quartets=195,766, total_weight=13209000, WQFM=10056067, quantum=10056067
+[37 taxa] completed scale2d.200g.500b_R1_weighted_quartets: quartets=196,066, total_weight=13209000, WQFM=10013981, quantum=10013981
+[37 taxa] completed scale2d.200g.500b_R20_weighted_quartets: quartets=195,851, total_weight=13209000, WQFM=9993865, quantum=9993865
+[37 taxa] completed scale2d.200g.500b_R3_weighted_quartets: quartets=196,293, total_weight=13209000, WQFM=10021859, quantum=10021859
+[37 taxa] completed scale2d.200g.500b_R2_weighted_quartets: quartets=195,839, total_weight=13209000, WQFM=9966771, quantum=9966771
+[37 taxa] completed scale2d.200g.500b_R4_weighted_quartets: quartets=196,310, total_weight=13209000, WQFM=9896186, quantum=9896186
+[37 taxa] completed scale2d.200g.500b_R5_weighted_quartets: quartets=196,285, total_weight=13209000, WQFM=10066567, quantum=10066567
+[37 taxa] completed scale2d.200g.500b_R6_weighted_quartets: quartets=196,563, total_weight=13209000, WQFM=9980320, quantum=9980320
+[37 taxa] completed scale2d.200g.500b_R7_weighted_quartets: quartets=196,650, total_weight=13209000, WQFM=10046251, quantum=10046251
+[37 taxa] completed scale2d.200g.500b_R8_weighted_quartets: quartets=196,768, total_weight=13209000, WQFM=9932505, quantum=9932505
+[37 taxa] completed scale2d.200g.500b_R9_weighted_quartets: quartets=195,385, total_weight=13209000, WQFM=10017325, quantum=10017325
+[37 taxa] completed scale2u.200g.500b_R10_weighted_quartets: quartets=161,638, total_weight=13142955, WQFM=11884972, quantum=11882308
+[37 taxa] completed scale2u.200g.500b_R11_weighted_quartets: quartets=161,061, total_weight=13209000, WQFM=11961092, quantum=11961092
+[37 taxa] completed scale2u.200g.500b_R12_weighted_quartets: quartets=164,563, total_weight=13209000, WQFM=11901890, quantum=11901890
+[37 taxa] completed scale2u.200g.500b_R13_weighted_quartets: quartets=162,839, total_weight=13209000, WQFM=11947108, quantum=11947108
+[37 taxa] completed scale2u.200g.500b_R14_weighted_quartets: quartets=162,959, total_weight=13209000, WQFM=11877504, quantum=11877504
+[37 taxa] completed scale2u.200g.500b_R15_weighted_quartets: quartets=155,230, total_weight=13209000, WQFM=11935031, quantum=11935031
+[37 taxa] completed scale2u.200g.500b_R16_weighted_quartets: quartets=161,033, total_weight=13209000, WQFM=11983504, quantum=11983504
+[37 taxa] completed scale2u.200g.500b_R17_weighted_quartets: quartets=166,319, total_weight=13209000, WQFM=11882607, quantum=11882607
+[37 taxa] completed scale2u.200g.500b_R18_weighted_quartets: quartets=162,508, total_weight=13209000, WQFM=11902913, quantum=11902913
+[37 taxa] completed scale2u.200g.500b_R19_weighted_quartets: quartets=163,413, total_weight=13209000, WQFM=11983425, quantum=11983425
+[37 taxa] completed scale2u.200g.500b_R1_weighted_quartets: quartets=161,912, total_weight=13209000, WQFM=11934423, quantum=11934423
+[37 taxa] completed scale2u.200g.500b_R20_weighted_quartets: quartets=159,081, total_weight=13209000, WQFM=11997935, quantum=11997935
+[37 taxa] completed scale2u.200g.500b_R3_weighted_quartets: quartets=157,520, total_weight=13209000, WQFM=12017522, quantum=12017522
+[37 taxa] completed scale2u.200g.500b_R2_weighted_quartets: quartets=162,008, total_weight=13209000, WQFM=11919753, quantum=11919753
+[37 taxa] completed scale2u.200g.500b_R4_weighted_quartets: quartets=163,510, total_weight=13209000, WQFM=11963434, quantum=11963434
+[37 taxa] completed scale2u.200g.500b_R5_weighted_quartets: quartets=158,882, total_weight=13209000, WQFM=11917857, quantum=11917857
+[37 taxa] completed scale2u.200g.500b_R6_weighted_quartets: quartets=163,798, total_weight=13209000, WQFM=11982151, quantum=11982151
+[37 taxa] completed scale2u.200g.500b_R7_weighted_quartets: quartets=162,487, total_weight=13209000, WQFM=11939096, quantum=11939096
+[37 taxa] completed scale2u.200g.500b_R8_weighted_quartets: quartets=161,963, total_weight=13209000, WQFM=11962369, quantum=11962369
+[37 taxa] completed scale2u.200g.500b_R9_weighted_quartets: quartets=161,160, total_weight=13209000, WQFM=11993582, quantum=11993582
+[37 taxa] complete: /root/dwave/QWQFM/benchmark/output_csv/results_37_taxa_weighted_quartet_scores.csv
+[48 taxa] source: /root/dwave/QWQFM/benchmark/output_csv/results_48_taxa_qpu_plus_bruteforce_n>18.csv
+[48 taxa] 114 to score, 0 reused
+[48 taxa] completed 0.5X-1000-500_R14_weighted_quartets: quartets=577,581, total_weight=194580000, WQFM=110442809, quantum=110531545
+[48 taxa] completed 0.5X-1000-500_R11_weighted_quartets: quartets=578,793, total_weight=194580000, WQFM=110789126, quantum=110789126
+[48 taxa] completed 0.5X-1000-500_R10_weighted_quartets: quartets=578,432, total_weight=194580000, WQFM=110820812, quantum=110818642
+[48 taxa] completed 0.5X-1000-500_R13_weighted_quartets: quartets=578,604, total_weight=194580000, WQFM=110263173, quantum=110428117
+[48 taxa] completed 0.5X-1000-500_R16_weighted_quartets: quartets=576,076, total_weight=194580000, WQFM=110249781, quantum=110249781
+[48 taxa] completed 0.5X-1000-500_R17_weighted_quartets: quartets=578,456, total_weight=194580000, WQFM=111068330, quantum=111068330
+[48 taxa] completed 0.5X-1000-500_R19_weighted_quartets: quartets=577,655, total_weight=194580000, WQFM=110806838, quantum=110806838
+[48 taxa] completed 0.5X-1000-500_R18_weighted_quartets: quartets=577,237, total_weight=194580000, WQFM=111397879, quantum=111271944
+[48 taxa] completed 0.5X-1000-500_R1_weighted_quartets: quartets=577,069, total_weight=194580000, WQFM=111122882, quantum=111159004
+[48 taxa] completed 0.5X-1000-500_R20_weighted_quartets: quartets=576,337, total_weight=194580000, WQFM=110390878, quantum=110390878
+[48 taxa] completed 0.5X-1000-500_R2_weighted_quartets: quartets=577,805, total_weight=194580000, WQFM=110282815, quantum=110282815
+[48 taxa] completed 0.5X-1000-500_R3_weighted_quartets: quartets=579,388, total_weight=194580000, WQFM=111157207, quantum=111157207
+[48 taxa] completed 0.5X-1000-500_R4_weighted_quartets: quartets=577,554, total_weight=194580000, WQFM=110222312, quantum=110267747
+[48 taxa] completed 0.5X-1000-500_R5_weighted_quartets: quartets=577,578, total_weight=194580000, WQFM=110768154, quantum=110768154
+[48 taxa] completed 0.5X-1000-500_R6_weighted_quartets: quartets=577,584, total_weight=194580000, WQFM=110431159, quantum=110431159
+[48 taxa] completed 0.5X-1000-500_R7_weighted_quartets: quartets=577,729, total_weight=194580000, WQFM=109913443, quantum=109913443
+[48 taxa] completed 1X-100-500_R12_weighted_quartets: quartets=553,747, total_weight=19458000, WQFM=12402799, quantum=12380859
+[48 taxa] completed 0.5X-1000-500_R9_weighted_quartets: quartets=577,016, total_weight=194580000, WQFM=109970077, quantum=109970077
+[48 taxa] completed 0.5X-1000-500_R8_weighted_quartets: quartets=577,855, total_weight=194580000, WQFM=110958364, quantum=110958364
+[48 taxa] completed 1X-100-500_R15_weighted_quartets: quartets=551,539, total_weight=19458000, WQFM=12452813, quantum=12452813
+[48 taxa] completed 1X-100-500_R17_weighted_quartets: quartets=550,722, total_weight=19458000, WQFM=12160961, quantum=12176142
+[48 taxa] completed 1X-100-500_R18_weighted_quartets: quartets=558,813, total_weight=19458000, WQFM=12351354, quantum=12358845
+[48 taxa] completed 1X-100-500_R19_weighted_quartets: quartets=556,584, total_weight=19458000, WQFM=12386410, quantum=12369746
+[48 taxa] completed 1X-100-500_R20_weighted_quartets: quartets=555,978, total_weight=19458000, WQFM=12616735, quantum=12657562
+[48 taxa] completed 1X-100-500_R2_weighted_quartets: quartets=550,653, total_weight=19458000, WQFM=12186422, quantum=12246729
+[48 taxa] completed 1X-100-500_R3_weighted_quartets: quartets=555,827, total_weight=19458000, WQFM=12393684, quantum=12394237
+[48 taxa] completed 1X-100-500_R4_weighted_quartets: quartets=554,984, total_weight=19458000, WQFM=12300489, quantum=12309028
+[48 taxa] completed 1X-100-500_R5_weighted_quartets: quartets=556,192, total_weight=19458000, WQFM=12265009, quantum=12280262
+[48 taxa] completed 1X-100-500_R6_weighted_quartets: quartets=555,455, total_weight=19458000, WQFM=12303372, quantum=12316683
+[48 taxa] completed 1X-100-500_R9_weighted_quartets: quartets=553,405, total_weight=19458000, WQFM=12183929, quantum=12189418
+[48 taxa] completed 1X-100-500_R7_weighted_quartets: quartets=551,456, total_weight=19458000, WQFM=12197163, quantum=12209123
+[48 taxa] completed 1X-1000-500_R12_weighted_quartets: quartets=570,459, total_weight=194580000, WQFM=123049442, quantum=123049442
+[48 taxa] completed 1X-1000-500_R16_weighted_quartets: quartets=571,148, total_weight=194580000, WQFM=122337809, quantum=122337809
+[48 taxa] completed 1X-1000-500_R19_weighted_quartets: quartets=572,125, total_weight=194580000, WQFM=123233344, quantum=123233344
+[48 taxa] completed 1X-1000-500_R1_weighted_quartets: quartets=572,873, total_weight=194580000, WQFM=122264504, quantum=122264504
+[48 taxa] completed 1X-1000-500_R20_weighted_quartets: quartets=570,951, total_weight=194580000, WQFM=123353996, quantum=123353996
+[48 taxa] completed 1X-1000-500_R2_weighted_quartets: quartets=567,496, total_weight=194580000, WQFM=123384562, quantum=123384562
+[48 taxa] completed 1X-1000-500_R3_weighted_quartets: quartets=574,220, total_weight=194580000, WQFM=122879564, quantum=122879564
+[48 taxa] completed 1X-1000-500_R4_weighted_quartets: quartets=570,892, total_weight=194580000, WQFM=124251560, quantum=124327338
+[48 taxa] completed 1X-1000-500_R5_weighted_quartets: quartets=567,824, total_weight=194580000, WQFM=123828178, quantum=123828178
+[48 taxa] completed 1X-1000-500_R6_weighted_quartets: quartets=569,630, total_weight=194580000, WQFM=123032019, quantum=122966668
+[48 taxa] completed 1X-1000-500_R7_weighted_quartets: quartets=570,101, total_weight=194580000, WQFM=122458850, quantum=122458850
+[48 taxa] completed 1X-1000-500_R8_weighted_quartets: quartets=568,008, total_weight=194580000, WQFM=123863342, quantum=123863342
+[48 taxa] completed 1X-1000-500_R9_weighted_quartets: quartets=568,424, total_weight=194580000, WQFM=122196294, quantum=122196294
+[48 taxa] completed 1X-200-500_R10_weighted_quartets: quartets=563,477, total_weight=38916000, WQFM=24488993, quantum=24591411
+[48 taxa] completed 1X-200-500_R11_weighted_quartets: quartets=560,435, total_weight=38916000, WQFM=24769837, quantum=24769837
+[48 taxa] completed 1X-200-500_R12_weighted_quartets: quartets=560,652, total_weight=38916000, WQFM=24386400, quantum=24386400
+[48 taxa] completed 1X-200-500_R14_weighted_quartets: quartets=562,929, total_weight=38916000, WQFM=24893956, quantum=24893956
+[48 taxa] completed 1X-200-500_R15_weighted_quartets: quartets=556,955, total_weight=38916000, WQFM=24816329, quantum=24832183
+[48 taxa] completed 1X-200-500_R16_weighted_quartets: quartets=555,244, total_weight=38916000, WQFM=24280754, quantum=24298180
+[48 taxa] completed 1X-200-500_R17_weighted_quartets: quartets=557,567, total_weight=38916000, WQFM=24224035, quantum=24226497
+[48 taxa] completed 1X-200-500_R18_weighted_quartets: quartets=563,637, total_weight=38916000, WQFM=24598273, quantum=24598273
+[48 taxa] completed 1X-200-500_R19_weighted_quartets: quartets=561,131, total_weight=38916000, WQFM=24807524, quantum=24808993
+[48 taxa] completed 1X-200-500_R1_weighted_quartets: quartets=561,491, total_weight=38916000, WQFM=24597886, quantum=24597886
+[48 taxa] completed 1X-200-500_R20_weighted_quartets: quartets=560,458, total_weight=38916000, WQFM=25096434, quantum=25097453
+[48 taxa] completed 1X-200-500_R2_weighted_quartets: quartets=553,755, total_weight=38916000, WQFM=24465208, quantum=24472775
+[48 taxa] completed 1X-200-500_R3_weighted_quartets: quartets=561,114, total_weight=38916000, WQFM=24625944, quantum=24625944
+[48 taxa] completed 1X-200-500_R4_weighted_quartets: quartets=562,678, total_weight=38916000, WQFM=24658451, quantum=24658527
+[48 taxa] completed 1X-200-500_R5_weighted_quartets: quartets=560,984, total_weight=38916000, WQFM=24937627, quantum=24937627
+[48 taxa] completed 1X-200-500_R6_weighted_quartets: quartets=560,487, total_weight=38916000, WQFM=24611191, quantum=24611191
+[48 taxa] completed 1X-200-500_R7_weighted_quartets: quartets=560,877, total_weight=38916000, WQFM=24272338, quantum=24269441
+[48 taxa] completed 1X-200-500_R8_weighted_quartets: quartets=555,761, total_weight=38916000, WQFM=24551244, quantum=24648714
+[48 taxa] completed 1X-200-500_R9_weighted_quartets: quartets=558,807, total_weight=38916000, WQFM=24309908, quantum=24298085
+[48 taxa] completed 1X-50-500_R10_weighted_quartets: quartets=553,791, total_weight=9729000, WQFM=6041108, quantum=6034644
+[48 taxa] completed 1X-50-500_R11_weighted_quartets: quartets=544,676, total_weight=9729000, WQFM=6272000, quantum=6272126
+[48 taxa] completed 1X-50-500_R14_weighted_quartets: quartets=545,479, total_weight=9729000, WQFM=6293107, quantum=6293474
+[48 taxa] completed 1X-50-500_R16_weighted_quartets: quartets=547,806, total_weight=9729000, WQFM=5992036, quantum=5994133
+[48 taxa] completed 1X-50-500_R17_weighted_quartets: quartets=540,155, total_weight=9729000, WQFM=6178454, quantum=6180432
+[48 taxa] completed 1X-50-500_R18_weighted_quartets: quartets=546,803, total_weight=9729000, WQFM=6186157, quantum=6178580
+[48 taxa] completed 1X-50-500_R19_weighted_quartets: quartets=543,355, total_weight=9729000, WQFM=6288436, quantum=6303628
+[48 taxa] completed 1X-50-500_R20_weighted_quartets: quartets=547,437, total_weight=9729000, WQFM=6346986, quantum=6348979
+[48 taxa] completed 1X-50-500_R2_weighted_quartets: quartets=541,841, total_weight=9729000, WQFM=6149284, quantum=6145933
+[48 taxa] completed 1X-50-500_R3_weighted_quartets: quartets=548,806, total_weight=9729000, WQFM=6222064, quantum=6219736
+[48 taxa] completed 1X-50-500_R4_weighted_quartets: quartets=545,570, total_weight=9729000, WQFM=6166481, quantum=6166496
+[48 taxa] completed 1X-50-500_R5_weighted_quartets: quartets=543,041, total_weight=9729000, WQFM=6169003, quantum=6168691
+[48 taxa] completed 1X-50-500_R6_weighted_quartets: quartets=544,634, total_weight=9729000, WQFM=6262210, quantum=6263652
+[48 taxa] completed 1X-50-500_R7_weighted_quartets: quartets=546,463, total_weight=9729000, WQFM=6172975, quantum=6147361
+[48 taxa] completed 1X-50-500_R8_weighted_quartets: quartets=539,699, total_weight=9729000, WQFM=6236825, quantum=6229843
+[48 taxa] completed 1X-50-500_R9_weighted_quartets: quartets=544,043, total_weight=9729000, WQFM=6081574, quantum=6058903
+[48 taxa] completed 1X-500-500_R10_weighted_quartets: quartets=567,984, total_weight=97290000, WQFM=61693529, quantum=61693529
+[48 taxa] completed 1X-500-500_R14_weighted_quartets: quartets=566,677, total_weight=97290000, WQFM=61782898, quantum=61782921
+[48 taxa] completed 1X-500-500_R15_weighted_quartets: quartets=566,204, total_weight=97290000, WQFM=61355960, quantum=61355960
+[48 taxa] completed 1X-500-500_R17_weighted_quartets: quartets=564,871, total_weight=97290000, WQFM=60929001, quantum=60929001
+[48 taxa] completed 1X-500-500_R18_weighted_quartets: quartets=569,103, total_weight=97290000, WQFM=61650393, quantum=61650393
+[48 taxa] completed 1X-500-500_R19_weighted_quartets: quartets=568,787, total_weight=97290000, WQFM=61700667, quantum=61700667
+[48 taxa] completed 1X-500-500_R20_weighted_quartets: quartets=565,222, total_weight=97290000, WQFM=62068768, quantum=62069744
+[48 taxa] completed 1X-500-500_R2_weighted_quartets: quartets=561,624, total_weight=97290000, WQFM=61370542, quantum=61370542
+[48 taxa] completed 1X-500-500_R3_weighted_quartets: quartets=569,347, total_weight=97290000, WQFM=61209429, quantum=61286400
+[48 taxa] completed 1X-500-500_R4_weighted_quartets: quartets=567,244, total_weight=97290000, WQFM=62034517, quantum=62153885
+[48 taxa] completed 1X-500-500_R5_weighted_quartets: quartets=563,619, total_weight=97290000, WQFM=61678564, quantum=61678564
+[48 taxa] completed 1X-500-500_R6_weighted_quartets: quartets=563,349, total_weight=97290000, WQFM=61478411, quantum=61538881
+[48 taxa] completed 1X-500-500_R7_weighted_quartets: quartets=566,004, total_weight=97290000, WQFM=61341307, quantum=61341307
+[48 taxa] completed 1X-500-500_R8_weighted_quartets: quartets=564,474, total_weight=97290000, WQFM=61642611, quantum=61539148
+[48 taxa] completed 1X-500-500_R9_weighted_quartets: quartets=565,235, total_weight=97290000, WQFM=61027298, quantum=61079592
+[48 taxa] completed 2X-1000-500_R10_weighted_quartets: quartets=564,500, total_weight=194580000, WQFM=132667194, quantum=132667194
+[48 taxa] completed 2X-1000-500_R11_weighted_quartets: quartets=564,724, total_weight=194580000, WQFM=131298423, quantum=131298423
+[48 taxa] completed 2X-1000-500_R12_weighted_quartets: quartets=562,371, total_weight=194580000, WQFM=130769333, quantum=130769333
+[48 taxa] completed 2X-1000-500_R13_weighted_quartets: quartets=564,514, total_weight=194580000, WQFM=131716027, quantum=131716027
+[48 taxa] completed 2X-1000-500_R14_weighted_quartets: quartets=567,700, total_weight=194580000, WQFM=131152794, quantum=131152794
+[48 taxa] completed 2X-1000-500_R15_weighted_quartets: quartets=565,595, total_weight=194580000, WQFM=131953206, quantum=131953206
+[48 taxa] completed 2X-1000-500_R16_weighted_quartets: quartets=563,633, total_weight=194580000, WQFM=131188404, quantum=131188404
+[48 taxa] completed 2X-1000-500_R17_weighted_quartets: quartets=567,649, total_weight=194580000, WQFM=132086146, quantum=132086146
+[48 taxa] completed 2X-1000-500_R18_weighted_quartets: quartets=565,304, total_weight=194580000, WQFM=131419383, quantum=131419383
+[48 taxa] completed 2X-1000-500_R1_weighted_quartets: quartets=566,785, total_weight=194580000, WQFM=131819417, quantum=131819417
+[48 taxa] completed 2X-1000-500_R19_weighted_quartets: quartets=565,498, total_weight=194580000, WQFM=131562909, quantum=131562909
+[48 taxa] completed 2X-1000-500_R20_weighted_quartets: quartets=567,680, total_weight=194580000, WQFM=131279849, quantum=131279849
+[48 taxa] completed 2X-1000-500_R2_weighted_quartets: quartets=564,337, total_weight=194580000, WQFM=131579137, quantum=131579137
+[48 taxa] completed 2X-1000-500_R3_weighted_quartets: quartets=567,098, total_weight=194580000, WQFM=131728738, quantum=131728738
+[48 taxa] completed 2X-1000-500_R4_weighted_quartets: quartets=567,065, total_weight=194580000, WQFM=131459993, quantum=131459993
+[48 taxa] completed 2X-1000-500_R5_weighted_quartets: quartets=567,092, total_weight=194580000, WQFM=132045160, quantum=132045160
+[48 taxa] completed 2X-1000-500_R6_weighted_quartets: quartets=567,628, total_weight=194580000, WQFM=131438864, quantum=131438864
+[48 taxa] completed 2X-1000-500_R7_weighted_quartets: quartets=565,071, total_weight=194580000, WQFM=131790700, quantum=131790700
+[48 taxa] completed 2X-1000-500_R8_weighted_quartets: quartets=564,478, total_weight=194580000, WQFM=131650183, quantum=131650183
+[48 taxa] completed 2X-1000-500_R9_weighted_quartets: quartets=567,689, total_weight=194580000, WQFM=131787536, quantum=131787536
+[48 taxa] complete: /root/dwave/QWQFM/benchmark/output_csv/results_48_taxa_weighted_quartet_scores.csv
+[101 taxa] source: /root/dwave/QWQFM/benchmark/output_csv/results_101_taxa_qpu_plus_bruteforce.csv
+[101 taxa] 4 to score, 0 reused
+    04.true.wqrts: 1,000,000 quartets
+    01.true.wqrts: 1,000,000 quartets
+    02.true.wqrts: 1,000,000 quartets
+    03.true.wqrts: 1,000,000 quartets
+    04.true.wqrts: 2,000,000 quartets
+    01.true.wqrts: 2,000,000 quartets
+    02.true.wqrts: 2,000,000 quartets
+    03.true.wqrts: 2,000,000 quartets
+    04.true.wqrts: 3,000,000 quartets
+    01.true.wqrts: 3,000,000 quartets
+    02.true.wqrts: 3,000,000 quartets
+    03.true.wqrts: 3,000,000 quartets
+    01.true.wqrts: 4,000,000 quartets
+    04.true.wqrts: 4,000,000 quartets
+    02.true.wqrts: 4,000,000 quartets
+    03.true.wqrts: 4,000,000 quartets
+    04.true.wqrts: 5,000,000 quartets
+    01.true.wqrts: 5,000,000 quartets
+    02.true.wqrts: 5,000,000 quartets
+    03.true.wqrts: 5,000,000 quartets
+    01.true.wqrts: 6,000,000 quartets
+    04.true.wqrts: 6,000,000 quartets
+    02.true.wqrts: 6,000,000 quartets
+    03.true.wqrts: 6,000,000 quartets
+    04.true.wqrts: 7,000,000 quartets
+    01.true.wqrts: 7,000,000 quartets
+    02.true.wqrts: 7,000,000 quartets
+    03.true.wqrts: 7,000,000 quartets
+    04.true.wqrts: 8,000,000 quartets
+    01.true.wqrts: 8,000,000 quartets
+    02.true.wqrts: 8,000,000 quartets
+    03.true.wqrts: 8,000,000 quartets
+    04.true.wqrts: 9,000,000 quartets
+    01.true.wqrts: 9,000,000 quartets
+    02.true.wqrts: 9,000,000 quartets
+    03.true.wqrts: 9,000,000 quartets
+    04.true.wqrts: 10,000,000 quartets
+    01.true.wqrts: 10,000,000 quartets
+    02.true.wqrts: 10,000,000 quartets
+    03.true.wqrts: 10,000,000 quartets
+    04.true.wqrts: 11,000,000 quartets
+    01.true.wqrts: 11,000,000 quartets
+    02.true.wqrts: 11,000,000 quartets
+    03.true.wqrts: 11,000,000 quartets
+    04.true.wqrts: 12,000,000 quartets
+    01.true.wqrts: 12,000,000 quartets
+    02.true.wqrts: 12,000,000 quartets
+[101 taxa] completed 02.true.wqrts: quartets=12,074,259, total_weight=4082925000, WQFM=2911740944, quantum=2911740944
+[101 taxa] completed 04.true.wqrts: quartets=12,244,666, total_weight=4082925000, WQFM=2468734605, quantum=2468734605
+    03.true.wqrts: 12,000,000 quartets
+[101 taxa] completed 01.true.wqrts: quartets=12,217,153, total_weight=4082925000, WQFM=2714704235, quantum=2714704235
+[101 taxa] completed 03.true.wqrts: quartets=12,222,014, total_weight=4082925000, WQFM=2570110987, quantum=2570110987
+[101 taxa] complete: /root/dwave/QWQFM/benchmark/output_csv/results_101_taxa_weighted_quartet_scores.csv

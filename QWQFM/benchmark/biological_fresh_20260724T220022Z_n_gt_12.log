@@ -1,0 +1,203 @@
+Input directory: /root/dwave/QWQFM/WQFM/input_files/biological_dataset_weigted_quartets
+Quartet files selected: 8 of 8
+  1. aminota-aa.weighted_quartets
+  2. aminota-nt.weighted_quartets
+  3. angiosperm.weighted_quartets
+  4. avian-all.weighted_quartets
+  5. avian-exon.weighted_quartets
+  6. avian-intron.weighted_quartets
+  7. avian-uce.weighted_quartets
+  8. mamalian.weighted_quartets
+Algorithm order: all 2 (quantum), then all 1 (WQFM)
+CSV output: /root/dwave/QWQFM/benchmark/output_csv/biological/results_biological_fresh_20260724T220022Z_n_gt_12.csv
+Checkpoint directory: /root/dwave/QWQFM/benchmark/work/biological_fresh_20260724T220022Z_n_gt_12
+D-Wave token: available from /root/dwave/.env
+Building wQFM...
+Buildfile: /root/dwave/QWQFM/WQFM/build.xml
+
+-pre-init:
+
+-init-private:
+
+-init-user:
+
+-init-project:
+
+-init-macrodef-property:
+
+-do-init:
+
+-post-init:
+
+-init-check:
+
+-init-ap-cmdline-properties:
+
+-init-macrodef-javac-with-processors:
+
+-init-macrodef-javac-without-processors:
+
+-init-macrodef-javac:
+
+-init-macrodef-test-impl:
+
+-init-macrodef-junit-init:
+
+-init-macrodef-junit-single:
+
+-init-test-properties:
+
+-init-macrodef-junit-batch:
+
+-init-macrodef-junit:
+
+-init-macrodef-junit-impl:
+
+-init-macrodef-testng:
+
+-init-macrodef-testng-impl:
+
+-init-macrodef-test:
+
+-init-macrodef-junit-debug:
+
+-init-macrodef-junit-debug-batch:
+
+-init-macrodef-junit-debug-impl:
+
+-init-macrodef-test-debug-junit:
+
+-init-macrodef-testng-debug:
+
+-init-macrodef-testng-debug-impl:
+
+-init-macrodef-test-debug-testng:
+
+-init-macrodef-test-debug:
+
+-init-debug-args:
+
+-init-macrodef-nbjpda:
+
+-init-macrodef-debug:
+
+-init-macrodef-java:
+
+-init-presetdef-jar:
+
+-init-ap-cmdline-supported:
+
+-init-ap-cmdline:
+
+init:
+
+-deps-jar-init:
+   [delete] Deleting: /root/dwave/QWQFM/WQFM/build/built-jar.properties
+
+deps-jar:
+
+-warn-already-built-jar:
+[propertyfile] Updating property file: /root/dwave/QWQFM/WQFM/build/built-jar.properties
+
+-check-automatic-build:
+
+-clean-after-automatic-build:
+
+-verify-automatic-build:
+
+-pre-pre-compile:
+
+-pre-compile:
+
+-copy-persistence-xml:
+
+-compile-depend:
+
+-do-compile:
+     [copy] Copying 1 file to /root/dwave/QWQFM/WQFM/build/classes
+
+-post-compile:
+
+compile:
+
+-pre-jar:
+
+-pre-pre-jar:
+
+-do-jar-create-manifest:
+
+-do-jar-copy-manifest:
+     [copy] Copying 1 file to /root/dwave/QWQFM/WQFM/build
+
+-do-jar-set-mainclass:
+
+-do-jar-set-profile:
+
+-do-jar-set-splashscreen:
+
+-do-jar-jar:
+[j2seproject1:jar] Building jar: /root/dwave/QWQFM/WQFM/dist/wQFM.jar
+     [echo] To run this application from the command line without Ant, try:
+     [echo] /usr/lib/jvm/java-17-openjdk-amd64/bin/java -cp /root/dwave/QWQFM/WQFM/main.jar:/root/dwave/QWQFM/WQFM/D:/Personal-Projects-Data/picocli-4.6.1.jar:/root/dwave/QWQFM/lib/picocli-4.6.1.jar:/root/dwave/QWQFM/lib/main.jar:/root/dwave/QWQFM/WQFM/dist/wQFM.jar wqfm.main.Main
+
+-init-macrodef-copylibs:
+
+-do-jar-copylibs:
+
+-do-jar-delete-manifest:
+
+-do-jar-without-libraries:
+
+-do-jar-with-libraries:
+
+-post-jar:
+
+-do-jar:
+
+jar:
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Quantum phase: running Algorithm 2 for all selected files
+[quantum 1/8] aminota-aa.weighted_quartets
+  Running Algorithm 2 (quantum)...
+[quantum 2/8] aminota-nt.weighted_quartets
+  Running Algorithm 2 (quantum)...
+[quantum 3/8] angiosperm.weighted_quartets
+  Running Algorithm 2 (quantum)...
+[quantum 4/8] avian-all.weighted_quartets
+  Running Algorithm 2 (quantum)...
+[quantum 5/8] avian-exon.weighted_quartets
+  Running Algorithm 2 (quantum)...
+[quantum 6/8] avian-intron.weighted_quartets
+  Running Algorithm 2 (quantum)...
+[quantum 7/8] avian-uce.weighted_quartets
+  Running Algorithm 2 (quantum)...
+[quantum 8/8] mamalian.weighted_quartets
+  Running Algorithm 2 (quantum)...
+Classical phase: running Algorithm 1 and scoring each file
+[wqfm 1/8] aminota-aa.weighted_quartets
+  Running Algorithm 1 (wqfm)...
+  CSV row: taxa=16, quartets=5,345, total_weight=125412, WQFM=83604, quantum=83604, better=0
+[wqfm 2/8] aminota-nt.weighted_quartets
+  Running Algorithm 1 (wqfm)...
+  CSV row: taxa=16, quartets=4,736, total_weight=125412, WQFM=97890, quantum=97890, better=0
+[wqfm 3/8] angiosperm.weighted_quartets
+  Running Algorithm 1 (wqfm)...
+  CSV row: taxa=46, quartets=434,193, total_weight=14499592, WQFM=11551819, quantum=11551819, better=0
+[wqfm 4/8] avian-all.weighted_quartets
+  Running Algorithm 1 (wqfm)...
+  CSV row: taxa=48, quartets=583,740, total_weight=2462111516, WQFM=1228719113, quantum=1206117995, better=-1
+[wqfm 5/8] avian-exon.weighted_quartets
+  Running Algorithm 1 (wqfm)...
+  CSV row: taxa=48, quartets=583,740, total_weight=1363805254, WQFM=593388865, quantum=514649173, better=-1
+[wqfm 6/8] avian-intron.weighted_quartets
+  Running Algorithm 1 (wqfm)...
+  CSV row: taxa=48, quartets=576,660, total_weight=382446442, WQFM=232326259, quantum=229909225, better=-1
+[wqfm 7/8] avian-uce.weighted_quartets
+  Running Algorithm 1 (wqfm)...
+  CSV row: taxa=48, quartets=581,782, total_weight=715859820, WQFM=410101677, quantum=407609033, better=-1
+[wqfm 8/8] mamalian.weighted_quartets
+  Running Algorithm 1 (wqfm)...
+  CSV row: taxa=37, quartets=186,645, total_weight=28003080, WQFM=25526915, quantum=25526915, better=0
+Benchmark complete: /root/dwave/QWQFM/benchmark/output_csv/biological/results_biological_fresh_20260724T220022Z_n_gt_12.csv

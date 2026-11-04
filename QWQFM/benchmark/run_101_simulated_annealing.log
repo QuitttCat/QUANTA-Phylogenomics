@@ -1,0 +1,24 @@
+Picked up JAVA_TOOL_OPTIONS: -Xmx4g -XX:+UseG1GC
+
+BUILD SUCCESSFUL
+Total time: 1 second
+[1/19 done] 01.true.wqrts
+[2/19 done] 02.true.wqrts
+[3/19 done] 03.true.wqrts
+[4/19 done] 04.true.wqrts
+[5/19 done] 06.true.wqrts
+[6/19 done] 07.true.wqrts
+[7/19 done] 08.true.wqrts
+[8/19 done] 09.true.wqrts
+[9/19 done] 10.true.wqrts
+[10/19 done] 41.true.wqrts
+[11/19 done] 42.true.wqrts
+[12/19 done] 43.true.wqrts
+[13/19 done] 44.true.wqrts
+[14/19 done] 45.true.wqrts
+[15/19 done] 46.true.wqrts
+[16/19 done] 47.true.wqrts
+[17/19 done] 48.true.wqrts
+[18/19 done] 49.true.wqrts
+[19/19 done] 50.true.wqrts
+19 rows -> /home/niloy/Downloads/dwave/result_analysis/classical solvers/result/results_101_simulated_annealing_plus_bruteforce_n>20.csv

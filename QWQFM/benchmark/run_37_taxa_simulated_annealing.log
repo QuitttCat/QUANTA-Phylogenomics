@@ -1,0 +1,279 @@
+Picked up JAVA_TOOL_OPTIONS: -Xmx1g
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+[1/240] noscale.100g.500b_R10_weighted_quartets
+[2/240] noscale.100g.500b_R11_weighted_quartets
+[3/240] noscale.100g.500b_R12_weighted_quartets
+[4/240] noscale.100g.500b_R13_weighted_quartets
+[5/240] noscale.100g.500b_R14_weighted_quartets
+[6/240] noscale.100g.500b_R15_weighted_quartets
+[7/240] noscale.100g.500b_R16_weighted_quartets
+[8/240] noscale.100g.500b_R17_weighted_quartets
+[9/240] noscale.100g.500b_R18_weighted_quartets
+[10/240] noscale.100g.500b_R19_weighted_quartets
+[11/240] noscale.100g.500b_R1_weighted_quartets
+[12/240] noscale.100g.500b_R20_weighted_quartets
+[13/240] noscale.100g.500b_R2_weighted_quartets
+[14/240] noscale.100g.500b_R3_weighted_quartets
+[15/240] noscale.100g.500b_R4_weighted_quartets
+[16/240] noscale.100g.500b_R5_weighted_quartets
+[17/240] noscale.100g.500b_R6_weighted_quartets
+[18/240] noscale.100g.500b_R7_weighted_quartets
+[19/240] noscale.100g.500b_R8_weighted_quartets
+[20/240] noscale.100g.500b_R9_weighted_quartets
+[21/240] noscale.200g.1000b_R10_weighted_quartets
+[22/240] noscale.200g.1000b_R11_weighted_quartets
+[23/240] noscale.200g.1000b_R12_weighted_quartets
+[24/240] noscale.200g.1000b_R13_weighted_quartets
+[25/240] noscale.200g.1000b_R14_weighted_quartets
+[26/240] noscale.200g.1000b_R15_weighted_quartets
+[27/240] noscale.200g.1000b_R16_weighted_quartets
+[28/240] noscale.200g.1000b_R17_weighted_quartets
+[29/240] noscale.200g.1000b_R18_weighted_quartets
+[30/240] noscale.200g.1000b_R19_weighted_quartets
+[31/240] noscale.200g.1000b_R1_weighted_quartets
+[32/240] noscale.200g.1000b_R20_weighted_quartets
+[33/240] noscale.200g.1000b_R2_weighted_quartets
+[34/240] noscale.200g.1000b_R3_weighted_quartets
+[35/240] noscale.200g.1000b_R4_weighted_quartets
+[36/240] noscale.200g.1000b_R5_weighted_quartets
+[37/240] noscale.200g.1000b_R6_weighted_quartets
+[38/240] noscale.200g.1000b_R7_weighted_quartets
+[39/240] noscale.200g.1000b_R8_weighted_quartets
+[40/240] noscale.200g.1000b_R9_weighted_quartets
+[41/240] noscale.200g.1500b_R10_weighted_quartets
+[42/240] noscale.200g.1500b_R11_weighted_quartets
+[43/240] noscale.200g.1500b_R12_weighted_quartets
+[44/240] noscale.200g.1500b_R13_weighted_quartets
+[45/240] noscale.200g.1500b_R14_weighted_quartets
+[46/240] noscale.200g.1500b_R15_weighted_quartets
+[47/240] noscale.200g.1500b_R16_weighted_quartets
+[48/240] noscale.200g.1500b_R17_weighted_quartets
+[49/240] noscale.200g.1500b_R18_weighted_quartets
+[50/240] noscale.200g.1500b_R19_weighted_quartets
+[51/240] noscale.200g.1500b_R1_weighted_quartets
+[52/240] noscale.200g.1500b_R20_weighted_quartets
+[53/240] noscale.200g.1500b_R2_weighted_quartets
+[54/240] noscale.200g.1500b_R3_weighted_quartets
+[55/240] noscale.200g.1500b_R4_weighted_quartets
+[56/240] noscale.200g.1500b_R5_weighted_quartets
+[57/240] noscale.200g.1500b_R6_weighted_quartets
+[58/240] noscale.200g.1500b_R7_weighted_quartets
+[59/240] noscale.200g.1500b_R8_weighted_quartets
+[60/240] noscale.200g.1500b_R9_weighted_quartets
+[61/240] noscale.200g.250b_R10_weighted_quartets
+[62/240] noscale.200g.250b_R11_weighted_quartets
+[63/240] noscale.200g.250b_R12_weighted_quartets
+[64/240] noscale.200g.250b_R13_weighted_quartets
+[65/240] noscale.200g.250b_R14_weighted_quartets
+[66/240] noscale.200g.250b_R15_weighted_quartets
+[67/240] noscale.200g.250b_R16_weighted_quartets
+[68/240] noscale.200g.250b_R17_weighted_quartets
+[69/240] noscale.200g.250b_R18_weighted_quartets
+[70/240] noscale.200g.250b_R19_weighted_quartets
+[71/240] noscale.200g.250b_R1_weighted_quartets
+[72/240] noscale.200g.250b_R20_weighted_quartets
+[73/240] noscale.200g.250b_R2_weighted_quartets
+[74/240] noscale.200g.250b_R3_weighted_quartets
+[75/240] noscale.200g.250b_R4_weighted_quartets
+[76/240] noscale.200g.250b_R5_weighted_quartets
+[77/240] noscale.200g.250b_R6_weighted_quartets
+[78/240] noscale.200g.250b_R7_weighted_quartets
+[79/240] noscale.200g.250b_R8_weighted_quartets
+[80/240] noscale.200g.250b_R9_weighted_quartets
+[81/240] noscale.200g.500b_R10_weighted_quartets
+[82/240] noscale.200g.500b_R11_weighted_quartets
+[83/240] noscale.200g.500b_R12_weighted_quartets
+[84/240] noscale.200g.500b_R13_weighted_quartets
+[85/240] noscale.200g.500b_R14_weighted_quartets
+[86/240] noscale.200g.500b_R15_weighted_quartets
+[87/240] noscale.200g.500b_R16_weighted_quartets
+[88/240] noscale.200g.500b_R17_weighted_quartets
+[89/240] noscale.200g.500b_R18_weighted_quartets
+[90/240] noscale.200g.500b_R19_weighted_quartets
+[91/240] noscale.200g.500b_R1_weighted_quartets
+[92/240] noscale.200g.500b_R20_weighted_quartets
+[93/240] noscale.200g.500b_R2_weighted_quartets
+[94/240] noscale.200g.500b_R3_weighted_quartets
+[95/240] noscale.200g.500b_R4_weighted_quartets
+[96/240] noscale.200g.500b_R5_weighted_quartets
+[97/240] noscale.200g.500b_R6_weighted_quartets
+[98/240] noscale.200g.500b_R7_weighted_quartets
+[99/240] noscale.200g.500b_R8_weighted_quartets
+[100/240] noscale.200g.500b_R9_weighted_quartets
+[101/240] noscale.200g.true_R10_weighted_quartets
+[102/240] noscale.200g.true_R11_weighted_quartets
+[103/240] noscale.200g.true_R12_weighted_quartets
+[104/240] noscale.200g.true_R13_weighted_quartets
+[105/240] noscale.200g.true_R14_weighted_quartets
+[106/240] noscale.200g.true_R15_weighted_quartets
+[107/240] noscale.200g.true_R16_weighted_quartets
+[108/240] noscale.200g.true_R17_weighted_quartets
+[109/240] noscale.200g.true_R18_weighted_quartets
+[110/240] noscale.200g.true_R19_weighted_quartets
+[111/240] noscale.200g.true_R1_weighted_quartets
+[112/240] noscale.200g.true_R20_weighted_quartets
+[113/240] noscale.200g.true_R2_weighted_quartets
+[114/240] noscale.200g.true_R3_weighted_quartets
+[115/240] noscale.200g.true_R4_weighted_quartets
+[116/240] noscale.200g.true_R5_weighted_quartets
+[117/240] noscale.200g.true_R6_weighted_quartets
+[118/240] noscale.200g.true_R7_weighted_quartets
+[119/240] noscale.200g.true_R8_weighted_quartets
+[120/240] noscale.200g.true_R9_weighted_quartets
+[121/240] noscale.25g.500b_R10_weighted_quartets
+[122/240] noscale.25g.500b_R11_weighted_quartets
+[123/240] noscale.25g.500b_R12_weighted_quartets
+[124/240] noscale.25g.500b_R13_weighted_quartets
+[125/240] noscale.25g.500b_R14_weighted_quartets
+[126/240] noscale.25g.500b_R15_weighted_quartets
+[127/240] noscale.25g.500b_R16_weighted_quartets
+[128/240] noscale.25g.500b_R17_weighted_quartets
+[129/240] noscale.25g.500b_R18_weighted_quartets
+[130/240] noscale.25g.500b_R19_weighted_quartets
+[131/240] noscale.25g.500b_R1_weighted_quartets
+[132/240] noscale.25g.500b_R20_weighted_quartets
+[133/240] noscale.25g.500b_R2_weighted_quartets
+[134/240] noscale.25g.500b_R3_weighted_quartets
+[135/240] noscale.25g.500b_R4_weighted_quartets
+[136/240] noscale.25g.500b_R5_weighted_quartets
+[137/240] noscale.25g.500b_R6_weighted_quartets
+[138/240] noscale.25g.500b_R7_weighted_quartets
+[139/240] noscale.25g.500b_R8_weighted_quartets
+[140/240] noscale.25g.500b_R9_weighted_quartets
+[141/240] noscale.400g.500b_R10_weighted_quartets
+[142/240] noscale.400g.500b_R11_weighted_quartets
+[143/240] noscale.400g.500b_R12_weighted_quartets
+[144/240] noscale.400g.500b_R13_weighted_quartets
+[145/240] noscale.400g.500b_R14_weighted_quartets
+[146/240] noscale.400g.500b_R15_weighted_quartets
+[147/240] noscale.400g.500b_R16_weighted_quartets
+[148/240] noscale.400g.500b_R17_weighted_quartets
+[149/240] noscale.400g.500b_R18_weighted_quartets
+[150/240] noscale.400g.500b_R19_weighted_quartets
+[151/240] noscale.400g.500b_R1_weighted_quartets
+[152/240] noscale.400g.500b_R20_weighted_quartets
+[153/240] noscale.400g.500b_R2_weighted_quartets
+[154/240] noscale.400g.500b_R3_weighted_quartets
+[155/240] noscale.400g.500b_R4_weighted_quartets
+[156/240] noscale.400g.500b_R5_weighted_quartets
+[157/240] noscale.400g.500b_R6_weighted_quartets
+[158/240] noscale.400g.500b_R7_weighted_quartets
+[159/240] noscale.400g.500b_R8_weighted_quartets
+[160/240] noscale.400g.500b_R9_weighted_quartets
+[161/240] noscale.50g.500b_R10_weighted_quartets
+[162/240] noscale.50g.500b_R11_weighted_quartets
+[163/240] noscale.50g.500b_R12_weighted_quartets
+[164/240] noscale.50g.500b_R13_weighted_quartets
+[165/240] noscale.50g.500b_R14_weighted_quartets
+[166/240] noscale.50g.500b_R15_weighted_quartets
+[167/240] noscale.50g.500b_R16_weighted_quartets
+[168/240] noscale.50g.500b_R17_weighted_quartets
+[169/240] noscale.50g.500b_R18_weighted_quartets
+[170/240] noscale.50g.500b_R19_weighted_quartets
+                                                Picked up JAVA_TOOL_OPTIONS: -Xmx1g
+
+BUILD SUCCESSFUL
+Total time: 1 second
+[171/240] noscale.50g.500b_R1_weighted_quartets
+[172/240] noscale.50g.500b_R20_weighted_quartets
+[173/240] noscale.50g.500b_R2_weighted_quartets
+[174/240] noscale.50g.500b_R3_weighted_quartets
+=== parallel restart JOBS=12 Sun Oct 25 21:49:45 +06 2026
+Picked up JAVA_TOOL_OPTIONS: -Xmx1g
+
+BUILD SUCCESSFUL
+Total time: 1 second
+[174/240 done] noscale.50g.500b_R5_weighted_quartets
+[175/240 done] noscale.50g.500b_R3_weighted_quartets
+[176/240 done] noscale.800g.500b_R13_weighted_quartets
+[177/240 done] noscale.800g.500b_R14_weighted_quartets
+[178/240 done] noscale.50g.500b_R7_weighted_quartets
+[179/240 done] noscale.50g.500b_R6_weighted_quartets
+[180/240 done] noscale.800g.500b_R11_weighted_quartets
+[181/240 done] noscale.50g.500b_R8_weighted_quartets
+[182/240 done] noscale.50g.500b_R4_weighted_quartets
+[184/240 done] noscale.50g.500b_R9_weighted_quartets
+[184/240 done] noscale.800g.500b_R10_weighted_quartets
+[185/240 done] noscale.800g.500b_R12_weighted_quartets
+[186/240 done] noscale.800g.500b_R16_weighted_quartets
+[187/240 done] noscale.800g.500b_R19_weighted_quartets
+[188/240 done] noscale.800g.500b_R18_weighted_quartets
+[189/240 done] noscale.800g.500b_R3_weighted_quartets
+[190/240 done] noscale.800g.500b_R5_weighted_quartets
+[191/240 done] noscale.800g.500b_R15_weighted_quartets
+[192/240 done] noscale.800g.500b_R2_weighted_quartets
+[193/240 done] noscale.800g.500b_R20_weighted_quartets
+[194/240 done] noscale.800g.500b_R1_weighted_quartets
+[195/240 done] noscale.800g.500b_R17_weighted_quartets
+[196/240 done] noscale.800g.500b_R4_weighted_quartets
+[197/240 done] noscale.800g.500b_R6_weighted_quartets
+[198/240 done] scale2d.200g.500b_R13_weighted_quartets
+[199/240 done] scale2d.200g.500b_R15_weighted_quartets
+[200/240 done] noscale.800g.500b_R7_weighted_quartets
+[201/240 done] noscale.800g.500b_R8_weighted_quartets
+[202/240 done] noscale.800g.500b_R9_weighted_quartets
+[203/240 done] scale2d.200g.500b_R14_weighted_quartets
+[204/240 done] scale2d.200g.500b_R10_weighted_quartets
+[205/240 done] scale2d.200g.500b_R11_weighted_quartets
+[206/240 done] scale2d.200g.500b_R16_weighted_quartets
+[207/240 done] scale2d.200g.500b_R12_weighted_quartets
+[208/240 done] scale2d.200g.500b_R17_weighted_quartets
+[209/240 done] scale2d.200g.500b_R18_weighted_quartets
+[210/240 done] scale2d.200g.500b_R4_weighted_quartets
+[211/240 done] scale2d.200g.500b_R19_weighted_quartets
+[213/240 done] scale2d.200g.500b_R5_weighted_quartets
+[213/240 done] scale2d.200g.500b_R3_weighted_quartets
+[214/240 done] scale2d.200g.500b_R2_weighted_quartets
+[215/240 done] scale2d.200g.500b_R1_weighted_quartets
+[216/240 done] scale2d.200g.500b_R6_weighted_quartets
+[217/240 done] scale2d.200g.500b_R20_weighted_quartets
+[218/240 done] scale2d.200g.500b_R8_weighted_quartets
+[219/240 done] scale2u.200g.500b_R10_weighted_quartets
+[220/240 done] scale2d.200g.500b_R9_weighted_quartets
+[221/240 done] scale2d.200g.500b_R7_weighted_quartets
+[222/240 done] scale2u.200g.500b_R14_weighted_quartets
+[223/240 done] scale2u.200g.500b_R11_weighted_quartets
+[224/240 done] scale2u.200g.500b_R13_weighted_quartets
+[225/240 done] scale2u.200g.500b_R15_weighted_quartets
+[226/240 done] scale2u.200g.500b_R16_weighted_quartets
+[227/240 done] scale2u.200g.500b_R12_weighted_quartets
+[228/240 done] scale2u.200g.500b_R17_weighted_quartets
+[230/240 done] scale2u.200g.500b_R19_weighted_quartets
+[230/240 done] scale2u.200g.500b_R18_weighted_quartets
+[231/240 done] scale2u.200g.500b_R20_weighted_quartets
+[232/240 done] scale2u.200g.500b_R2_weighted_quartets
+[233/240 done] scale2u.200g.500b_R1_weighted_quartets
+[234/240 done] scale2u.200g.500b_R3_weighted_quartets
+[235/240 done] scale2u.200g.500b_R4_weighted_quartets
+[236/240 done] scale2u.200g.500b_R5_weighted_quartets
+[237/240 done] scale2u.200g.500b_R6_weighted_quartets
+[238/240 done] scale2u.200g.500b_R7_weighted_quartets
+[239/240 done] scale2u.200g.500b_R9_weighted_quartets
+[240/240 done] scale2u.200g.500b_R8_weighted_quartets
+Traceback (most recent call last):
+  File "/home/niloy/Downloads/dwave/result_analysis/37 Taxa/summarize_classical.py", line 88, in <module>
+    main()
+  File "/home/niloy/Downloads/dwave/result_analysis/37 Taxa/summarize_classical.py", line 54, in main
+    tree = scorer.read_tree(result_dir / "quantum.tre")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/niloy/Downloads/dwave/QWQFM/benchmark/scripts/score_benchmark_row.py", line 55, in read_tree
+    raise ValueError(f"Tree file is empty: {path}")
+ValueError: Tree file is empty: /home/niloy/Downloads/dwave/QWQFM/benchmark/work/37_taxa_simulated_annealing_n_gt_20/noscale.50g.500b_R19_weighted_quartets/quantum.tre
+Picked up JAVA_TOOL_OPTIONS: -Xmx1g
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+[240/240 done] noscale.50g.500b_R19_weighted_quartets
+240 rows -> /home/niloy/Downloads/dwave/result_analysis/37 Taxa/result/results_37_taxa_simulated_annealing_plus_bruteforce_n>20.csv
+Picked up JAVA_TOOL_OPTIONS: -Xmx1g
+
+BUILD SUCCESSFUL
+Total time: 1 second
+Picked up JAVA_TOOL_OPTIONS: -Xmx1g
+
+BUILD SUCCESSFUL
+Total time: 1 second
+240 rows -> /home/niloy/Downloads/dwave/result_analysis/37 Taxa/result/results_37_taxa_simulated_annealing_plus_bruteforce_n>20.csv
+240 rows -> /home/niloy/Downloads/dwave/result_analysis/37 Taxa/result/results_37_taxa_simulated_annealing_plus_bruteforce_n>20.csv

@@ -1,0 +1,237 @@
+Input directory: /root/dwave/QWQFM/WQFM/input_files/48-taxa-weighted-quartets
+Quartet files selected: 114 of 114
+Classical source CSV: /root/dwave/QWQFM/benchmark/output_csv/results_48_taxa_qpu_plus_bruteforce_n>20.csv
+Z12 output CSV: /root/dwave/QWQFM/benchmark/output_csv/results_48_taxa_z12_qpu_plus_bruteforce_n>20.csv
+Checkpoint directory: /root/dwave/QWQFM/benchmark/work/48_taxa_z12_qpu_plus_bruteforce_n_gt_20
+D-Wave solver: Advantage2_system1 (zephyr_z12)
+D-Wave token: available from /root/dwave/.env
+Initialized /root/dwave/QWQFM/benchmark/output_csv/results_48_taxa_z12_qpu_plus_bruteforce_n>20.csv with 114 classical rows; 0 quantum rows already complete
+[Z12 1/114] 0.5X-1000-500_R10_weighted_quartets
+  CSV row: RF WQFM=0.088889, RF Z12=0.066667, better=1
+[Z12 2/114] 0.5X-1000-500_R11_weighted_quartets
+  CSV row: RF WQFM=0.088889, RF Z12=0.088889, better=0
+[Z12 3/114] 0.5X-1000-500_R13_weighted_quartets
+  CSV row: RF WQFM=0.133333, RF Z12=0.133333, better=0
+[Z12 4/114] 0.5X-1000-500_R14_weighted_quartets
+  CSV row: RF WQFM=0.177778, RF Z12=0.155556, better=1
+[Z12 5/114] 0.5X-1000-500_R16_weighted_quartets
+  CSV row: RF WQFM=0.111111, RF Z12=0.111111, better=0
+[Z12 6/114] 0.5X-1000-500_R17_weighted_quartets
+  CSV row: RF WQFM=0.088889, RF Z12=0.088889, better=0
+[Z12 7/114] 0.5X-1000-500_R18_weighted_quartets
+  CSV row: RF WQFM=0.088889, RF Z12=0.088889, better=0
+[Z12 8/114] 0.5X-1000-500_R19_weighted_quartets
+  CSV row: RF WQFM=0.111111, RF Z12=0.111111, better=0
+[Z12 9/114] 0.5X-1000-500_R1_weighted_quartets
+  CSV row: RF WQFM=0.133333, RF Z12=0.133333, better=0
+[Z12 10/114] 0.5X-1000-500_R20_weighted_quartets
+  CSV row: RF WQFM=0.088889, RF Z12=0.088889, better=0
+[Z12 11/114] 0.5X-1000-500_R2_weighted_quartets
+  CSV row: RF WQFM=0.088889, RF Z12=0.088889, better=0
+[Z12 12/114] 0.5X-1000-500_R3_weighted_quartets
+  CSV row: RF WQFM=0.066667, RF Z12=0.066667, better=0
+[Z12 13/114] 0.5X-1000-500_R4_weighted_quartets
+  CSV row: RF WQFM=0.133333, RF Z12=0.133333, better=0
+[Z12 14/114] 0.5X-1000-500_R5_weighted_quartets
+  CSV row: RF WQFM=0.088889, RF Z12=0.088889, better=0
+[Z12 15/114] 0.5X-1000-500_R6_weighted_quartets
+  CSV row: RF WQFM=0.088889, RF Z12=0.088889, better=0
+[Z12 16/114] 0.5X-1000-500_R7_weighted_quartets
+  CSV row: RF WQFM=0.088889, RF Z12=0.088889, better=0
+[Z12 17/114] 0.5X-1000-500_R8_weighted_quartets
+  CSV row: RF WQFM=0.111111, RF Z12=0.111111, better=0
+[Z12 18/114] 0.5X-1000-500_R9_weighted_quartets
+  CSV row: RF WQFM=0.044444, RF Z12=0.044444, better=0
+[Z12 19/114] 1X-100-500_R12_weighted_quartets
+  CSV row: RF WQFM=0.200000, RF Z12=0.177778, better=1
+[Z12 20/114] 1X-100-500_R15_weighted_quartets
+  CSV row: RF WQFM=0.244444, RF Z12=0.244444, better=0
+[Z12 21/114] 1X-100-500_R17_weighted_quartets
+  CSV row: RF WQFM=0.288889, RF Z12=0.311111, better=-1
+[Z12 22/114] 1X-100-500_R18_weighted_quartets
+  CSV row: RF WQFM=0.222222, RF Z12=0.266667, better=-1
+[Z12 23/114] 1X-100-500_R19_weighted_quartets
+  CSV row: RF WQFM=0.244444, RF Z12=0.200000, better=1
+[Z12 24/114] 1X-100-500_R20_weighted_quartets
+  CSV row: RF WQFM=0.244444, RF Z12=0.244444, better=0
+[Z12 25/114] 1X-100-500_R2_weighted_quartets
+  CSV row: RF WQFM=0.200000, RF Z12=0.222222, better=-1
+[Z12 26/114] 1X-100-500_R3_weighted_quartets
+  CSV row: RF WQFM=0.266667, RF Z12=0.288889, better=-1
+[Z12 27/114] 1X-100-500_R4_weighted_quartets
+  CSV row: RF WQFM=0.244444, RF Z12=0.244444, better=0
+[Z12 28/114] 1X-100-500_R5_weighted_quartets
+  CSV row: RF WQFM=0.288889, RF Z12=0.266667, better=1
+[Z12 29/114] 1X-100-500_R6_weighted_quartets
+  CSV row: RF WQFM=0.200000, RF Z12=0.266667, better=-1
+[Z12 30/114] 1X-100-500_R7_weighted_quartets
+  CSV row: RF WQFM=0.222222, RF Z12=0.244444, better=-1
+[Z12 31/114] 1X-100-500_R9_weighted_quartets
+  CSV row: RF WQFM=0.200000, RF Z12=0.200000, better=0
+[Z12 32/114] 1X-1000-500_R12_weighted_quartets
+  CSV row: RF WQFM=0.066667, RF Z12=0.066667, better=0
+[Z12 33/114] 1X-1000-500_R16_weighted_quartets
+  CSV row: RF WQFM=0.022222, RF Z12=0.022222, better=0
+[Z12 34/114] 1X-1000-500_R19_weighted_quartets
+  CSV row: RF WQFM=0.044444, RF Z12=0.044444, better=0
+[Z12 35/114] 1X-1000-500_R1_weighted_quartets
+  CSV row: RF WQFM=0.088889, RF Z12=0.088889, better=0
+[Z12 36/114] 1X-1000-500_R20_weighted_quartets
+  CSV row: RF WQFM=0.000000, RF Z12=0.000000, better=0
+[Z12 37/114] 1X-1000-500_R2_weighted_quartets
+  CSV row: RF WQFM=0.044444, RF Z12=0.044444, better=0
+[Z12 38/114] 1X-1000-500_R3_weighted_quartets
+  CSV row: RF WQFM=0.066667, RF Z12=0.066667, better=0
+[Z12 39/114] 1X-1000-500_R4_weighted_quartets
+  CSV row: RF WQFM=0.088889, RF Z12=0.111111, better=-1
+[Z12 40/114] 1X-1000-500_R5_weighted_quartets
+  CSV row: RF WQFM=0.044444, RF Z12=0.044444, better=0
+[Z12 41/114] 1X-1000-500_R6_weighted_quartets
+  CSV row: RF WQFM=0.111111, RF Z12=0.066667, better=1
+[Z12 42/114] 1X-1000-500_R7_weighted_quartets
+  CSV row: RF WQFM=0.000000, RF Z12=0.000000, better=0
+[Z12 43/114] 1X-1000-500_R8_weighted_quartets
+  CSV row: RF WQFM=0.044444, RF Z12=0.044444, better=0
+[Z12 44/114] 1X-1000-500_R9_weighted_quartets
+  CSV row: RF WQFM=0.088889, RF Z12=0.088889, better=0
+[Z12 45/114] 1X-200-500_R10_weighted_quartets
+  CSV row: RF WQFM=0.133333, RF Z12=0.111111, better=1
+[Z12 46/114] 1X-200-500_R11_weighted_quartets
+  CSV row: RF WQFM=0.177778, RF Z12=0.177778, better=0
+[Z12 47/114] 1X-200-500_R12_weighted_quartets
+  CSV row: RF WQFM=0.155556, RF Z12=0.155556, better=0
+[Z12 48/114] 1X-200-500_R14_weighted_quartets
+  CSV row: RF WQFM=0.133333, RF Z12=0.133333, better=0
+[Z12 49/114] 1X-200-500_R15_weighted_quartets
+  CSV row: RF WQFM=0.177778, RF Z12=0.177778, better=0
+[Z12 50/114] 1X-200-500_R16_weighted_quartets
+  CSV row: RF WQFM=0.155556, RF Z12=0.177778, better=-1
+[Z12 51/114] 1X-200-500_R17_weighted_quartets
+  CSV row: RF WQFM=0.200000, RF Z12=0.222222, better=-1
+[Z12 52/114] 1X-200-500_R18_weighted_quartets
+  CSV row: RF WQFM=0.244444, RF Z12=0.244444, better=0
+[Z12 53/114] 1X-200-500_R19_weighted_quartets
+  CSV row: RF WQFM=0.222222, RF Z12=0.200000, better=1
+[Z12 54/114] 1X-200-500_R1_weighted_quartets
+  CSV row: RF WQFM=0.111111, RF Z12=0.111111, better=0
+[Z12 55/114] 1X-200-500_R20_weighted_quartets
+  CSV row: RF WQFM=0.244444, RF Z12=0.222222, better=1
+[Z12 56/114] 1X-200-500_R2_weighted_quartets
+  CSV row: RF WQFM=0.133333, RF Z12=0.155556, better=-1
+[Z12 57/114] 1X-200-500_R3_weighted_quartets
+  CSV row: RF WQFM=0.266667, RF Z12=0.266667, better=0
+[Z12 58/114] 1X-200-500_R4_weighted_quartets
+  CSV row: RF WQFM=0.177778, RF Z12=0.155556, better=1
+[Z12 59/114] 1X-200-500_R5_weighted_quartets
+  CSV row: RF WQFM=0.200000, RF Z12=0.200000, better=0
+[Z12 60/114] 1X-200-500_R6_weighted_quartets
+  CSV row: RF WQFM=0.155556, RF Z12=0.155556, better=0
+[Z12 61/114] 1X-200-500_R7_weighted_quartets
+  CSV row: RF WQFM=0.155556, RF Z12=0.155556, better=0
+[Z12 62/114] 1X-200-500_R8_weighted_quartets
+  CSV row: RF WQFM=0.222222, RF Z12=0.222222, better=0
+[Z12 63/114] 1X-200-500_R9_weighted_quartets
+  CSV row: RF WQFM=0.133333, RF Z12=0.133333, better=0
+[Z12 64/114] 1X-50-500_R10_weighted_quartets
+  CSV row: RF WQFM=0.266667, RF Z12=0.266667, better=0
+[Z12 65/114] 1X-50-500_R11_weighted_quartets
+  CSV row: RF WQFM=0.288889, RF Z12=0.266667, better=1
+[Z12 66/114] 1X-50-500_R14_weighted_quartets
+  CSV row: RF WQFM=0.266667, RF Z12=0.288889, better=-1
+[Z12 67/114] 1X-50-500_R16_weighted_quartets
+  CSV row: RF WQFM=0.311111, RF Z12=0.311111, better=0
+[Z12 68/114] 1X-50-500_R17_weighted_quartets
+  CSV row: RF WQFM=0.244444, RF Z12=0.288889, better=-1
+[Z12 69/114] 1X-50-500_R18_weighted_quartets
+  CSV row: RF WQFM=0.266667, RF Z12=0.266667, better=0
+[Z12 70/114] 1X-50-500_R19_weighted_quartets
+  CSV row: RF WQFM=0.244444, RF Z12=0.244444, better=0
+[Z12 71/114] 1X-50-500_R20_weighted_quartets
+  CSV row: RF WQFM=0.266667, RF Z12=0.266667, better=0
+[Z12 72/114] 1X-50-500_R2_weighted_quartets
+  CSV row: RF WQFM=0.266667, RF Z12=0.266667, better=0
+[Z12 73/114] 1X-50-500_R3_weighted_quartets
+  CSV row: RF WQFM=0.333333, RF Z12=0.333333, better=0
+[Z12 74/114] 1X-50-500_R4_weighted_quartets
+  CSV row: RF WQFM=0.244444, RF Z12=0.266667, better=-1
+[Z12 75/114] 1X-50-500_R5_weighted_quartets
+  CSV row: RF WQFM=0.266667, RF Z12=0.266667, better=0
+[Z12 76/114] 1X-50-500_R6_weighted_quartets
+  CSV row: RF WQFM=0.244444, RF Z12=0.244444, better=0
+[Z12 77/114] 1X-50-500_R7_weighted_quartets
+  CSV row: RF WQFM=0.266667, RF Z12=0.288889, better=-1
+[Z12 78/114] 1X-50-500_R8_weighted_quartets
+  CSV row: RF WQFM=0.288889, RF Z12=0.288889, better=0
+[Z12 79/114] 1X-50-500_R9_weighted_quartets
+  CSV row: RF WQFM=0.288889, RF Z12=0.222222, better=1
+[Z12 80/114] 1X-500-500_R10_weighted_quartets
+  CSV row: RF WQFM=0.066667, RF Z12=0.066667, better=0
+[Z12 81/114] 1X-500-500_R14_weighted_quartets
+  CSV row: RF WQFM=0.088889, RF Z12=0.066667, better=1
+[Z12 82/114] 1X-500-500_R15_weighted_quartets
+  CSV row: RF WQFM=0.111111, RF Z12=0.111111, better=0
+[Z12 83/114] 1X-500-500_R17_weighted_quartets
+  CSV row: RF WQFM=0.133333, RF Z12=0.133333, better=0
+[Z12 84/114] 1X-500-500_R18_weighted_quartets
+  CSV row: RF WQFM=0.111111, RF Z12=0.111111, better=0
+[Z12 85/114] 1X-500-500_R19_weighted_quartets
+  CSV row: RF WQFM=0.111111, RF Z12=0.111111, better=0
+[Z12 86/114] 1X-500-500_R20_weighted_quartets
+  CSV row: RF WQFM=0.066667, RF Z12=0.088889, better=-1
+[Z12 87/114] 1X-500-500_R2_weighted_quartets
+  CSV row: RF WQFM=0.111111, RF Z12=0.111111, better=0
+[Z12 88/114] 1X-500-500_R3_weighted_quartets
+  CSV row: RF WQFM=0.200000, RF Z12=0.155556, better=1
+[Z12 89/114] 1X-500-500_R4_weighted_quartets
+  CSV row: RF WQFM=0.133333, RF Z12=0.133333, better=0
+[Z12 90/114] 1X-500-500_R5_weighted_quartets
+  CSV row: RF WQFM=0.088889, RF Z12=0.088889, better=0
+[Z12 91/114] 1X-500-500_R6_weighted_quartets
+  CSV row: RF WQFM=0.177778, RF Z12=0.155556, better=1
+[Z12 92/114] 1X-500-500_R7_weighted_quartets
+  CSV row: RF WQFM=0.088889, RF Z12=0.088889, better=0
+[Z12 93/114] 1X-500-500_R8_weighted_quartets
+  CSV row: RF WQFM=0.066667, RF Z12=0.088889, better=-1
+[Z12 94/114] 1X-500-500_R9_weighted_quartets
+  CSV row: RF WQFM=0.111111, RF Z12=0.111111, better=0
+[Z12 95/114] 2X-1000-500_R10_weighted_quartets
+  CSV row: RF WQFM=0.022222, RF Z12=0.022222, better=0
+[Z12 96/114] 2X-1000-500_R11_weighted_quartets
+  CSV row: RF WQFM=0.022222, RF Z12=0.022222, better=0
+[Z12 97/114] 2X-1000-500_R12_weighted_quartets
+  CSV row: RF WQFM=0.044444, RF Z12=0.044444, better=0
+[Z12 98/114] 2X-1000-500_R13_weighted_quartets
+  CSV row: RF WQFM=0.022222, RF Z12=0.022222, better=0
+[Z12 99/114] 2X-1000-500_R14_weighted_quartets
+  CSV row: RF WQFM=0.066667, RF Z12=0.066667, better=0
+[Z12 100/114] 2X-1000-500_R15_weighted_quartets
+  CSV row: RF WQFM=0.066667, RF Z12=0.066667, better=0
+[Z12 101/114] 2X-1000-500_R16_weighted_quartets
+  CSV row: RF WQFM=0.022222, RF Z12=0.022222, better=0
+[Z12 102/114] 2X-1000-500_R17_weighted_quartets
+  CSV row: RF WQFM=0.044444, RF Z12=0.044444, better=0
+[Z12 103/114] 2X-1000-500_R18_weighted_quartets
+  CSV row: RF WQFM=0.044444, RF Z12=0.044444, better=0
+[Z12 104/114] 2X-1000-500_R19_weighted_quartets
+  CSV row: RF WQFM=0.022222, RF Z12=0.022222, better=0
+[Z12 105/114] 2X-1000-500_R1_weighted_quartets
+  CSV row: RF WQFM=0.044444, RF Z12=0.044444, better=0
+[Z12 106/114] 2X-1000-500_R20_weighted_quartets
+  CSV row: RF WQFM=0.066667, RF Z12=0.066667, better=0
+[Z12 107/114] 2X-1000-500_R2_weighted_quartets
+  CSV row: RF WQFM=0.044444, RF Z12=0.044444, better=0
+[Z12 108/114] 2X-1000-500_R3_weighted_quartets
+  CSV row: RF WQFM=0.066667, RF Z12=0.066667, better=0
+[Z12 109/114] 2X-1000-500_R4_weighted_quartets
+  CSV row: RF WQFM=0.022222, RF Z12=0.022222, better=0
+[Z12 110/114] 2X-1000-500_R5_weighted_quartets
+  CSV row: RF WQFM=0.044444, RF Z12=0.044444, better=0
+[Z12 111/114] 2X-1000-500_R6_weighted_quartets
+  CSV row: RF WQFM=0.022222, RF Z12=0.022222, better=0
+[Z12 112/114] 2X-1000-500_R7_weighted_quartets
+  CSV row: RF WQFM=0.022222, RF Z12=0.022222, better=0
+[Z12 113/114] 2X-1000-500_R8_weighted_quartets
+  CSV row: RF WQFM=0.044444, RF Z12=0.044444, better=0
+[Z12 114/114] 2X-1000-500_R9_weighted_quartets
+  CSV row: RF WQFM=0.044444, RF Z12=0.044444, better=0
+Z12 benchmark complete: /root/dwave/QWQFM/benchmark/output_csv/results_48_taxa_z12_qpu_plus_bruteforce_n>20.csv

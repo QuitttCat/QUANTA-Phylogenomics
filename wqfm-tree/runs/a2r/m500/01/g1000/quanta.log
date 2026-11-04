@@ -1,0 +1,5 @@
+taxon count : 501
+Gene trees count : 1000
+total internal nodes : 500000
+unique partitions : 101514
+QUBO_SUMMARY subproblems=498 max_units=501 qubo_build_s=29.303 solver_s=145.430 elapsed_s=200.731

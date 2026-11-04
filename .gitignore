@@ -1,0 +1,18 @@
+# Virtual environments (.venv, QWQFM/.venv, baselines/tools/.venv-extract)
+.venv*/
+venv/
+
+# Datasets (shared on Google Drive, see README.md)
+QWQFM/WQFM/input_files/
+QWQFM/benchmark/input_sets/
+wqfm-tree/data/
+
+# Copies of the datasets inside run folders
+wqfm-tree/runs/**/gene_trees.tre*
+baselines/results/**/tmp*/
+
+# Official wQFM-TREE clone: a separate git repository, with its own copy of the ASTRAL-II trees
+wqfm-tree/official/
+
+# Secrets (D-Wave API token)
+.env

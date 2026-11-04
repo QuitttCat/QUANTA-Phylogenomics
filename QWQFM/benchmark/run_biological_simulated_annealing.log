@@ -1,0 +1,13 @@
+Picked up JAVA_TOOL_OPTIONS: -Xmx1g
+
+BUILD SUCCESSFUL
+Total time: 1 second
+[1/8 done] aminota-nt.weighted_quartets
+[2/8 done] aminota-aa.weighted_quartets
+[3/8 done] angiosperm.weighted_quartets
+[4/8 done] avian-intron.weighted_quartets
+[5/8 done] avian-all.weighted_quartets
+[6/8 done] mamalian.weighted_quartets
+[7/8 done] avian-exon.weighted_quartets
+[8/8 done] avian-uce.weighted_quartets
+8 rows -> /home/niloy/Downloads/dwave/result_analysis/classical solvers/result/results_biological_simulated_annealing_plus_bruteforce_n>20.csv

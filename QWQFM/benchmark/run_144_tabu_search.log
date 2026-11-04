@@ -1,0 +1,6 @@
+Picked up JAVA_TOOL_OPTIONS: -Xmx4500m -XX:+UseG1GC
+
+BUILD SUCCESSFUL
+Total time: 1 second
+[1/1 done] insect_gene_tree_0713.weighted_quartets
+1 rows -> /home/niloy/Downloads/dwave/result_analysis/classical solvers/result/results_144_tabu_search_plus_bruteforce_n>20.csv

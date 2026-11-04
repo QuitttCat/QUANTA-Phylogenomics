@@ -1,0 +1,17 @@
+Gene Trees path: /home/niloy/Downloads/dwave/wqfm-tree/runs/1000_taxa/gene_trees.tre, output path: /home/niloy/Downloads/dwave/wqfm-tree/runs/1000_taxa/wqfmtree.tre
+Cleaning input file
+Cleaned input file written to /home/niloy/Downloads/dwave/wqfm-tree/runs/1000_taxa/gene_trees.tre-cleaned
+Generating consensus tree using paup
+warning: please limit length of filenames
+output at:
+/home/niloy/Downloads/dwave/wqfm-tree/runs/1000_taxa/gene_trees.tre-cleaned-cons.strict.tree
+/home/niloy/Downloads/dwave/wqfm-tree/runs/1000_taxa/gene_trees.tre-cleaned-cons.majority.tree
+/home/niloy/Downloads/dwave/wqfm-tree/runs/1000_taxa/gene_trees.tre-cleaned-cons.greedy.tree
+done.
+ ===================== Running wQFM-TREE ===================== 
+taxon count : 1000
+Gene trees count : 200
+total internal nodes : 199800
+unique partitions : 30060
+level : 1
+#iterations: 0
